@@ -111,7 +111,7 @@ body {
 
 /*<-------------------------------portfolio section------------------>*/
 
-.portfolio_section{
+.section{
   padding-top: 130px;
   padding-bottom: 130px;
   text-align: center;
@@ -121,7 +121,7 @@ body {
   border: 0;
 }
 
-.portfolio_section_title > h2{
+.section_title > h2{
   font-size: 16px;
   margin: 15px 0;
   line-height: 20px;
@@ -130,13 +130,16 @@ body {
   color: rgb(64, 68, 72);
 }
 
-.portfolio_section_title > h3{
+.section_title > h3{
   max-width: 860px;
   margin: 25px auto;
   font-size: 34px;
   font-weight: 100;
-  font-family: 'brandon_grotesquelight';
-  color: #7F8082;
+  /*font-family: 'brandon_grotesquelight';*/
+  font-family: 'brandon_grotesquethin';
+  /*color: #7F8082;*/
+  color: #323334;
+  line-height: 55.0131556175px;
 }
 
 .grid {
@@ -188,6 +191,23 @@ body {
   font-size: 14px;
   font-family: "brandon_grotesquelight";
   display: none;
+}
+
+
+.about_section{
+  background-color: #ffffff;
+}
+
+.footer_section{
+  background-color: #21282c;
+}
+
+.foot_head > h2 {
+  color: #969696;
+}
+
+.foot_head > h3 {
+  color: #ffffff;
 }
 
 /* <------------------------------Buttons------------------------>
@@ -346,11 +366,11 @@ width:100%;
     height: 220px;
   }
 
-  .portfolio_section_title > h2 {
+  .section_title > h2 {
     margin: 25px 50px 0;
   }
 
-  .portfolio_section_title > h3 {
+  .section_title > h3 {
     max-width: 560px;
     margin: 15px 50px 25px;
     padding: 0;
@@ -366,22 +386,22 @@ width:100%;
     display: block;
   }
 
-  .portfolio_section_title > h2{
+  .section_title > h2{
     margin: 25px 50px 0;
   }
 
 
-  .portfolio_section_title > h3{
+  .section_title > h3{
     margin: 15px 50px 25px
   }
 
-  .portfolio_section{
+  .section{
     text-align: left;
     left: 0;
     padding: 90px 0
   }
 
-  .portfolio_section_title > h3 {
+  .section_title > h3 {
     font-size: 26px;
     line-height: 36px;
   }
