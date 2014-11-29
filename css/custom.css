@@ -396,12 +396,12 @@ width:100%;
   }
 
   .grid > .element > img {
-    width: 380px;
-    height: 234px;
-    min-width: 380px;
-    min-height: 234px;
-    max-width: 380px;
-    max-height: 234px;
+    width: 350px;
+    height: 214px;
+    min-width: 350px;
+    min-height: 214px;
+    max-width: 350px;
+    max-height: 214px;
     top: 0;
     left: 0;
     margin: 0;
