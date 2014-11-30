@@ -26,7 +26,7 @@ body {
 
 .home_banner_text_container {
   position: absolute;
-  background-color: #66c5c8;
+  background-color: #1abc9c;
   width: 100%;
   height: 100%;
   left: 0;
@@ -39,7 +39,8 @@ body {
 }
 
 .inner > h1 {
-  font-size: 40px;
+  font-size: 48px;
+  line-height: 77.66563146px;
   font-family: 'brandon_grotesquethin';
   font-weight: 100;
   margin-top: 0;
@@ -87,26 +88,91 @@ body {
 
 /*<------------------------------Navbar------------------------>*/
 
-.navbar{
+nav{
   position: fixed;
   top: 0;
   width: 100%;
   background-color: transparent;
   border: none;
-  min-height: 40px!important;
+  z-index: 10;
 }
 
-.navbar_menu_button{
+nav > .right {
   position: absolute;
-  width: 20px;
-  height: 2px;
-  color: white;
+  right: 0;
   top: 0;
+  z-index: 1;
 }
 
+nav > .right > .menu {
+  width: 54px;
+  height: 54px;
+  overflow: hidden;
+  display: block;
+  overflow: hidden;
+  -ms-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+}
 
-.navbar_menu_button{
-  background-image: url('../images/mwnu_icon.svg');
+nav > .right > .menu > .hamburger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 54px;
+  height: 54px;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+nav > .right > .menu > a{
+  color: #fff;
+  text-decoration: none;
+}
+
+nav>.right>.menu>.hamburger>.layer {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 18px;
+    width: 18px;
+    height: 2px;
+    -ms-border-radius: 1px;
+    border-radius: 1px;
+    background-color: #fff;
+}
+nav>.right>.menu>.hamburger>.layer.top {
+    top: 19px;
+}
+nav>.right>.menu>.hamburger>.layer.mid {
+    top: 26px;
+}
+nav>.right>.menu>.hamburger>.layer.btm {
+    top: 33px;
+}
+nav>.right>.menu.open>.hamburger>.layer.top {
+    top: 27px;
+    left: 20px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+nav>.right>.menu.open>.hamburger>.layer.mid {
+    -ms-opacity: 0;
+    opacity: 0;
+    width: 4px;
+    left: 0;
+}
+nav>.right>.menu.open>.hamburger>.layer.btm {
+    top: 27px;
+    left: 20px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 /*<-------------------------------portfolio section------------------>*/
@@ -198,6 +264,8 @@ body {
   background-color: #ffffff;
 }
 
+/*<-----------------------------------------Footer----------------------------------------->*/
+
 .footer_section{
   background-color: #21282c;
 }
@@ -208,6 +276,75 @@ body {
 
 .foot_head > h3 {
   color: #ffffff;
+}
+
+.foot_content {
+  max-width: 1060px;
+  margin: 100px auto 50px;
+  color: rgba(255,255,255,1);
+  overflow: hidden;
+  text-align: left;
+}
+
+.foot_left{
+  border-top: solid 1px rgba(255,255,255,.15);
+  border-bottom: solid 1px rgba(255,255,255,.15);
+  width: 500px;
+  height: 400px;
+  margin: 0 60px 60px 0;
+  padding: 40px 0 50px;
+  float: left;
+}
+
+.foot_left > h2 {
+  font-family: 'brandon_grotesque_regularRg';
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 9px 0;
+  color: #969696;
+}
+
+.foot_left > h3 {
+  font-family: 'brandon_grotesquethin';
+  font-size: 23px;
+  line-height: 33px;
+  margin: 18px 0;
+  text-transform: none;
+}
+
+.foot_mail{
+  position: relative;
+  z-index: 1;
+}
+
+.foot_mail > a {
+  font-family: 'brandon_grotesquethin';
+  font-size: 23px;
+  font-weight: 100;
+  line-height: 36px;
+  color: rgba(255,255,255,1);
+  display: inline-block;
+  text-decoration: none;
+  background: url(../images/underline_white20.png) repeat-x bottom;
+  -webkit-transition: color .4s cubic-bezier(.1,.7,.3,1);
+  -moz-transition: color .4s cubic-bezier(.1,.7,.3,1);
+  -ms-transition: color .4s cubic-bezier(.1,.7,.3,1);
+  -o-transition: color .4s cubic-bezier(.1,.7,.3,1);
+  transition: color .4s cubic-bezier(.1,.7,.3,1);
+}
+
+.foot_mail > a:hover {
+  color: #66c5c8;
+}
+
+.foot_mail > a > mark {
+  background: url(../images/underline_clr20.png) repeat-x bottom;
+  line-height: 36px;
+  height: 36px;
+  display: inline-block;
+  color: inherit;
 }
 
 /* <------------------------------Buttons------------------------>
