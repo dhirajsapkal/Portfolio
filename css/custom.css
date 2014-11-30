@@ -38,23 +38,19 @@ body {
   left: 0;
   text-align: center;
   background-image: url(../images/Portfolio/accumenbig.jpg)!important;
-  overflow: hidden;
-  background-color: transparent!important;
-  max-height: 100%;
-  -moz-max-width: 100%;
-  -ms-max-width: 100%;
-  -o-max-width: 100%;
-  -webkit-max-width: 100%;
-  max-width: 100%;
+  background-size: cover;
+  z-index: -10;
+}
+
+.accumen_banner_text_container::after {
+  content: "";
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(155, 89, 182,0.7);
+  z-index: -9;
 }
 
 .acccumen_banner_text_container {
