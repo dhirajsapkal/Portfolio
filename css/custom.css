@@ -14,7 +14,7 @@ body {
   background-color: #f5f5f5;
 }
 
-a{
+a, a:hover, a:active{
   color: rgb(64, 68, 72)
 }
 
