@@ -41,7 +41,7 @@ a, a:hover, a:active{
   height: 100%;
   left: 0;
   text-align: center;
-  background-image: url(../images/Portfolio/accumenbig.jpg)!important;
+  background-image: url(../images/Portfolio/accumen/accumenbig.jpg)!important;
   background-size: cover;
   z-index: -10;
 }
@@ -64,6 +64,23 @@ a, a:hover, a:active{
   overflow: hidden;
   background-color: transparent;
   /*background-image: url(../images/Portfolio/accumenbig.jpg);*/
+}
+
+.accumen_logo {
+  display: block;
+  height: 100px;
+  margin: 0 auto 30px;
+}
+
+.accumen_pcmock{
+  background-image: url(../images/Portfolio/accumen/macbookpro.png);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 110%;
+  left: 0;
+  background-size: 100%;
+  margin: 0 auto 30px;
 }
 
 .home_banner_text {
