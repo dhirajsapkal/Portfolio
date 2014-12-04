@@ -792,7 +792,8 @@ width:100%;
   }
 
   .grid{
-    margin: 50px;
+    /*margin: 50px;*/
+    margin-left: 10px;
     max-width: 480px;
   }
 
