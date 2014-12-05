@@ -1030,8 +1030,8 @@ width:100%;
   }
 
   .image_element{
-    height: 250px;
-    width: 480px;
+    height: auto;
+    width: 100%;
     margin-right: 0px;
   }
 
@@ -1040,8 +1040,8 @@ width:100%;
     top: 0;
     left: 0;
     /*width: fill;*/
-    height: 250px;
-    width: 400px;
+    height: auto;
+    width: 100%;
     margin: 0;
     padding: 0;
     opacity: 1;
@@ -1067,7 +1067,10 @@ width:100%;
   }
 
   .single_image_grid{
-    margin: 0px!important;
+    margin-top: 60px;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    margin-bottom: 0!important;
   }
 
   .element > a > p{
