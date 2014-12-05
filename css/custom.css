@@ -77,6 +77,11 @@ a, a:hover, a:active{
   /*background-image: url(../images/Portfolio/accumenbig.jpg);*/
 }
 
+.inner > h3 {
+  font-family: 'brandon_grotesquethin_italic';
+  font-size:
+}
+
 .accumen_logo {
   display: block;
   height: 100px;
@@ -235,6 +240,67 @@ nav>.right>.menu.open>.hamburger>.layer.btm {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
+
+/*<-----------------------------------Content section-------------------------->*/
+
+.project_facts {
+  text-align: center;
+  padding: 60px;
+  background-color: #ffffff;
+}
+
+.project_facts_title > h3 {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: 'brandon_grotesquelight_italic';
+  font-size: 22px;
+  line-height: 38px;
+  color: #696b6d;
+}
+.project_facts_title > h2{
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: 'brandon_grotesquebold';
+  color: rgb(64, 68, 72);
+}
+
+.project_content{
+  text-align: center;
+  padding: 60px;
+}
+
+.project_content h2 {
+  font-size: 16px;
+  margin: 15px 0;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: 'brandon_grotesquebold';
+  color: rgb(64, 68, 72);
+}
+
+.infographic_element{
+  width: 150px;
+  height: 310px;
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.infographic_element > img {
+  width: 150px;
+  height: 150px;
+}
+
+.infographic_element > p {
+  width: 150px;
+  font-family: 'brandon_grotesquelight';
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+
 
 /*<-------------------------------portfolio section------------------>*/
 
