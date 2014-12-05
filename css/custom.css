@@ -985,14 +985,14 @@ width:100%;
     position: relative;
     left: 40%;
     margin: 40px;
-    width: 50%;
+    width: 40%;
   }
 
   .project-right > .text {
     position: relative;
     right: 0;
     margin: 40px;
-    width: 50%;
+    width: 40%;
   }
 
   .visual > img {
