@@ -29,6 +29,10 @@ a, a:hover, a:active{
   color: rgb(64, 68, 72)
 }
 
+.wrapper {
+  overflow-x:hidden;
+}
+
 /*<-------------------------------------------banners------------------------------------------>*/
 
 .home_banner {
