@@ -334,6 +334,10 @@ a, a:hover, a:active{
   margin: 14px 0;
 }
 
+.single_image_grid {
+  margin: 75px;
+}
+
 .section{
   display: block;
   overflow: hidden;
@@ -391,7 +395,7 @@ a, a:hover, a:active{
 }
 
 .project-left {
-  min-height: 800px;
+  min-height: 500px;
   height: auto!important;
   padding-top: 0;
   padding-bottom: 0;
@@ -401,7 +405,7 @@ a, a:hover, a:active{
   position: relative;
   height: 400px;
   width: calc(40% + 250px);
-  height: 800px;
+  /*height: 800px;*/
 }
 
 .project-left>.visual>img {
@@ -412,7 +416,7 @@ a, a:hover, a:active{
 
 .project-left>.text {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 50%;
   width: 400px;
   margin: 130px 0 130px 130px;
@@ -949,6 +953,47 @@ width:100%;
     backface-visibility: visible;
   }*/
 
+  .project-left {
+    min-height: 600px;
+    height: auto!important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .project-right{
+    min-height: 600px;
+    height: auto!important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+  .project-left > .visual, .project-right > .visual {
+    position: relative;
+    height: 400px;
+  }
+
+  .project-right > .visual > img {
+    left: 60%;
+  }
+
+  .project-left > .text {
+    position: relative;
+    left: 40%;
+    margin: 40px;
+  }
+
+  .project-right > .text {
+    position: relative;
+    right: 0;
+    margin: 40px;
+  }
+
+  .visual > img {
+    width: auto;
+    height: 400px;
+  }
+
   .grid > .element > a > p {
     opacity: 1;
     -webkit-transform: scale(1);
@@ -1115,6 +1160,41 @@ width:100%;
     width: 100%;
     max-width: 100%;
     min-width: 280px;
+  }
+
+  .project-left {
+    min-height: 400px;
+    height: auto!important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .project-right{
+    min-height: 400px;
+    height: auto!important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+
+  .project-left > .visual, .project-right > .visual {
+    position: relative;
+    height: 400px;
+  }
+
+  .project-right > .visual > img {
+    left: 60%;
+  }
+
+  .project-left > .text, .project-right > .text {
+    position: relative;
+    left: 0;
+    margin: 40px;
+  }
+
+  .visual > img {
+    width: auto;
+    height: 400px;
   }
 
 }
