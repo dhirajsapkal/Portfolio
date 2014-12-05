@@ -154,7 +154,7 @@ a, a:hover, a:active{
 
 /*<------------------------------Navbar------------------------>*/
 
-nav{
+.dummy_nav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -163,14 +163,14 @@ nav{
   z-index: 10;
 }
 
-nav > .right {
+.dummy_nav > .right {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 1;
 }
 
-nav > .right > .menu {
+.dummy_nav > .right > .menu {
   width: 54px;
   height: 54px;
   overflow: hidden;
@@ -180,7 +180,7 @@ nav > .right > .menu {
   border-radius: 0 0 0 3px;
 }
 
-nav > .right > .menu > .hamburger {
+.dummy_nav > .right > .menu > .hamburger {
   position: absolute;
   right: 0;
   top: 0;
@@ -191,12 +191,12 @@ nav > .right > .menu > .hamburger {
   cursor: pointer;
 }
 
-nav > .right > .menu > a{
+.dummy_nav > .right > .menu > a{
   color: #fff;
   text-decoration: none;
 }
 
-nav>.right>.menu>.hamburger>.layer {
+.dummy_nav>.right>.menu>.hamburger>.layer {
     display: block;
     overflow: hidden;
     position: absolute;
@@ -207,16 +207,16 @@ nav>.right>.menu>.hamburger>.layer {
     border-radius: 1px;
     background-color: #fff;
 }
-nav>.right>.menu>.hamburger>.layer.top {
+.dummy_nav>.right>.menu>.hamburger>.layer.top {
     top: 19px;
 }
-nav>.right>.menu>.hamburger>.layer.mid {
+.dummy_nav>.right>.menu>.hamburger>.layer.mid {
     top: 26px;
 }
-nav>.right>.menu>.hamburger>.layer.btm {
+.dummy_nav>.right>.menu>.hamburger>.layer.btm {
     top: 33px;
 }
-nav>.right>.menu.open>.hamburger>.layer.top {
+.dummy_nav>.right>.menu.open>.hamburger>.layer.top {
     top: 27px;
     left: 20px;
     -webkit-transform: rotate(45deg);
@@ -225,13 +225,13 @@ nav>.right>.menu.open>.hamburger>.layer.top {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-nav>.right>.menu.open>.hamburger>.layer.mid {
+.dummy_nav>.right>.menu.open>.hamburger>.layer.mid {
     -ms-opacity: 0;
     opacity: 0;
     width: 4px;
     left: 0;
 }
-nav>.right>.menu.open>.hamburger>.layer.btm {
+.dummy_nav>.right>.menu.open>.hamburger>.layer.btm {
     top: 27px;
     left: 20px;
     -webkit-transform: rotate(-45deg);
@@ -858,7 +858,8 @@ width:100%;
   }
 
   .grid{
-    margin: 50px;
+    /*margin: 50px;*/
+    margin-left: 10px;
     max-width: 480px;
   }
 
