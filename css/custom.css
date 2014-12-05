@@ -415,7 +415,7 @@ a, a:hover, a:active{
 .project-left>.visual>img {
   position: absolute;
 /*  right: 100%;*/
-  left: 0;
+  left: -20%;
 }
 
 .project-left>.text {
@@ -466,6 +466,67 @@ a, a:hover, a:active{
   background: -ms-linear-gradient(top,  #353a41 65%,#30353b 100%); /* IE10+ */
   background: linear-gradient(to bottom,  #353a41 65%,#30353b 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353a41', endColorstr='#30353b',GradientType=0 ); /* IE6-9 */
+}
+
+/*<-------------------------------Progress bar------------------------------->*/
+
+.section-progress{
+  height: 800px;
+}
+
+.progress_bar {
+  position: absolute;
+  top: 100px;
+  left: calc(50% - 5px);
+  background-color: #F00;
+  z-index: 1;
+}
+
+.progress_bar > .base_line {
+  background-color: rgb(44, 48, 55);
+  box-shadow: 0.5px 0.866px 0px 0px rgba(255, 255, 255, 0.071), inset 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.173);
+  width: 10px;
+  height: 809px;
+}
+
+.progress_bar > .orange {
+  border-radius: 50%;
+  background-color: rgb(169, 120, 15);
+  /*box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.28), inset 0.5px 0.866px 0px 0px rgba(255, 255, 255, 0.14);*/
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.14), 0px 1px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.14), 0px 1px 0px 0px rgba(0,0,0,1);
+  box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.14), 0px 1px 0px 0px rgba(0,0,0,1);
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+  top: -15px;
+  left: -15px;
+}
+
+.progress_bar > .base_circle {
+  border-radius: 50%;
+  background-color: rgb(44, 48, 55);
+  box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
+  position: absolute;
+  left: -23px;
+  top: -23px;
+  width: 55px;
+  height: 55px;
+  z-index: 9;
+}
+
+.orange_indicator{
+  position: absolute;
+  top: -8px;
+  left: -4px;
+  z-index: 11;
+}
+
+.orange_indicator > img {
+  width: 20px;
 }
 
 /*<-------------------------------portfolio section------------------>*/
