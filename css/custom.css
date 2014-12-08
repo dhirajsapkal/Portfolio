@@ -474,22 +474,32 @@ a, a:hover, a:active{
   height: 800px;
 }
 
+.section-progress > h2 {
+  font-family: 'brandon_grotesque_regularRg';
+  font-size: 34px;
+  color: #ffffff;
+  line-height: 42px;
+  margin: 25px 0;
+  text-align: center;
+}
+
 .progress_bar {
   position: absolute;
-  top: 100px;
+  top: 25px;
   left: calc(50% - 5px);
   background-color: #F00;
   z-index: 1;
+  left: 12%;
 }
 
 .progress_bar > .base_line {
   background-color: rgb(44, 48, 55);
   box-shadow: 0.5px 0.866px 0px 0px rgba(255, 255, 255, 0.071), inset 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.173);
   width: 10px;
-  height: 809px;
+  height: 580px;
 }
 
-.progress_bar > .orange {
+.progress_bar  .orange {
   border-radius: 50%;
   background-color: rgb(169, 120, 15);
   /*box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.28), inset 0.5px 0.866px 0px 0px rgba(255, 255, 255, 0.14);*/
@@ -497,36 +507,169 @@ a, a:hover, a:active{
   -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.14), 0px 1px 0px 0px rgba(0,0,0,1);
   box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.14), 0px 1px 0px 0px rgba(0,0,0,1);
   position: absolute;
-  width: 40px;
-  height: 40px;
   z-index: 10;
-  top: -15px;
-  left: -15px;
 }
 
-.progress_bar > .base_circle {
+.progress_bar .green {
+  border-radius: 50%;
+  background-color: #377c47;
+  /*box-shadow: 0.5px 0.866px 0px 0px rgba(0, 0, 0, 0.28), inset 0.5px 0.866px 0px 0px rgba(255, 255, 255, 0.14);*/
+  -webkit-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.14), 0px 1px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.14), 0px 1px 0px 0px rgba(0,0,0,1);
+  box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.14), 0px 1px 0px 0px rgba(0,0,0,1);
+  position: absolute;
+  z-index: 10;
+}
+
+
+.progress_bar  .base_circle {
   border-radius: 50%;
   background-color: rgb(44, 48, 55);
   box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
   -webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
   -moz-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.12), inset 0px 1px 2px 0px rgba(0, 0, 0, 0.44);
   position: absolute;
-  left: -23px;
-  top: -23px;
-  width: 55px;
-  height: 55px;
   z-index: 9;
 }
 
+.green_indicator{
+  position: absolute;
+  z-index: 11;
+}
+
+
 .orange_indicator{
   position: absolute;
-  top: -8px;
-  left: -4px;
   z-index: 11;
+}
+
+.orange1 > .orange_indicator{
+  top: -8px;
+  left: -5px;
+}
+
+.green1 {
+  position: absolute;
+  top: 90%;
+}
+
+.green1 > .green_indicator{
+  width: 40px;
+  height: 40px;
+  top: 60px;
+  left: -14px;
+}
+
+.orange1 > .orange {
+  width: 40px;
+  height: 40px;
+  top: -15px;
+  left: -15px;
+}
+
+.orange_small > .orange {
+  width: 20px;
+  height: 20px;
+  top: 30%;
+  left: -5px;
+}
+
+.green_small > .green {
+  width: 20px;
+  height: 20px;
+  top: 70%;
+  left: -5px;
+}
+
+.green1 > .green {
+  width: 40px;
+  height: 40px;
+  top: 48px;
+  left: -15px;
+}
+
+.orange1 > .base_circle {
+    left: -23px;
+    top: -23px;
+    width: 55px;
+    height: 55px;
+}
+
+.green1 > .base_circle {
+  left: -23px;
+  top: 40px;
+  width: 55px;
+  height: 55px;
+}
+
+.orange_small > .base_circle {
+  width: 30px;
+  height: 30px;
+  top: 169px;
+  left: -10px;
+}
+
+.green_small > .base_circle {
+  width: 30px;
+  height: 30px;
+  top: 401px;
+  left: -10px;
 }
 
 .orange_indicator > img {
   width: 20px;
+}
+
+.green_indicator > img {
+  width: 16px;
+}
+
+.infobox {
+  position: absolute;
+  left: 20%;
+  width: 480px;
+  height: 58px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.arrow {
+  width: 10px;
+  height: 58px;
+  float: left;
+}
+
+.arrow > svg polygon {
+  fill: rgb(169, 120, 15);
+}
+
+.infobox_box {
+  width: 470px;
+  height: 58px;
+  float: left;
+  overflow: hidden;
+  background-color: rgb(169, 120, 15);
+}
+
+.infobox_box > p {
+  font-family: 'brandon_grotesque_regularRg';
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 58px;
+  text-align: center;
+}
+
+.infobox3 > .arrow svg polygon, .infobox4 > .arrow svg polygon {
+  fill:#377c47;
+}
+
+.infobox3 > .infobox_box, .infobox4 > .infobox_box {
+  background-color: #377c47;
+}
+
+.section-progress > .project-right > .text {
+  right: 9%;
+  /*margin: 0;*/
 }
 
 /*<-------------------------------portfolio section------------------>*/
