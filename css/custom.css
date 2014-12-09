@@ -408,22 +408,22 @@ a, a:hover, a:active{
 .project-left>.visual {
   position: relative;
   height: 400px;
-  width: calc(40% + 250px);
+  margin-left: calc(40% + 250px);
   /*height: 800px;*/
 }
 
 .project-left>.visual>img {
   position: absolute;
 /*  right: 100%;*/
-  left: -20%;
+  left: -960px;
 }
 
 .project-left>.text {
   position: absolute;
   top: 10%;
-  left: 50%;
+  left: 57%;
   width: 400px;
-  margin: 130px 0 130px 130px;
+  margin: 130px 130px 130px 0px;
   z-index: 2;
 }
 
@@ -670,6 +670,28 @@ a, a:hover, a:active{
 .section-progress > .project-right > .text {
   right: 9%;
   /*margin: 0;*/
+}
+
+
+.screenshot {
+  width: 100%;
+  height: auto;
+  /*display: block;*/
+
+/*  position: relative;
+  left: 0;
+  right: 0;*/
+/*  margin-top: 30px;
+  margin-bottom: 30px;*/
+}
+
+.screenshot > img {
+  position: relative;
+  display: block;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
 }
 
 /*<-------------------------------portfolio section------------------>*/
