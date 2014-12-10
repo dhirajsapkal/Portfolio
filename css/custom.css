@@ -1526,7 +1526,7 @@ width:100%;
     width: 100%;
   }
 
-  .project-center > .text p h2{
+  .project-center > .text p, .project-center > .text h2{
     margin-left: 20px;
     margin-right: 20px;
   }
