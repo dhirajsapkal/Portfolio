@@ -88,6 +88,7 @@ html, body, .perspective {
 	position: absolute;
 	height: auto;
 	font-size: 2em;
+	overflow: hidden;
 }
 
 .outer-nav.vertical {
