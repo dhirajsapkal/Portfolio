@@ -84,3 +84,20 @@
 	init();
 
 })();
+
+var dummy_nav_bar = $('.dummy_nav');
+var dummy_nav_bar_offset_top = $(window).height();
+
+var navigation_control = function(){
+	var scroll_top = $(window).scrollTop();
+
+	if (scroll_top > dummy_nav_bar_offset_top) {
+		dummy_nav_bar.css({ 'background-color': 'white', 'border-bottom': 'thin solid black' });
+	} else {
+		dummy_nav_bar.css({ 'background-color': 'transparent', 'border-bottom': 'none' });
+	}
+};
+
+$(window).scroll(function() {
+	navigation_control();
+});
