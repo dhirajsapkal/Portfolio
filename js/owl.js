@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var options={}
-    if(document.location.href.substr("accumen"))
+    if(document.location.href.indexOf("accumen") !== -1)
       options = {
         autoPlay : 3000,
         // stopOnHover : true,
