@@ -4,8 +4,8 @@ $(document).ready(function() {
     if(document.location.href.substr("accumen"))
       options = {
         autoPlay : 3000,
-        stopOnHover : true,
-        navigation:true,
+        // stopOnHover : true,
+        // navigation:true,
         paginationSpeed : 1000,
         goToFirstSpeed : 2000,
         singleItem : true,
