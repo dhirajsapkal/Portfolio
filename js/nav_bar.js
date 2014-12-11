@@ -85,19 +85,43 @@
 
 })();
 
-var dummy_nav_bar = $('.dummy_nav');
-var dummy_nav_bar_offset_top = $(window).height();
+// var dummy_nav_bar = $('.dummy_nav');
+// var dummy_nav_bar_offset_top = $(window).height();
 
-var navigation_control = function(){
-	var scroll_top = $(window).scrollTop();
+// var navigation_control = function(){
+// 	var scroll_top = $(window).scrollTop();
 
-	if (scroll_top > dummy_nav_bar_offset_top) {
-		dummy_nav_bar.css({ 'background-color': 'white', 'border-bottom': 'thin solid black' });
-	} else {
-		dummy_nav_bar.css({ 'background-color': 'transparent', 'border-bottom': 'none' });
-	}
-};
+// 	if (scroll_top > dummy_nav_bar_offset_top) {
+// 		dummy_nav_bar.addClass('');
+// 		dummy_nav_bar.removeClass('');
+// 		dummy_nav_bar.css({ 'background-color': 'orange', 'border-bottom': 'thin solid black' });
+// 	} else {
+// 		dummy_nav_bar.addClass('');
+// 		dummy_nav_bar.removeClass('');
+// 		dummy_nav_bar.css({ 'background-color': 'transparent', 'border-bottom': 'none' });
+// 	}
+// };
+
+// $(window).scroll(function() {
+// 	navigation_control();
+// });
 
 $(window).scroll(function() {
-	navigation_control();
+
+    var top = $(this).scrollTop(),
+        $intro = $(".outer"), // put ur intro section selector
+        $navbar = $(".hamburger"), // put ur navbar selector
+        bottomDiv = $intro.offset().top + $intro[0].offsetHeight,
+        distance = Math.max(0, (top - bottomDiv) * -1);
+
+    if(distance < 45 )
+      if(!$navbar.hasClass("opaque"))
+        $navbar.removeClass("glass").addClass("opaque")
+      else
+        return;
+    else
+      if(!$navbar.hasClass("glass"))
+        $navbar.removeClass("opaque").addClass("glass")
+      else
+        return;
 });

@@ -3,7 +3,7 @@ $(document).ready(function() {
     var options={}
     if(document.location.href.indexOf("accumen") !== -1)
       options = {
-        autoPlay : 3000,
+        autoPlay : 15000,
         // stopOnHover : true,
         // navigation:true,
         paginationSpeed : 1000,

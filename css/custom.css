@@ -39,6 +39,7 @@ a, a:hover, a:active{
   position: relative;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .home_banner_text_container {
@@ -192,7 +193,6 @@ a, a:hover, a:active{
 }
 
 .dummy_nav > .right {
-  position: absolute;
   right: 0;
   top: 0;
   z-index: 1;
@@ -754,6 +754,11 @@ a, a:hover, a:active{
   width: 100%;
   list-style: none;
   border: 0;
+}
+
+.mobile-thumbnail-title{
+  visibility: hidden;
+  position: absolute;
 }
 
 .section-white{
@@ -1354,6 +1359,12 @@ width:100%;
     transform: scale(1);
   }
 
+  .mobile-thumbnail-title {
+    visibility: visible;
+    position: relative;
+    left: -20%;
+}
+
   .section_title > h2 {
     margin: 25px 50px 0;
   }
@@ -1375,6 +1386,12 @@ width:100%;
     margin-top: 60px;
     margin-left: 0!important;
     margin-right: 0!important;
+    margin-bottom: 60px;
+  }
+
+  .hover-grid figure {
+    width: 70%!important;
+    max-height: 200px!important;
     margin-bottom: 60px;
   }
 

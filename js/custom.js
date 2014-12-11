@@ -25,7 +25,7 @@ $(document).ready(function() {
   var windowH = $(window).height();
   var wrapperH = $('.home_banner').height();
   if(windowH > wrapperH) {
-    $('.home_banner').css({'height':($(window).height())+'px'});
+    $('.home_banner').css({'height':($(window).height())+60+'px'});
   }
   $(window).resize(function(){
     var windowH = $(window).height();
@@ -38,6 +38,8 @@ $(document).ready(function() {
     }
 
   })
+
+
   /*
    * Replace all SVG images with inline SVG
    */
