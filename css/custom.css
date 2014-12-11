@@ -70,6 +70,10 @@ a, a:hover, a:active{
   background-image: url(../images/Portfolio/hdfc/thumbnail.png)!important ;
 }
 
+.wedmela_banner_text_container{
+  background-image: url(../images/Portfolio/wedmela/banner.jpg)!important;
+}
+
 .banner_text_container::after {
   content: "";
   position: absolute;
@@ -86,6 +90,10 @@ a, a:hover, a:active{
 
 .hdfc_banner_text_container::after{
   background-color: rgba(225, 84, 78, 0.7);
+}
+
+.wedmela_banner_text_container::after{
+  background-color: rgba(230,151,92, 0.7);
 }
 
 /*.acccumen_banner_text_container {
@@ -848,8 +856,8 @@ a, a:hover, a:active{
     top: 0;
     left: 0;
     /*width: fill;*/
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 60%;
     margin: 0;
     padding: 0;
     opacity: 1;
@@ -1337,7 +1345,7 @@ width:100%;
     left: 0;
     /*width: fill;*/
     height: auto;
-    width: 100%;
+    width: 60%;
     margin: 0;
     padding: 0;
     opacity: 1;
