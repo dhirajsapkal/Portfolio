@@ -1,0 +1,17 @@
+#owl-demo .item{
+  /*margin: 3px;*/
+}
+#owl-demo .item img{
+  /*display: block;*/
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 601px) {
+
+  #owl-demo .item img{
+  width: 80%;
+  height: auto;
+}
+
+}
