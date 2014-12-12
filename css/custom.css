@@ -1238,7 +1238,8 @@ ul.sociallinks > li > a.behance:hover {
 
   .grid{
     /*margin: 50px;*/
-    margin-left: 10px;
+    display: inline-block;
+    /*margin-left: 10px;*/
     max-width: 480px;
   }
 
