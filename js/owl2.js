@@ -6,7 +6,7 @@ $(document).ready(function() {
 
       items : 4,
       itemsDesktop : [3000,4],
-      itemsDesktopSmall : [979,3]
+      itemsDesktopSmall : [979,4]
 
   });
 
