@@ -10,7 +10,7 @@ html, body, .perspective {
 	-ms-transition: background 0.2s linear;
 	-o-transition: background 0.2s linear;
 	transition: background 0.2s linear;
-	background: rgba(48, 53, 59, 0.8);
+	background: rgba(48, 53, 59, 0.5);
 }
 
 .glass {
@@ -25,18 +25,14 @@ html, body, .perspective {
 .perspective {
 	background: #aaa;
 	position: relative;
-	font-family: 'brandon_grotesquelight';
-	/*overflow: hidden;*/
+	font-family: 'brandon-grotesque', sans-serif;
+	font-weight: 300;
 }
 
 .container {
-	/*background: #fff;*/
 	min-height: 100%;
 	position: relative;
 	outline: 1px solid rgba(0,0,0,0);
-	/*z-index: 10;*/
-	/*-webkit-transform: translateZ(0) translateX(0) rotateY(0deg);  reset transforms (Chrome bug)
-	transform: translateZ(0) translateX(0) rotateY(0deg);*/
 }
 
 .container::after {

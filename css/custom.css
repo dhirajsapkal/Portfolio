@@ -1,7 +1,5 @@
 /*@font-face {
-  font-family: 'Proxima Nova';
-  font-weight: 100;
-  src: url('../fonts/ProximaNova-Light.otf');
+  font-family: 'brandon-grotesque';
 }
 
 @font-face {
@@ -23,6 +21,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 body {
   background-color: #f5f5f5;
+  font-family: 'brandon-grotesque', sans-serif;
 }
 
 a, a:hover, a:active{
@@ -106,10 +105,6 @@ a, a:hover, a:active{
   /*background-image: url(../images/Portfolio/accumenbig.jpg);*/
 }
 */
-.inner > h3 {
-  font-family: 'brandon_grotesquethin_italic';
-  font-size:
-}
 
 .logo {
   display: block;
@@ -136,14 +131,12 @@ a, a:hover, a:active{
 .inner > h1 {
   font-size: 48px;
   line-height: 77.66563146px;
-  font-family: 'brandon_grotesquethin';
   font-weight: 100;
   margin-top: 0;
   margin-bottom: 30px;
 }
 
 .inner > h2 {
-  font-family: 'brandon_grotesquethin';
   font-size: 35px;
   line-height: 48.5410196625px;
   font-weight: 100;
@@ -177,8 +170,7 @@ a, a:hover, a:active{
 }
 
 .text_bold{
-  font-family: 'brandon_grotesquemedium';
-  font-weight: 300;
+  font-weight: 500;
 }
 
 /*<------------------------------Navbar------------------------>*/
@@ -281,7 +273,8 @@ a, a:hover, a:active{
   width: 100%;
   max-width: 800px;
   margin: 30px auto;
-  font-family: 'brandon_grotesquelight_italic';
+  font-weight:300;
+  font-style: italic;
   font-size: 22px;
   line-height: 38px;
   color: #696b6d;
@@ -291,7 +284,7 @@ a, a:hover, a:active{
   margin: 15px 0;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: 'brandon_grotesquebold';
+  font-weight:700;
   color: rgb(64, 68, 72);
 }
 
@@ -305,7 +298,7 @@ a, a:hover, a:active{
   margin: 15px 0;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: 'brandon_grotesquebold';
+  font-weight: 700;
   color: rgb(64, 68, 72);
 }
 
@@ -325,7 +318,7 @@ a, a:hover, a:active{
 
 .infographic_element > p {
   width: 150px;
-  font-family: 'brandon_grotesquelight';
+  font-weight:300;
   font-size: 20px;
   padding-top: 40px;
 }
@@ -347,7 +340,7 @@ a, a:hover, a:active{
 }
 
 .project_challenges h2, .project_solutions h2{
-  font-family: 'brandon_grotesque_regularRg';
+  font-weight:400;
   font-size: 34px;
   line-height: 42px;
   margin: 25px 0;
@@ -356,9 +349,8 @@ a, a:hover, a:active{
 }
 
 .project_challenges p {
-  font-family: 'brandon_grotesquelight';
+  font-weight: 300;
   font-size: 16px;
-  font-weight: 100;
   line-height: 28px;
   margin: 14px 0;
 }
@@ -405,7 +397,7 @@ a, a:hover, a:active{
 }
 
 .project-right>.text > h2 {
-  font-family: 'brandon_grotesque_regularRg';
+  font-weight: 400;
   font-size: 34px;
   color: #ffffff;
   line-height: 42px;
@@ -414,11 +406,10 @@ a, a:hover, a:active{
 }
 
 .project-right>.text > p {
-  font-family: 'brandon_grotesquelight';
+  font-weight: 300;
   color: #9fa1a4;
   font-size: 20px;
   text-align: left;
-  font-weight: 100;
   line-height: 33px;
   margin: 14px 0;
 }
@@ -453,7 +444,7 @@ a, a:hover, a:active{
 }
 
 .project-left>.text > h2 {
-  font-family: 'brandon_grotesque_regularRg';
+  font-weight: 400;
   font-size: 34px;
   color: #ffffff;
   line-height: 42px;
@@ -462,7 +453,7 @@ a, a:hover, a:active{
 }
 
 .project-left>.text > p {
-  font-family: 'brandon_grotesquelight';
+  font-weight: 300;
   color: #9fa1a4;
   font-size: 20px;
   text-align: left;
@@ -478,7 +469,7 @@ a, a:hover, a:active{
 }
 
 .project-center > .text > h2{
-  font-family: 'brandon_grotesque_regularRg';
+  font-weight: 400;
   font-size: 34px;
   color: rgb(64, 68, 72);
   line-height: 42px;
@@ -487,7 +478,7 @@ a, a:hover, a:active{
 }
 
 .project-center > .text > p{
-  font-family: 'brandon_grotesquelight';
+  font-weight: 300;
   color: #696b6d;
   font-size: 20px;
   text-align: center;
@@ -525,7 +516,7 @@ a, a:hover, a:active{
 }
 
 .section-progress > h2 {
-  font-family: 'brandon_grotesque_regularRg';
+  font-weight: 400;
   font-size: 34px;
   color: #ffffff;
   line-height: 42px;
@@ -702,7 +693,7 @@ a, a:hover, a:active{
 }
 
 .infobox_box > p {
-  font-family: 'brandon_grotesque_regularRg';
+  font-weight: 400;
   font-size: 25px;
   color: #ffffff;
   line-height: 58px;
@@ -774,7 +765,7 @@ a, a:hover, a:active{
   margin: 15px 0;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: 'brandon_grotesquebold';
+  font-weight: 700;
   color: rgb(64, 68, 72);
 }
 
@@ -784,9 +775,6 @@ a, a:hover, a:active{
   padding-bottom: 60px;
   font-size: 34px;
   font-weight: 100;
-  /*font-family: 'brandon_grotesquelight';*/
-  font-family: 'brandon_grotesquethin';
-  /*color: #7F8082;*/
   color: #323334;
   line-height: 55.0131556175px;
 }
@@ -810,35 +798,6 @@ a, a:hover, a:active{
   cursor: pointer;
 }
 
-/*.element > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255,255,255,0);
-  z-index: 100;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}*/
-
-/*.grid > .element > figcaption{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255,255,255,0);
-  padding: 20px;
-  color: #FFF;
-  text-transform: uppercase;
-  font-size: 24px;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-}*/
 
 .element p {
   position: absolute;
@@ -852,7 +811,7 @@ a, a:hover, a:active{
   text-align: left;
   margin: 180px 0 0;
   font-size: 14px;
-  font-family: "brandon_grotesquelight";
+  font-weight: 100;
   display: none;
 }
 
@@ -894,14 +853,14 @@ a, a:hover, a:active{
 .footer_next_project > h2 {
   color: #fff;
   margin-bottom: 20px;
-  font-family: 'brandon_grotesquethin';
+  font-weight: 100;
   font-size: 34px;
   line-height: 42px;
   margin: 25px 0;
 }
 
 .footer_next_project > h3 {
-  font-family: 'brandon_grotesquelight';
+  font-weight: 300;
   color: #909395;
   text-transform: none;
   font-size: 24px;
@@ -931,7 +890,7 @@ a.button-arrow {
   -ms-border-radius: 3px;
   border-radius: 3px;
   color: rgba(255, 255, 255, .7);
-  font-family: 'brandon_grotesquelight';
+  font-weight: 300;
   font-size: 14px;
   line-height: 58px;
   text-transform: uppercase;
@@ -1020,7 +979,7 @@ a.button-arrow svg path {
 }
 
 .foot_left > h2, .foot_social > h2 {
-  font-family: 'brandon_grotesque_regularRg';
+  font-weight: 400;
   font-size: 13px;
   font-weight: 300;
   line-height: 24px;
@@ -1030,7 +989,7 @@ a.button-arrow svg path {
 }
 
 .foot_left > h3 {
-  font-family: 'brandon_grotesquethin';
+  font-weight: 100;
   font-size: 23px;
   line-height: 33px;
   margin: 18px 0;
@@ -1043,7 +1002,7 @@ a.button-arrow svg path {
 }
 
 .foot_mail > a {
-  font-family: 'brandon_grotesquethin';
+  font-weight: 100;
   font-size: 23px;
   font-weight: 100;
   line-height: 36px;
@@ -1114,70 +1073,7 @@ ul.sociallinks > li > a.behance:hover {
 
 
 
-/* <------------------------------Buttons------------------------>
 
-.home_banner_buttons {
-  font-family: 'brandon_grotesque_regularRg';
-  position: absolute;
-  margin: 0 auto;
-  border-radius:  2px;
-width:100%;
-  left: 0;
-  right: 0;
-  top: 75.5%;
-}
-
-.button_sayhi {
-  border-style: solid;
-  width: 100%;
-  border-width: 1px;
-  border-color: rgb(25, 159, 195);
-  border-radius: 2px;
-  background-color: rgba(102, 197, 200, 0);
-  font-size: 16px;
-  line-height: 60px;
-  text-transform: uppercase;
-  color: rgb(25, 159, 195);
-  text-align: center;
-  margin-top: 35px;
-}
-
-.button_sayhi:hover{
-  transition: background-color 0.2s ease-in 0s;
-  color: rgba(255,255,255,1);
-  background-color: rgba(25,159,195,.8);
-}
-
-.button_sayhi:active, .button_viewmore:active{
-  outline-color: transparent;
-}
-
-.button_right{
-  text-align: right;
-}
-
-
-.button_viewmore{
-  border-style: solid;
-  width: 100%;
-  border-width: 1px;
-  border-color: rgb(40, 190, 146);
-  border-radius: 2px;
-  background-color: rgba(102, 197, 200, 0);
-  font-size: 16px;
-  line-height: 60px;
-  text-transform: uppercase;
-  color: rgb(46, 190, 146);
-  text-align: center;
-  margin-top: 35px;
-}
-
-.button_viewmore:hover {
-  transition: background-color 0.2s ease-in 0s;
-  color: rgba(255,255,255,1);
-  background-color: rgba(46,190,146,.8);
-}
- */
 
 @media screen and (max-width: 768px) {
   .inner > h1 {
@@ -1188,24 +1084,6 @@ width:100%;
   .inner > h2 {
     font-size: 25px;
   }
-
-/*   .home_banner_buttons{
-  width:100%;
-  top: 85%;
-  padding: 10px 10px 10px 10px;
-}
-
-.button_sayhi{
-  margin-bottom: 10px;
-}
-
-.button_sayhi, .button_viewmore {
-  width: 100%!important;
-  font-size: 16px;
-  line-height: 56px;
-  margin-top: 0;
-} */
-
 
 
 
@@ -1229,31 +1107,6 @@ width:100%;
     text-align: center;
     cursor: pointer
   }
-
-
-/*  .grid > .element > figcaption{
-    padding: 0;
-    position: absolute;
-    color: #7F8082;
-    text-align: left;
-    text-transform: uppercase;
-    font-size: 14px;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0);
-    padding: 20px;
-    color: #FFF;
-    text-transform: uppercase;
-    font-size: 24px;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    backface-visibility: visible;
-  }*/
 
   .project-left {
     min-height: 600px;
