@@ -777,7 +777,7 @@ a, a:hover, a:active{
 
 .section_title > h3{
   max-width: 860px;
-  margin: 25px auto;
+  margin: 25px 25px;
   padding-bottom: 60px;
   font-size: 34px;
   font-weight: 100;
@@ -1276,8 +1276,9 @@ ul.sociallinks > li > a.behance:hover {
   }
 
   .section_title > h3 {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: center;
   }
 
   .grid figure{
