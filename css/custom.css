@@ -777,7 +777,7 @@ a, a:hover, a:active{
 
 .section_title > h3{
   max-width: 860px;
-  margin: 25px 25px;
+  margin: 25px auto;
   padding-bottom: 60px;
   font-size: 34px;
   font-weight: 100;
@@ -1262,6 +1262,7 @@ ul.sociallinks > li > a.behance:hover {
 
   .section_title > h2{
     margin: 25px 50px 0;
+    text-align: center;
   }
 
 
