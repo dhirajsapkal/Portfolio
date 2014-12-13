@@ -5392,6 +5392,11 @@ th.visible-print, td.visible-print {
 .background-normal {
     background: url("../images/background_2.png") repeat;
 }
+
+.background-footer {
+  background: url("../images/background_2_footer.png");
+}
+
 .background-map {
     background: url("../images/background_2_map.png") repeat;
 }
