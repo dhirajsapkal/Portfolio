@@ -2,7 +2,7 @@
  * smooth-scroll v5.2.2
  * Animate scrolling to anchor links, by Chris Ferdinandi.
  * http://github.com/cferdinandi/smooth-scroll
- * 
+ *
  * Free to use under the MIT License.
  * http://gomakethings.com/mit/
  */
@@ -29,10 +29,10 @@
 
 	// Default settings
 	var defaults = {
-		speed: 500,
+		speed: 900,
 		easing: 'easeInOutCubic',
 		offset: 0,
-		updateURL: true,
+		updateURL: false,
 		callbackBefore: function () {},
 		callbackAfter: function () {}
 	};
