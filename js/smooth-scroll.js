@@ -29,10 +29,10 @@
 
 	// Default settings
 	var defaults = {
-		speed: 900,
+		speed: 500,
 		easing: 'easeInOutCubic',
 		offset: 0,
-		updateURL: false,
+		updateURL: true,
 		callbackBefore: function () {},
 		callbackAfter: function () {}
 	};
