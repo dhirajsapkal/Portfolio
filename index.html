@@ -10,8 +10,8 @@
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script type="text/javascript" src="js/preloader.js"></script>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
-  <script src="//use.typekit.net/osj5ezc.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <!--<script src="//use.typekit.net/osj5ezc.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>-->
   <link rel="stylesheet" type="text/css" href="css/nav_bar.css">
   <link rel="stylesheet" type="text/css" href="css/custom.css">
   <link rel="stylesheet" type="text/css" href="css/hover.css">
@@ -51,12 +51,16 @@
                     </h1>
                   </div>
                 </div>
+                <a data-scroll href="#intro-content">
+                  <div class="arrow">
+                  </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <!--home banner ends-->
-        <div class="portfolio_section section">
+        <div class="portfolio_section section" id="intro-content">
           <div class="section_title wow fadeIn">
             <h2>Work</h2>
             <h3>Take a look at some of my work</h3>
@@ -192,7 +196,12 @@
   <script type="text/javascript" src="js/classie.js"></script>
   <script type="text/javascript" src="js/nav_bar.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/glide.js"></script>
+  <script src="js/smooth-scroll.js"></script>
   <script>
+    smoothScroll.init();
+  </script>
+  <!--<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -201,6 +210,6 @@
   ga('create', 'UA-57636361-1', 'auto');
   ga('send', 'pageview');
 
-  </script>
+  </script>-->
 </body>
 </html>
