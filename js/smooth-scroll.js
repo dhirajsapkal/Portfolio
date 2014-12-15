@@ -1,393 +1,304 @@
-/**
- * smooth-scroll v5.2.2
- * Animate scrolling to anchor links, by Chris Ferdinandi.
- * http://github.com/cferdinandi/smooth-scroll
- *
- * Free to use under the MIT License.
- * http://gomakethings.com/mit/
- */
+// SmoothScroll v0.9.9
+// Licensed under the terms of the MIT license.
 
-(function (root, factory) {
-	if ( typeof define === 'function' && define.amd ) {
-		define('smoothScroll', factory(root));
-	} else if ( typeof exports === 'object' ) {
-		module.exports = factory(root);
-	} else {
-		root.smoothScroll = factory(root);
-	}
-})(window || this, function (root) {
+// People involved
+// - Balazs Galambosi: maintainer (CHANGELOG.txt)
+// - Patrick Brunner (patrickb1991@gmail.com)
+// - Michael Herf: ssc_pulse Algorithm
 
-	'use strict';
+function ssc_init() {
+    if (!document.body) return;
+    var e = document.body;
+    var t = document.documentElement;
+    var n = window.innerHeight;
+    var r = e.scrollHeight;
+    ssc_root = document.compatMode.indexOf("CSS") >= 0 ? t : e;
+    ssc_activeElement = e;
+    ssc_initdone = true;
+    if (top != self) {
+        ssc_frame = true
+    } else if (r > n && (e.offsetHeight <= n || t.offsetHeight <= n)) {
+        ssc_root.style.height = "auto";
+        if (ssc_root.offsetHeight <= n) {
+            var i = document.createElement("div");
+            i.style.clear = "both";
+            e.appendChild(i)
+        }
+    }
+    if (!ssc_fixedback) {
+        e.style.backgroundAttachment = "scroll";
+        t.style.backgroundAttachment = "scroll"
+    }
+    if (ssc_keyboardsupport) {
+        ssc_addEvent("keydown", ssc_keydown)
+    }
+}
 
-	//
-	// Variables
-	//
+function ssc_scrollArray(e, t, n, r) {
+    r || (r = 1e3);
+    ssc_directionCheck(t, n);
+    ssc_que.push({
+        x: t,
+        y: n,
+        lastX: t < 0 ? .99 : -.99,
+        lastY: n < 0 ? .99 : -.99,
+        start: +(new Date)
+    });
+    if (ssc_pending) {
+        return
+    }
+    var i = function () {
+        var s = +(new Date);
+        var o = 0;
+        var u = 0;
+        for (var a = 0; a < ssc_que.length; a++) {
+            var f = ssc_que[a];
+            var l = s - f.start;
+            var c = l >= ssc_animtime;
+            var h = c ? 1 : l / ssc_animtime;
+            if (ssc_pulseAlgorithm) {
+                h = ssc_pulse(h)
+            }
+            var p = f.x * h - f.lastX >> 0;
+            var d = f.y * h - f.lastY >> 0;
+            o += p;
+            u += d;
+            f.lastX += p;
+            f.lastY += d;
+            if (c) {
+                ssc_que.splice(a, 1);
+                a--
+            }
+        }
+        if (t) {
+            var v = e.scrollLeft;
+            e.scrollLeft += o;
+            if (o && e.scrollLeft === v) {
+                t = 0
+            }
+        }
+        if (n) {
+            var m = e.scrollTop;
+            e.scrollTop += u;
+            if (u && e.scrollTop === m) {
+                n = 0
+            }
+        }
+        if (!t && !n) {
+            ssc_que = []
+        }
+        if (ssc_que.length) {
+            setTimeout(i, r / ssc_framerate + 1)
+        } else {
+            ssc_pending = false
+        }
+    };
+    setTimeout(i, 0);
+    ssc_pending = true
+}
 
-	var smoothScroll = {}; // Object for public APIs
-	var supports = !!document.querySelector && !!root.addEventListener; // Feature test
-	var settings;
+function ssc_wheel(e) {
+    if (!ssc_initdone) {
+        ssc_init()
+    }
+    var t = e.target;
+    var n = ssc_overflowingAncestor(t);
+    if (!n || e.defaultPrevented || ssc_isNodeName(ssc_activeElement, "embed") || ssc_isNodeName(t, "embed") && /\.pdf/i.test(t.src)) {
+        return true
+    }
+    var r = e.wheelDeltaX || 0;
+    var i = e.wheelDeltaY || 0;
+    if (!r && !i) {
+        i = e.wheelDelta || 0
+    }
+    if (Math.abs(r) > 1.2) {
+        r *= ssc_stepsize / 120
+    }
+    if (Math.abs(i) > 1.2) {
+        i *= ssc_stepsize / 120
+    }
+    ssc_scrollArray(n, -r, -i);
+    e.preventDefault()
+}
 
-	// Default settings
-	var defaults = {
-		speed: 500,
-		easing: 'easeInOutCubic',
-		offset: 0,
-		updateURL: true,
-		callbackBefore: function () {},
-		callbackAfter: function () {}
-	};
+function ssc_keydown(e) {
+    var t = e.target;
+    var n = e.ctrlKey || e.altKey || e.metaKey;
+    if (/input|textarea|embed/i.test(t.nodeName) || t.isContentEditable || e.defaultPrevented || n) {
+        return true
+    }
+    if (ssc_isNodeName(t, "button") && e.keyCode === ssc_key.spacebar) {
+        return true
+    }
+    var r, i = 0,
+        s = 0;
+    var o = ssc_overflowingAncestor(ssc_activeElement);
+    var u = o.clientHeight;
+    if (o == document.body) {
+        u = window.innerHeight
+    }
+    switch (e.keyCode) {
+    case ssc_key.up:
+        s = -ssc_arrowscroll;
+        break;
+    case ssc_key.down:
+        s = ssc_arrowscroll;
+        break;
+    case ssc_key.spacebar:
+        r = e.shiftKey ? 1 : -1;
+        s = -r * u * .9;
+        break;
+    case ssc_key.pageup:
+        s = -u * .9;
+        break;
+    case ssc_key.pagedown:
+        s = u * .9;
+        break;
+    case ssc_key.home:
+        s = -o.scrollTop;
+        break;
+    case ssc_key.end:
+        var a = o.scrollHeight - o.scrollTop - u;
+        s = a > 0 ? a + 10 : 0;
+        break;
+    case ssc_key.left:
+        i = -ssc_arrowscroll;
+        break;
+    case ssc_key.right:
+        i = ssc_arrowscroll;
+        break;
+    default:
+        return true
+    }
+    ssc_scrollArray(o, i, s);
+    e.preventDefault()
+}
 
+function ssc_mousedown(e) {
+    ssc_activeElement = e.target
+}
 
-	//
-	// Methods
-	//
+function ssc_setCache(e, t) {
+    for (var n = e.length; n--;) ssc_cache[ssc_uniqueID(e[n])] = t;
+    return t
+}
 
-	/**
-	 * A simple forEach() implementation for Arrays, Objects and NodeLists
-	 * @private
-	 * @param {Array|Object|NodeList} collection Collection of items to iterate
-	 * @param {Function} callback Callback function for each iteration
-	 * @param {Array|Object|NodeList} scope Object/NodeList/Array that forEach is iterating over (aka `this`)
-	 */
-	var forEach = function (collection, callback, scope) {
-		if (Object.prototype.toString.call(collection) === '[object Object]') {
-			for (var prop in collection) {
-				if (Object.prototype.hasOwnProperty.call(collection, prop)) {
-					callback.call(scope, collection[prop], prop, collection);
-				}
-			}
-		} else {
-			for (var i = 0, len = collection.length; i < len; i++) {
-				callback.call(scope, collection[i], i, collection);
-			}
-		}
-	};
+function ssc_overflowingAncestor(e) {
+    var t = [];
+    var n = ssc_root.scrollHeight;
+    do {
+        var r = ssc_cache[ssc_uniqueID(e)];
+        if (r) {
+            return ssc_setCache(t, r)
+        }
+        t.push(e);
+        if (n === e.scrollHeight) {
+            if (!ssc_frame || ssc_root.clientHeight + 10 < n) {
+                return ssc_setCache(t, document.body)
+            }
+        } else if (e.clientHeight + 10 < e.scrollHeight) {
+            overflow = getComputedStyle(e, "").getPropertyValue("overflow");
+            if (overflow === "scroll" || overflow === "auto") {
+                return ssc_setCache(t, e)
+            }
+        }
+    } while (e = e.parentNode)
+}
 
-	/**
-	 * Merge defaults with user options
-	 * @private
-	 * @param {Object} defaults Default settings
-	 * @param {Object} options User options
-	 * @returns {Object} Merged values of defaults and options
-	 */
-	var extend = function ( defaults, options ) {
-		var extended = {};
-		forEach(defaults, function (value, prop) {
-			extended[prop] = defaults[prop];
-		});
-		forEach(options, function (value, prop) {
-			extended[prop] = options[prop];
-		});
-		return extended;
-	};
+function ssc_addEvent(e, t, n) {
+    window.addEventListener(e, t, n || false)
+}
 
-	/**
-	 * Get the closest matching element up the DOM tree
-	 * @param {Element} elem Starting element
-	 * @param {String} selector Selector to match against (class, ID, or data attribute)
-	 * @return {Boolean|Element} Returns false if not match found
-	 */
-	var getClosest = function (elem, selector) {
-		var firstChar = selector.charAt(0);
-		for ( ; elem && elem !== document; elem = elem.parentNode ) {
-			if ( firstChar === '.' ) {
-				if ( elem.classList.contains( selector.substr(1) ) ) {
-					return elem;
-				}
-			} else if ( firstChar === '#' ) {
-				if ( elem.id === selector.substr(1) ) {
-					return elem;
-				}
-			} else if ( firstChar === '[' ) {
-				if ( elem.hasAttribute( selector.substr(1, selector.length - 2) ) ) {
-					return elem;
-				}
-			}
-		}
-		return false;
-	};
+function ssc_removeEvent(e, t, n) {
+    window.removeEventListener(e, t, n || false)
+}
 
-	/**
-	 * Escape special characters for use with querySelector
-	 * @private
-	 * @param {String} id The anchor ID to escape
-	 * @author Mathias Bynens
-	 * @link https://github.com/mathiasbynens/CSS.escape
-	 */
-	var escapeCharacters = function ( id ) {
-		var string = String(id);
-		var length = string.length;
-		var index = -1;
-		var codeUnit;
-		var result = '';
-		var firstCodeUnit = string.charCodeAt(0);
-		while (++index < length) {
-			codeUnit = string.charCodeAt(index);
-			// Note: there’s no need to special-case astral symbols, surrogate
-			// pairs, or lone surrogates.
+function ssc_isNodeName(e, t) {
+    return e.nodeName.toLowerCase() === t.toLowerCase()
+}
 
-			// If the character is NULL (U+0000), then throw an
-			// `InvalidCharacterError` exception and terminate these steps.
-			if (codeUnit === 0x0000) {
-				throw new InvalidCharacterError(
-					'Invalid character: the input contains U+0000.'
-				);
-			}
+function ssc_directionCheck(e, t) {
+    e = e > 0 ? 1 : -1;
+    t = t > 0 ? 1 : -1;
+    if (ssc_direction.x !== e || ssc_direction.y !== t) {
+        ssc_direction.x = e;
+        ssc_direction.y = t;
+        ssc_que = []
+    }
+}
 
-			if (
-				// If the character is in the range [\1-\1F] (U+0001 to U+001F) or is
-				// U+007F, […]
-				(codeUnit >= 0x0001 && codeUnit <= 0x001F) || codeUnit == 0x007F ||
-				// If the character is the first character and is in the range [0-9]
-				// (U+0030 to U+0039), […]
-				(index === 0 && codeUnit >= 0x0030 && codeUnit <= 0x0039) ||
-				// If the character is the second character and is in the range [0-9]
-				// (U+0030 to U+0039) and the first character is a `-` (U+002D), […]
-				(
-					index === 1 &&
-					codeUnit >= 0x0030 && codeUnit <= 0x0039 &&
-					firstCodeUnit === 0x002D
-				)
-			) {
-				// http://dev.w3.org/csswg/cssom/#escape-a-character-as-code-point
-				result += '\\' + codeUnit.toString(16) + ' ';
-				continue;
-			}
+function ssc_pulse_(e) {
+    var t, n, r;
+    e = e * ssc_pulseScale;
+    if (e < 1) {
+        t = e - (1 - Math.exp(-e))
+    } else {
+        n = Math.exp(-1);
+        e -= 1;
+        r = 1 - Math.exp(-e);
+        t = n + r * (1 - n)
+    }
+    return t * ssc_pulseNormalize
+}
 
-			// If the character is not handled by one of the above rules and is
-			// greater than or equal to U+0080, is `-` (U+002D) or `_` (U+005F), or
-			// is in one of the ranges [0-9] (U+0030 to U+0039), [A-Z] (U+0041 to
-			// U+005A), or [a-z] (U+0061 to U+007A), […]
-			if (
-				codeUnit >= 0x0080 ||
-				codeUnit === 0x002D ||
-				codeUnit === 0x005F ||
-				codeUnit >= 0x0030 && codeUnit <= 0x0039 ||
-				codeUnit >= 0x0041 && codeUnit <= 0x005A ||
-				codeUnit >= 0x0061 && codeUnit <= 0x007A
-			) {
-				// the character itself
-				result += string.charAt(index);
-				continue;
-			}
+function ssc_pulse(e) {
+    if (e >= 1) return 1;
+    if (e <= 0) return 0;
+    if (ssc_pulseNormalize == 1) {
+        ssc_pulseNormalize /= ssc_pulse_(1)
+    }
+    return ssc_pulse_(e)
+}
 
-			// Otherwise, the escaped character.
-			// http://dev.w3.org/csswg/cssom/#escape-a-character
-			result += '\\' + string.charAt(index);
+var ssc_framerate = 150;
+var ssc_animtime = 300;
+var ssc_stepsize = 30;
+var ssc_pulseAlgorithm = true;
+var ssc_pulseScale = 6;
+var ssc_pulseNormalize = 1;
+var ssc_keyboardsupport = true;
+var ssc_arrowscroll = 50;
+var ssc_frame = false;
+var ssc_direction = {
+    x: 0,
+    y: 0
+};
 
-		}
-		return result;
-	};
+var ssc_initdone = false;
+var ssc_fixedback = true;
+var ssc_root = document.documentElement;
+var ssc_activeElement;
+var ssc_key = {
+    left: 37,
+    up: 38,
+    right: 39,
+    down: 40,
+    spacebar: 32,
+    pageup: 33,
+    pagedown: 34,
+    end: 35,
+    home: 36
+};
 
-	/**
-	 * Calculate the easing pattern
-	 * @private
-	 * @link https://gist.github.com/gre/1650294
-	 * @param {String} type Easing pattern
-	 * @param {Number} time Time animation should take to complete
-	 * @returns {Number}
-	 */
-	var easingPattern = function ( type, time ) {
-		var pattern;
-		if ( type === 'easeInQuad' ) pattern = time * time; // accelerating from zero velocity
-		if ( type === 'easeOutQuad' ) pattern = time * (2 - time); // decelerating to zero velocity
-		if ( type === 'easeInOutQuad' ) pattern = time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time; // acceleration until halfway, then deceleration
-		if ( type === 'easeInCubic' ) pattern = time * time * time; // accelerating from zero velocity
-		if ( type === 'easeOutCubic' ) pattern = (--time) * time * time + 1; // decelerating to zero velocity
-		if ( type === 'easeInOutCubic' ) pattern = time < 0.5 ? 4 * time * time * time : (time - 1) * (2 * time - 2) * (2 * time - 2) + 1; // acceleration until halfway, then deceleration
-		if ( type === 'easeInQuart' ) pattern = time * time * time * time; // accelerating from zero velocity
-		if ( type === 'easeOutQuart' ) pattern = 1 - (--time) * time * time * time; // decelerating to zero velocity
-		if ( type === 'easeInOutQuart' ) pattern = time < 0.5 ? 8 * time * time * time * time : 1 - 8 * (--time) * time * time * time; // acceleration until halfway, then deceleration
-		if ( type === 'easeInQuint' ) pattern = time * time * time * time * time; // accelerating from zero velocity
-		if ( type === 'easeOutQuint' ) pattern = 1 + (--time) * time * time * time * time; // decelerating to zero velocity
-		if ( type === 'easeInOutQuint' ) pattern = time < 0.5 ? 16 * time * time * time * time * time : 1 + 16 * (--time) * time * time * time * time; // acceleration until halfway, then deceleration
-		return pattern || time; // no easing, no acceleration
-	};
+var ssc_que = [];
+var ssc_pending = false;
+var ssc_cache = {};
 
-	/**
-	 * Calculate how far to scroll
-	 * @private
-	 * @param {Element} anchor The anchor element to scroll to
-	 * @param {Number} headerHeight Height of a fixed header, if any
-	 * @param {Number} offset Number of pixels by which to offset scroll
-	 * @returns {Number}
-	 */
-	var getEndLocation = function ( anchor, headerHeight, offset ) {
-		var location = 0;
-		if (anchor.offsetParent) {
-			do {
-				location += anchor.offsetTop;
-				anchor = anchor.offsetParent;
-			} while (anchor);
-		}
-		location = location - headerHeight - offset;
-		return location >= 0 ? location : 0;
-	};
+setInterval(function () {
+    ssc_cache = {}
+}, 10 * 1e3);
 
-	/**
-	 * Determine the document's height
-	 * @private
-	 * @returns {Number}
-	 */
-	var getDocumentHeight = function () {
-		return Math.max(
-			document.body.scrollHeight, document.documentElement.scrollHeight,
-			document.body.offsetHeight, document.documentElement.offsetHeight,
-			document.body.clientHeight, document.documentElement.clientHeight
-		);
-	};
+var ssc_uniqueID = function () {
+    var e = 0;
+    return function (t) {
+        return t.ssc_uniqueID || (t.ssc_uniqueID = e++)
+    }
+}();
 
-	/**
-	 * Convert data-options attribute into an object of key/value pairs
-	 * @private
-	 * @param {String} options Link-specific options as a data attribute string
-	 * @returns {Object}
-	 */
-	var getDataOptions = function ( options ) {
-		return !options || !(typeof JSON === 'object' && typeof JSON.parse === 'function') ? {} : JSON.parse( options );
-	};
+var ischrome = /chrome/.test(navigator.userAgent.toLowerCase());
 
-	/**
-	 * Update the URL
-	 * @private
-	 * @param {Element} anchor The element to scroll to
-	 * @param {Boolean} url Whether or not to update the URL history
-	 */
-	var updateUrl = function ( anchor, url ) {
-		if ( history.pushState && (url || url === 'true') ) {
-			history.pushState( null, null, [root.location.protocol, '//', root.location.host, root.location.pathname, root.location.search, anchor].join('') );
-		}
-	};
-
-	/**
-	 * Start/stop the scrolling animation
-	 * @public
-	 * @param {Element} toggle The element that toggled the scroll event
-	 * @param {Element} anchor The element to scroll to
-	 * @param {Object} options
-	 */
-	smoothScroll.animateScroll = function ( toggle, anchor, options ) {
-
-		// Options and overrides
-		var settings = extend( settings || defaults, options || {} );  // Merge user options with defaults
-		var overrides = getDataOptions( toggle ? toggle.getAttribute('data-options') : null );
-		settings = extend( settings, overrides );
-		anchor = '#' + escapeCharacters(anchor.substr(1)); // Escape special characters and leading numbers
-
-		// Selectors and variables
-		var anchorElem = document.querySelector(anchor);
-		var fixedHeader = document.querySelector('[data-scroll-header]'); // Get the fixed header
-		var headerHeight = fixedHeader === null ? 0 : (fixedHeader.offsetHeight + fixedHeader.offsetTop); // Get the height of a fixed header if one exists
-		var startLocation = root.pageYOffset; // Current location on the page
-		var endLocation = getEndLocation( anchorElem, headerHeight, parseInt(settings.offset, 10) ); // Scroll to location
-		var animationInterval; // interval timer
-		var distance = endLocation - startLocation; // distance to travel
-		var documentHeight = getDocumentHeight();
-		var timeLapsed = 0;
-		var percentage, position;
-
-		// Update URL
-		updateUrl(anchor, settings.updateURL);
-
-		/**
-		 * Stop the scroll animation when it reaches its target (or the bottom/top of page)
-		 * @private
-		 * @param {Number} position Current position on the page
-		 * @param {Number} endLocation Scroll to location
-		 * @param {Number} animationInterval How much to scroll on this loop
-		 */
-		var stopAnimateScroll = function (position, endLocation, animationInterval) {
-			var currentLocation = root.pageYOffset;
-			if ( position == endLocation || currentLocation == endLocation || ( (root.innerHeight + currentLocation) >= documentHeight ) ) {
-				clearInterval(animationInterval);
-				anchorElem.focus();
-				settings.callbackAfter( toggle, anchor ); // Run callbacks after animation complete
-			}
-		};
-
-		/**
-		 * Loop scrolling animation
-		 * @private
-		 */
-		var loopAnimateScroll = function () {
-			timeLapsed += 16;
-			percentage = ( timeLapsed / parseInt(settings.speed, 10) );
-			percentage = ( percentage > 1 ) ? 1 : percentage;
-			position = startLocation + ( distance * easingPattern(settings.easing, percentage) );
-			root.scrollTo( 0, Math.floor(position) );
-			stopAnimateScroll(position, endLocation, animationInterval);
-		};
-
-		/**
-		 * Set interval timer
-		 * @private
-		 */
-		var startAnimateScroll = function () {
-			settings.callbackBefore( toggle, anchor ); // Run callbacks before animating scroll
-			animationInterval = setInterval(loopAnimateScroll, 16);
-		};
-
-		/**
-		 * Reset position to fix weird iOS bug
-		 * @link https://github.com/cferdinandi/smooth-scroll/issues/45
-		 */
-		if ( root.pageYOffset === 0 ) {
-			root.scrollTo( 0, 0 );
-		}
-
-		// Start scrolling animation
-		startAnimateScroll();
-
-	};
-
-	/**
-	 * If smooth scroll element clicked, animate scroll
-	 * @private
-	 */
-	var eventHandler = function (event) {
-		var toggle = getClosest(event.target, '[data-scroll]');
-		if ( toggle && toggle.tagName.toLowerCase() === 'a' ) {
-			event.preventDefault(); // Prevent default click event
-			smoothScroll.animateScroll( toggle, toggle.hash, settings); // Animate scroll
-		}
-	};
-
-	/**
-	 * Destroy the current initialization.
-	 * @public
-	 */
-	smoothScroll.destroy = function () {
-		if ( !settings ) return;
-		document.removeEventListener( 'click', eventHandler, false );
-		settings = null;
-	};
-
-	/**
-	 * Initialize Smooth Scroll
-	 * @public
-	 * @param {Object} options User settings
-	 */
-	smoothScroll.init = function ( options ) {
-
-		// feature test
-		if ( !supports ) return;
-
-		// Destroy any existing initializations
-		smoothScroll.destroy();
-
-		// Selectors and variables
-		settings = extend( defaults, options || {} ); // Merge user options with defaults
-
-		// When a toggle is clicked, run the click handler
-		document.addEventListener('click', eventHandler, false);
-
-	};
-
-
-	//
-	// Public APIs
-	//
-
-	return smoothScroll;
-
-});
+if (ischrome) {
+    ssc_addEvent("mousedown", ssc_mousedown);
+    ssc_addEvent("mousewheel", ssc_wheel);
+    ssc_addEvent("load", ssc_init)
+}
