@@ -252,7 +252,7 @@ function ssc_pulse(e) {
 
 var ssc_framerate = 150;
 var ssc_animtime = 300;
-var ssc_stepsize = 30;
+var ssc_stepsize = 50;
 var ssc_pulseAlgorithm = true;
 var ssc_pulseScale = 6;
 var ssc_pulseNormalize = 1;
