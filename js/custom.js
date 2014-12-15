@@ -21,7 +21,10 @@
 //   });
 // });
 
+
+
 $(document).ready(function() {
+
   var windowH = $(window).height();
   var wrapperH = $('.home_banner').height();
   if(windowH > wrapperH) {
