@@ -28,6 +28,10 @@ a, a:hover, a:active{
   color: rgb(64, 68, 72)
 }
 
+a:focus{
+  outline: none;
+}
+
 .wrapper {
   overflow-x:hidden;
 }
@@ -68,6 +72,10 @@ a, a:hover, a:active{
   margin: 0 auto;
   display: block;
   z-index: 10;
+}
+
+.mouse-icon:focus{
+  outline: none;
 }
 
 .mouse-icon > .wheel {
@@ -243,10 +251,18 @@ a, a:hover, a:active{
   z-index: 10;
 }
 
+.dummy_nav:focus {
+  outline: none;
+}
+
 .dummy_nav > .right {
   right: 0;
   top: 0;
   z-index: 1;
+}
+
+.dummy_nav > .right:focus {
+  outline: none;
 }
 
 .dummy_nav > .right > .menu {
