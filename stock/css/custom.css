@@ -785,3 +785,7 @@ body {
 .red h6 {
   color: #dd4b39;
 }
+
+.btn-buysell{
+  padding: 15px 0px!important;
+}
