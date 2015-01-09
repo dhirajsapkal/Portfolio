@@ -769,15 +769,15 @@ body {
 }
 
 .price span {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   color: #626262;
 }
 
 .price img{
-  height: 25px;
+  height: 20px;
   position: relative;
-  bottom: 7px;
+  bottom: 6px;
   margin-left: 24px;
   margin-right: 10px;
   /*fill: white;*/
