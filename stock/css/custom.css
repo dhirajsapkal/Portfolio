@@ -676,6 +676,7 @@ body {
 @media screen and (max-width: 1200px) {
   #track1{
     visibility: visible;
+    top: 2px;
   }
 
   #track2{
