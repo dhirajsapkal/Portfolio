@@ -6841,6 +6841,7 @@ body {
 .primary {
   width: 189px;
   height: 67px;
+  margin-top: 20px;
   outline: none;
   border: none;
   background-color: #ffc500;
@@ -6858,8 +6859,8 @@ body {
 }
 
 .secondary {
-  margin-left: 30px;
   width: 189px;
+  margin-top: 20px;
   height: 67px;
   outline: none;
   border: 3px solid #f0f0f0;
@@ -7152,6 +7153,16 @@ p{
   line-height: 100px;
 }
 
+@media screen and (max-width: 1200px){
+  .chat{
+    bottom: 46%;
+  }
+  .banner{
+    top: 58%;
+    left: 43%;
+  }
+}
+
 
 @media screen and (max-width: 768px){
   .hand{
@@ -7178,6 +7189,14 @@ p{
   .primary{
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .background_image{
+    left: -12%;
+  }
+
+  .background_image_container{
+    width: 130%;
   }
 
 }
