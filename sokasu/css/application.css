@@ -7199,6 +7199,10 @@ p{
     width: 130%;
   }
 
+  .signup{
+    background-attachment: scroll;
+  }
+
 }
 
 @charset "UTF-8";
