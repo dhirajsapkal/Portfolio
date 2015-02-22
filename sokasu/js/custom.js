@@ -12,7 +12,6 @@ $(document).ready(function() {
 
   $('.nav-pills, .nav-tabs').tabdrop()
 
-  new WOW().init();
 
   $('.banner').localScroll({duration:500});
 
