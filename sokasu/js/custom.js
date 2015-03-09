@@ -24,5 +24,26 @@ $(document).ready(function() {
 
   $('.banner').localScroll({duration:500});
 
+  $("#b1").click(function(){
+    $("#pane1").hide();
+    $("#pane3").hide();
+    $("#pane4").hide();
+    $("#pane2").show();
+  });
+
+  $("#b2").click(function(){
+    $("#pane1").hide();
+    $("#pane3").show();
+    $("#pane4").hide();
+    $("#pane2").hide();
+  });
+
+  $("#b3").click(function(){
+    $("#pane1").hide();
+    $("#pane3").hide();
+    $("#pane4").show();
+    $("#pane2").hide();
+  });
+
 
 });

@@ -23,10 +23,13 @@
   <div class="se-pre-con"></div>
     <div class="intro_section">
       <ul id="scene">
-        <li class="layer background_image_container" data-depth="0.20">
+        <li class="layer" data-depth="0">
+          <div class="dot"></div>
+        </li>
+        <li class="layer background_image_container" data-depth="0.05">
           <div class="background_image"></div>
         </li>
-        <li class="layer" data-depth="0.30">
+        <li class="layer" data-depth="0.10">
           <img class="hand wow rotateInUpLeft" data-wow-duration="1.3s" src="images/hand.png">
         </li>
         <li class="layer" data-depth="0">
@@ -53,10 +56,10 @@
             <div class="content">
               <div class="row">
                 <div class="col-xs-12">
-                  <h2>Trends!....they’re everywhere!</h2>
+                  <h2>Too much info from social media?</h2>
                 </div>
               </div>
-              <p>But don’t fret, <strong>Sokasu</strong> searches all over the web for the right content, so you don't have to</p>
+              <p>Don’t fret, <strong>Sokasu</strong> scours social media posts, tweets and comments for the latest buzz and neatly organises them - so you don't have to!</p>
             </div>
           </div>
           <div class="col-md-6 col-xs-12">
@@ -70,24 +73,24 @@
         <div class="row">
           <div class="col-md-12 col-xs-12">
             <div class="content centered-pills">
-              <h2>So.... err..... What’s trending?</h2>
-              <p>I’m glad you asked.... Here’s a little taste of what Sokasu has to offer</p>
+              <h2>So, what's new?</h2>
+              <p>Glad you asked.... Here’s a little taste of what Sokasu has to offer</p>
               <ul class="nav nav-pills trending-nav wow fadeInLeft" data-wow-duration='0.5s'>
-                <li role="presentation" class="active"><a href="#">Sports</a></li>
-                <li role="presentation"><a href="#">Design</a></li>
-                <li role="presentation"><a href="#">Fashion</a></li>
-                <li role="presentation"><a href="#">Gossip</a></li>
-                <li role="presentation"><a href="#">Tech</a></li>
-                <li role="presentation"><a href="#">Politics</a></li>
-                <li role="presentation"><a href="#">Cats</a></li>
-                <li role="presentation"><a href="#">Space</a></li>
+                <li role="presentation" class="active"><a id="b1">Sports</a></li>
+                <li role="presentation"><a id="b2">Design</a></li>
+                <li role="presentation"><a id="b3">Fashion</a></li>
+                <li role="presentation"><a id="b4">Gossip</a></li>
+                <li role="presentation"><a>Tech</a></li>
+                <li role="presentation"><a>Politics</a></li>
+                <li role="presentation"><a>Cats</a></li>
+                <li role="presentation"><a>Space</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-md-offset-3">
-            <div class="trending-pane">
+            <div class="trending-pane" id="pane1">
               <h3 class="wow fadeInLeft" data-wow-duration='0.5s'>#IndiaVsSouthAfrica</h3>
               <h4 class="wow fadeInLeft" data-wow-duration='0.5s' data-wow-delay='0.3s'>#IND vs SA</h4>
               <h5 class="wow fadeInLeft" data-wow-duration='0.5s' data-wow-delay='0.3s'> #Fognini knocks out #Nadal </h3>
@@ -104,8 +107,26 @@
               <h2>Unfortunately...</h2>
               <p>Sokasu isn’t available yet, However our code monkeys are hard at work to get Sokau ready to party!</p>
               <p>Give us your E-Mail ID and we’ll send you a hand-typed invite! (for said party)</p>
-              <input type="text" class="form-control" placeholder="youareawesome@sarcasm.com" aria-describedby="basic-addon1">
-              <a href="#"><button type="button">I WANNA PARTY!</button></a>
+              <form class="subscribe-form form-inline" action="./index.html" role="form">
+
+                  <!-- Begin MailChimp Signup Form -->
+                        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+
+                        <div id="mc_embed_signup">
+                        <form action="//sokasu.us10.list-manage.com/subscribe/post?u=594920a1eb11df1f9e31d08d2&amp;id=ec6759d484" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate email-form input" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                          <label for="mce-EMAIL"></label>
+                          <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="email address" required>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_594920a1eb11df1f9e31d08d2_ec6759d484" tabindex="-1" value=""></div>
+                            <div class=""><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button email-button"></div>
+                            </div>
+                        </form>
+                        </div>
+
+                  <!--End mc_embed_signup-->
+
+                </form> <!-- /.subscribe-form -->
             </div>
           </div>
         </div>

@@ -2695,7 +2695,7 @@ select[multiple].form-group-lg .form-control {
   }
   .form-inline .form-control {
     display: inline-block;
-    width: auto;
+    /*width: auto;*/
     vertical-align: middle;
   }
   .form-inline .form-control-static {
@@ -6805,13 +6805,24 @@ body {
 
 
 .background_image{
-  background-image: url('../images/bg2.jpg');
+  background-image: url('../images/bg3.jpg');
   position: absolute;
   background-size: cover;
   width: 115%;
   top: -5%;
   left: -12%;
   bottom: -5%;
+}
+
+.dot{
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 130%;
+  height: 100%;
+  background-image: url(../images/dots.png);
+  pointer-events: none;
+  opacity: 0.2;
 }
 
 .hand{
@@ -7079,6 +7090,22 @@ p{
   height: 65px;
 }
 
+#mc-embedded-subscribe {
+  border-style: solid;
+  position: relative;
+  border-width: 3px;
+  border-color: rgb(175, 85, 25);
+  background-color: rgb(227, 107, 27);
+  color: white;
+  font-size: 16px;
+  height: 65px;
+  padding-left: 45px;
+  padding-right: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+}
+
 .form-control:focus{
   border-color: rgba(227, 107, 27, 0.5);
   box-shadow: none;
@@ -7160,6 +7187,18 @@ p{
   .banner{
     top: 58%;
     left: 43%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  h2{
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  p{
+    font-size: 20px;
+    line-height: 36px;
   }
 }
 
