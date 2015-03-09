@@ -6758,11 +6758,11 @@ button.close {
   src : url('http://fonts.googleapis.com/css?family=Lato:300,700');
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Source Sans Pro', sans-serif;
-  src : url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300');
+  src : url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:200');
 }
-
+*/
 
 
 body {
@@ -6916,7 +6916,7 @@ h2{
 p{
   margin-top: 45px;
   margin-bottom: 0;
-  font-family: 'Source Sans Pro';
+  /*font-family: 'Source Sans Pro';*/
   font-weight: 300;
   color: #636363;
   font-size: 25px;
@@ -6924,7 +6924,6 @@ p{
 }
 
 .content {
-  padding-top: 106px;
   z-index: 20;
 }
 
@@ -7037,7 +7036,7 @@ p{
 
 
 .trending-pane{
-  font-family: 'Source Sans Pro';
+  /*font-family: 'Source Sans Pro';*/
   color: #1f1f1f;
   margin-bottom: 106px;
   overflow: hidden;
@@ -7180,6 +7179,10 @@ p{
   line-height: 100px;
 }
 
+.padding-top-bot{
+  padding: 100px 0px;
+}
+
 @media screen and (max-width: 1200px){
   .chat{
     bottom: 46%;
@@ -7199,6 +7202,14 @@ p{
   p{
     font-size: 20px;
     line-height: 36px;
+  }
+
+  .content {
+    padding-top: 46px;
+  }
+
+  .padding-top-bot{
+    padding: 40px 0px;
   }
 }
 
