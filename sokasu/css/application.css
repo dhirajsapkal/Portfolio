@@ -6932,19 +6932,10 @@ p{
   background-repeat: repeat;
 }
 
-.about {
-  width: 80%;
-  margin-top: 50px;
-  margin-left: 20px;
-  margin-bottom: 50px;
-}
-
-.trending {
-  background-color: #ffc501;
-  background-image: url(../images/cricket2.png);
-  background-size: cover;
-  text-align: center;
+.img-right{
+  width: 36%;
   position: relative;
+  left: 40%;
 }
 
 /*.trending::after {
@@ -7183,6 +7174,76 @@ p{
   padding: 100px 0px;
 }
 
+.what-is{
+  background-image: url('../images/Background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.center-title{
+  color: #f6f8f8;
+  text-align: center;
+}
+
+.center-title:after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 4px;
+  width: 150px;
+  background-color: #d18026;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: 20px;
+}
+
+.title-whatis {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #232323;
+  margin-top: 70px;
+}
+
+.features-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h5{
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: #232323;
+  text-transform: uppercase;
+}
+
+.features-image{
+  width: 100%;
+  margin-top: 60px;
+}
+
+.features-list-item{
+  margin-top: 190px;
+}
+
+.features-list-item p{
+  font-size: 20px;
+  color: #232323;
+  opacity: 0.75;
+  line-height: 30px;
+  margin-top: 15px;
+}
+
+@media (min-width: 992px){
+  .features-list.features-list-left {
+    text-align: right;
+  }
+}
+
 @media screen and (max-width: 1200px){
   .chat{
     bottom: 46%;
@@ -7209,7 +7270,26 @@ p{
   }
 
   .padding-top-bot{
-    padding: 40px 0px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .features-image{
+    width: 50%;
+  }
+
+  .features-list{
+    text-align: center;
+  }
+
+  .features-list-item{
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .img-right{
+    padding-top: 40px;
   }
 }
 
