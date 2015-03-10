@@ -6805,7 +6805,7 @@ body {
 
 
 .background_image{
-  background-image: url('../images/bg6.jpg');
+  background-image: url('../images/bg3.jpg');
   position: absolute;
   background-size: cover;
   width: 115%;
@@ -6841,8 +6841,8 @@ body {
 
 .banner {
   position: absolute;
-  top: 68%;
-  left: 45%;
+  top: 59%;
+  left: 43.7%;
 }
 
 .banner i {
@@ -6850,17 +6850,21 @@ body {
 }
 
 .primary {
-  width: 189px;
+  width: 100%;
   height: 67px;
   margin-top: 20px;
+  margin-bottom: 20px;
   outline: none;
   border: none;
-  background-color: #ffc500;
+  background-color: rgb(255, 197, 0);
   color: #000000;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
+  border-radius: 0;
+  opacity: 0.9;
 }
+
 
 .primary:hover, .primary:focus, .primary:active {
   background-color: #000000;
@@ -7083,8 +7087,7 @@ p{
 #mc-embedded-subscribe {
   border-style: solid;
   position: relative;
-  border-width: 3px;
-  border-color: rgb(175, 85, 25);
+  border: none;
   background-color: rgb(227, 107, 27);
   color: white;
   font-size: 16px;
@@ -7095,6 +7098,15 @@ p{
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
+}
+
+#mc-embedded-subscribe:hover, #mc-embedded-subscribe:active, #mc-embedded-subscribe:focus{
+  background-color: #000000;
+  transition: background-color 0.8s ease;
+  color: white;
+  transition: color 0.3s ease;
+  border-color: black;
+  outline: none;
 }
 
 .form-control:focus{
@@ -7193,9 +7205,9 @@ p{
   left: 0;
   height: 4px;
   width: 150px;
-  background-color: #d18026;
+  background-color: #f6f8f8;
   left: 50%;
-  margin-left: -60px;
+  transform: translateX(-50%);
   margin-top: 20px;
 }
 
@@ -7222,8 +7234,11 @@ h5{
   text-transform: uppercase;
 }
 
-.features-image{
+#owl-demo .item img{
   width: 90%;
+}
+
+#owl-demo{
   margin-top: 60px;
 }
 
@@ -7253,6 +7268,7 @@ h5{
     top: 58%;
     left: 43%;
   }
+
 }
 
 @media screen and (max-width: 768px){
@@ -7292,6 +7308,11 @@ h5{
   .img-right{
     padding-top: 40px;
   }
+
+  .primary{
+    width: 40%;
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -7320,6 +7341,10 @@ h5{
   .primary{
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  #mc-embedded-subscribe{
+    width: 100%;
   }
 
   .background_image{
