@@ -6805,7 +6805,7 @@ body {
 
 
 .background_image{
-  background-image: url('../images/bg3.jpg');
+  background-image: url('../images/bg6.jpg');
   position: absolute;
   background-size: cover;
   width: 115%;
@@ -7091,6 +7091,7 @@ p{
   height: 65px;
   padding-left: 45px;
   padding-right: 45px;
+  margin-top: 0;
   left: 50%;
   transform: translateX(-50%);
   text-transform: uppercase;
@@ -7222,12 +7223,12 @@ h5{
 }
 
 .features-image{
-  width: 100%;
+  width: 90%;
   margin-top: 60px;
 }
 
 .features-list-item{
-  margin-top: 190px;
+  margin-top: 160px;
 }
 
 .features-list-item p{
