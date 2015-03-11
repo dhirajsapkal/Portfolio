@@ -7379,6 +7379,10 @@ h5{
     width: 290px;
     height: 562px;
   }
+
+  .social-media > a + a{
+    margin-left: 50px;
+  }
 }
 
 
@@ -7387,9 +7391,9 @@ h5{
     visibility: hidden!important;
   }
 
-  .social-media > a + a{
+/*  .social-media > a + a{
     margin-left: 90px;
-  }
+  }*/
 
 .chat {
     width: 70%;
