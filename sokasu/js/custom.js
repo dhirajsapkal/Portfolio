@@ -2,9 +2,7 @@
 $(window).load(function() {
   // Animate loader off screen
   $(".se-pre-con").fadeOut("slow");
-  console.log( "preloader" );
   new WOW().init();
-  console.log( "started" );
 });
 
 $(document).ready(function() {
@@ -29,7 +27,12 @@ $(document).ready(function() {
       navigation : false, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400,
-      singleItem:true
+      singleItem:true,
+      autoWidth:true,
+      loop: true,
+      pagination: false,
+      lazyLoad: true
+      // margin: 20
  
       // "singleItem:true" is a shortcut for:
       // items : 1, 
