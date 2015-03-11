@@ -6860,9 +6860,9 @@ body {
   /*background-color: rgb(255, 197, 0);*/
   background-color: #f0f0f0;
   color: #000000;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
+  font-weight: 500;
+  /*text-transform: uppercase;*/
+  font-size: 20px;
   border-radius: 0;
   /*opacity: 0.9;*/
 }
@@ -7374,10 +7374,21 @@ h5{
   }
 }
 
+@media screen and (max-width: 480px){
+  .marvel-device.nexus5{
+    width: 290px;
+    height: 562px;
+  }
+}
+
 
 @media screen and (max-width: 768px){
   .hand{
     visibility: hidden!important;
+  }
+
+  .social-media > a + a{
+    margin-left: 90px;
   }
 
 .chat {
