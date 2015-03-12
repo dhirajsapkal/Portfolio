@@ -7422,6 +7422,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
 
   #mc-embedded-subscribe{
     width: 100%;
+    position: static;
   }
 
   .background_image{
