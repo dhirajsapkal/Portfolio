@@ -7416,6 +7416,7 @@ h5{
   #mc-embedded-subscribe{
     width: 100%;
     position: static;
+    transform: none;
   }
 
   .background_image{
