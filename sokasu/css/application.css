@@ -7394,8 +7394,8 @@ h5{
     width: 70%;
     position: absolute;
     left: 50%;
-    bottom: 46%;
     transform: translateX(-50%);
+    /*bottom: 46%;*/
   }
 
   .banner {
