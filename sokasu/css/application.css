@@ -7390,16 +7390,12 @@ h5{
     visibility: hidden!important;
   }
 
-  .center-title:after{
-    transform: none;
-  }
-
-.chat {
+/*.chat {
     width: 70%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-  }
+  }*/
 
   .banner {
     text-align: center;
