@@ -7385,6 +7385,59 @@ h5{
   }
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+
+  .hand{
+    visibility: hidden!important;
+  }
+
+.chat {
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .banner {
+    text-align: center;
+    width: 100%;
+    left: 0;
+  }
+  .secondary{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .primary{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  #mc-embedded-subscribe{
+    width: 100%;
+  }
+
+  .background_image{
+    left: -12%;
+  }
+
+  .background_image_container{
+    width: 130%;
+  }
+
+  .signup{
+    background-attachment: scroll;
+  }
+
+}
+
 
 @media screen and (max-width: 768px){
   .hand{
