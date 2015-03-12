@@ -7390,6 +7390,10 @@ h5{
     visibility: hidden!important;
   }
 
+  .center-title:after{
+    transform: none;
+  }
+
 .chat {
     width: 70%;
     position: absolute;
