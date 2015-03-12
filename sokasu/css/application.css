@@ -7391,10 +7391,11 @@ h5{
   }
 
 .chat {
-    width: 70%;
+    width: 40%;
     position: absolute;
-/*    left: 50%;
-    transform: translateX(-50%);*/
+    right: 15%;
+    bottom: 36%;
+    /*transform: translateX(-50%);*/
   }
 
   .banner {
@@ -7417,6 +7418,7 @@ h5{
     width: 100%;
     position: static;
     transform: none;
+    border-radius: 0px!important;
   }
 
   .background_image{
