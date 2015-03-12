@@ -7391,11 +7391,10 @@ h5{
   }
 
 .chat {
-    width: 40%;
+    width: 70%;
     position: absolute;
-    right: 15%;
-    bottom: 36%;
-    /*transform: translateX(-50%);*/
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .banner {
