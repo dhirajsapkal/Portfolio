@@ -7263,38 +7263,14 @@ h5{
   margin-top: 80px;
 }
 
-#owl-demo{
-  /*margin-top: 60px;*/
-  /*height: 680px;*/
+/*#owl-demo{
+  margin-top: 60px;
+  height: 680px;
   width: auto;
   overflow: hidden;
-}
-
-/*.phone-bg{
-  background-image: url(../images/phone.png);
-  background-size: contain;
-  background-position: center;
-  margin-top: 60px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 680px;
 }*/
 
-.carousel-box{
-  /*width: 100%;*/
-}
 
-.owl-carousel .owl-wrapper-outer{
-  /*padding-top: 15%;*/
-  /*left: 5%;*/
-/*  width: 90%;
-  height: 634px;*/
-
-  /*margin: 0 5%;*/
-}
-
-.owl-carousel .owl-wrapper-outer{
-}
 
 .features-list-item{
   margin-top: 160px;
