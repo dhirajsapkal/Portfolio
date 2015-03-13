@@ -7412,7 +7412,7 @@ h5{
 }
 
 
-@media screen (min-width: 480px) and (max-width:768px) {
+@media (max-width:640px) {
   .hand{
     visibility: hidden!important;
   }
