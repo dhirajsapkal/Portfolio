@@ -7329,7 +7329,7 @@ h5{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
   h2{
     font-size: 40px;
     line-height: 60px;
@@ -7436,7 +7436,7 @@ h5{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen (min-width: 480px) and (max-width:768px) {
   .hand{
     visibility: hidden!important;
   }
