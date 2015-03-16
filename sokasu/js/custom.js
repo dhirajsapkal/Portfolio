@@ -30,6 +30,7 @@ $(document).ready(function() {
       paginationSpeed : 400,
       autoplay:true,
       smartSpeed: 600,
+      autoplayHoverPause: true,
       autoplayTimeout:3000,
       singleItem:true,
       autoWidth:false,
