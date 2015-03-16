@@ -6856,7 +6856,7 @@ body {
 .primary {
   width: 100%;
   height: 67px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
   outline: none;
   border: none;
@@ -7351,7 +7351,7 @@ h5{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
   h2{
     font-size: 40px;
     line-height: 60px;
@@ -7399,7 +7399,7 @@ h5{
 @media screen and (max-width: 480px){
   .marvel-device.nexus5{
     width: 290px;
-    height: 562px;
+    height: 520px;
   }
 
   .social-media > a + a{
@@ -7464,7 +7464,7 @@ h5{
 }
 
 
-@media screen and (max-width: 768px){
+@media (max-width:640px) {
   .hand{
     visibility: hidden!important;
   }
