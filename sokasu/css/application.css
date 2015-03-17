@@ -6807,7 +6807,10 @@ body {
 .background_image{
   background-image: url('../images/bg3.jpg');
   position: absolute;
-  background-size: cover;
+  -ms-background-size:cover;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  background-size:cover;
   width: 115%;
   top: -5%;
   left: -12%;
@@ -6870,8 +6873,14 @@ body {
 
 .primary:hover, .primary:focus, .primary:active {
   background-color: #000000;
+  -ms-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
   color: #ffc500;
+  -ms-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -6890,9 +6899,15 @@ body {
 
 .secondary:hover, .secondary:focus, .secondary:active {
   background-color: #f0f0f0;
+  -ms-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
-  color: #000000;
+  -ms-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  color: #000000;
 }
 
 #scene {
@@ -7060,6 +7075,9 @@ p{
 .signup {
   background-image: url(../images/lowerbg.jpg);
   background-size: cover;
+  -ms-background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
   background-attachment: fixed;
 }
 
@@ -7100,14 +7118,23 @@ p{
   padding-right: 45px;
   margin-top: 0;
   left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
   text-transform: uppercase;
 }
 
 #mc-embedded-subscribe:hover, #mc-embedded-subscribe:active, #mc-embedded-subscribe:focus{
   background-color: #000000;
+  -ms-transition: background-color 0.8s ease;
+  -webkit-transition: background-color 0.8s ease;
+  -moz-transition: background-color 0.8s ease;
   transition: background-color 0.8s ease;
   color: white;
+  -ms-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
   transition: color 0.3s ease;
   border-color: black;
   outline: none;
@@ -7130,17 +7157,26 @@ p{
   padding-left: 45px;
   padding-right: 45px;
   left: 50%;
-  transform:translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
   text-transform: uppercase;
 }
 
 .email-form button:hover, .email-form button:active, .email-form button:focus{
   background-color: #000000;
-  transition: background-color 0.8s ease;
   color: white;
-  transition: color 0.3s ease;
   border-color: black;
   outline: none;
+  -ms-transition: background-color 0.8s ease;
+  -webkit-transition: background-color 0.8s ease;
+  -moz-transition: background-color 0.8s ease;
+  transition: background-color 0.8s ease;
+  -ms-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .social-media {
@@ -7168,11 +7204,18 @@ p{
 
 .social-media a:hover, .social-media a:focus, .social-media a:active{
   color: #ffc501;
-  transition: color 0.3s ease;
   -webkit-box-shadow:inset 0px -3px 0px 0px #ffc501;
   -moz-box-shadow:inset 0px -3px 0px 0px #ffc501;
   box-shadow:inset 0px -3px 0px 0px #ffc501;
   transition: box-shadow 0.3s ease;
+  -ms-transition: box-shadow 0.3s ease;
+  -webkit-transition: box-shadow 0.3s ease;
+  -moz-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .footer{
@@ -7220,6 +7263,9 @@ p{
   width: 150px;
   background-color: #ffc500;
   left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
   transform: translateX(-50%);
   margin-top: 20px;
 }
@@ -7370,6 +7416,9 @@ h5{
     width: 70%;
     position: absolute;
     left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
     transform: translateX(-50%);
     /*bottom: 46%;*/
   }
@@ -7393,6 +7442,9 @@ h5{
   #mc-embedded-subscribe{
     width: 100%;
     position: static;
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
     transform: none;
     border-radius: 0px!important;
     padding-left: 0;
@@ -7428,6 +7480,9 @@ h5{
     width: 70%;
     position: absolute;
     left: 50%;
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
     transform: translateX(-50%);
   }
 
