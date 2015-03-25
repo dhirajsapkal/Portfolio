@@ -6753,6 +6753,8 @@ button.close {
   position: relative;
 }
 
+
+
 @font-face {
   font-family: 'Lato', sans-serif;
   src : url('http://fonts.googleapis.com/css?family=Lato:300,700');
@@ -7335,9 +7337,8 @@ h5{
 }
 
 .register-position{
-  color: rgb(255, 255, 255);
   font-weight: bold;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 
 #registered{
@@ -7351,7 +7352,7 @@ h5{
 
 .copy-link{
   border: 1px solid rgba(0, 0, 0, 0.14);
-  padding: 15px;
+  padding: 25px;
   background-color: transparent;
   outline: none;
   margin-top: 30px;
@@ -7362,6 +7363,7 @@ h5{
 .my-position{
   /*border: 1px solid rgba(0, 0, 0, 0.14);*/
   padding: 20px;
+  /*background-color: #ffc500;*/
   background-color: #ffc500;
 }
 
@@ -7386,26 +7388,46 @@ h5{
   color: white !important;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 35px 8px;
-  padding: 14px 20px 12px 60px;
+  width: 100%;
+/*  margin: 35px 8px;
+  padding: 14px 20px 12px 60px;*/
+  padding: 20px 20px!important;
+  margin: 30px 0px 0px 0px!important;
+  min-width: 0px!important;
+  width: 100%;
+  height: 60px!important;
   font-size: 14px;
+  line-height: 17px!important;
   border-radius: 0;
 }
 
-.btn-twitter {
-  background: url(../images/twitter.png) 20px center no-repeat #309aea !important;
-  border-bottom: 3px solid #2a83c8;
+.icon-facebook{
+  background-color: #30487b!important;
 }
 
-.btn-email {
-  background: url(../images/email.png) 20px center no-repeat #666 !important;
-  border-bottom: 3px solid #444;
+.icon-twitter{
+  background-color: #2a83c8!important;
 }
 
-.btn-facebook {
-  background: url(../images/facebook.png) 16px center no-repeat #30487b !important;
-  border-bottom: 3px solid #24355c;
+.icon-email{
+  background-color: #444!important;
 }
+
+.icon-facebook:before {
+  content: "";
+  background: url(../images/facebook.png)  center no-repeat #30487b !important;
+}
+
+.icon-twitter:before {
+  content: "";
+  background: url(../images/twitter.png)  center no-repeat #2a83c8 !important;
+}
+
+.icon-email:before {
+  content: "";
+  background: url(../images/email.png)  center no-repeat #444 !important;
+}
+
 
 @media (min-width: 992px){
   .features-list.features-list-left {
