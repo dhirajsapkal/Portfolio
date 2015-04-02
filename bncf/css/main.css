@@ -224,16 +224,28 @@ section{
    Media Queries
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
+ @media only screen and (min-width: 35em) {
 
-   }
+ }
 
-   @media print,
-   (-o-min-device-pixel-ratio: 5/4),
-   (-webkit-min-device-pixel-ratio: 1.25),
-   (min-resolution: 120dpi) {
+ @media print,
+ (-o-min-device-pixel-ratio: 5/4),
+ (-webkit-min-device-pixel-ratio: 1.25),
+ (min-resolution: 120dpi) {
 
-   }
+ }
+
+ @media only screen and (max-width: 40em) {
+  .hero h1{
+    font-size: 2.75rem;
+    line-height: 4.75rem;
+  }
+
+  .hero p{
+    font-size: 1.5rem;
+    line-height: 1.62rem;
+  }
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /* ==========================================================================
    Helper classes
