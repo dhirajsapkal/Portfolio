@@ -6790,6 +6790,7 @@ body {
 
 .intro_section {
   /*min-height: 480px;*/
+  height: 100vh;
 /*  background-color: black;*/
 }
 

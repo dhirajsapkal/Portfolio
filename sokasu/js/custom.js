@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   function setBackgroundHeight() {
-   $(".intro_section, #scene").height($(window).height());
+   $("#scene").height($(window).height());
   };
 
   setBackgroundHeight();
