@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p, body{
 }
 
 section{
-  padding: 6.23rem 1em;
+  padding: 6.25rem 1.25em;
 }
 
 #back-top {
@@ -101,18 +101,18 @@ section{
 .hero h1 {
   color: #f8f8f8;
   font-size: 3.75rem;
-  line-height: 5.75rem;
+  line-height: 6.25rem;
   margin-bottom: 2.5rem;
+  margin-top: 0;
   font-weight: 300;
   text-align: center; 
 }
 .hero p {
   color: #f8f8f8;
   font-size: 2.5rem;
-  line-height: 2.62rem;
+  line-height: 2.5rem;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 2rem; 
 }
 
 .intro-section{
@@ -123,20 +123,21 @@ section{
 
 .intro-section p{
   font-size: 1.25rem;
-  line-height: 2.625625rem;
+  line-height: 2.5rem;
   margin-bottom: 6.25rem;
 }
 
 .intro-section h2{
   font-weight: 300;
-  font-size: 2.6875rem;
+  font-size: 2.5rem;
+  margin-bottom: 0;
   font-style: italic;
   text-align: center;
   margin-top: 4.375rem;
 }
 
 .quote{
-  height: 5.625rem;
+  height: 5rem;
   position: relative;
   left: 50%;
   -webkit-transform : translateX(-50%);
@@ -154,7 +155,7 @@ section{
 
 .title{
   font-weight: 300;
-  font-size: 2.6875rem;
+  font-size: 2.5rem;
   color: #f8f8f8;
   text-align: center;
   margin: 0;
@@ -164,8 +165,8 @@ section{
   color: #f8f8f8;
   font-weight: 300;
   font-size: 1.25rem;
-  margin-top: 5.625rem;
-  line-height: 2.625rem;
+  margin-top: 5rem;
+  line-height: 2.5rem;
   margin-bottom: 0px;
 
 }
@@ -185,19 +186,19 @@ section{
 }
 
 .about-us h3{
-  font-size: 1.5625rem;
+  font-size: 1.875rem;
   color: #f8f8f8;
-  line-height: 2.625rem;
+  line-height: 2.5rem;
   font-weight: 400;
-  text-align: center;
-  margin: 8.75rem 0 4rem 0;
+  /*text-align: center;*/
+  margin: 8.75rem 0 3.75rem 0;
 }
 
 .round-thin{
   border: 0.1875rem solid rgb(224, 134, 38);
   background-color: transparent;
   color: rgb(224, 134, 38);
-  font-size: 1rem;
+  font-size: 0.9375rem;
   padding: 1.25rem 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
@@ -212,6 +213,10 @@ section{
 .round-thin:hover, .round-thin:active, .round-thin:focus{
   background-color: rgb(224, 134, 38);
   color: #f8f8f8;
+}
+
+.contact{
+  background-color: #0c0c0c;
 }
 
 
