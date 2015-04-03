@@ -7,7 +7,7 @@ $(window).load(function() {
 
 $(document).ready(function() {
   $('#scene').parallax();
-  $(window).on("resize", function(){
+  $(window).on("load", function(){
      setBackgroundHeight();
   });
 
