@@ -28,11 +28,7 @@
     <div class="row intro">
       <div class="small-centered medium-centered medium-12 columns">
         <h1>Community Welfare</h1>
-        <!-- <p>Begins with you!</p> -->
-        <label>Input Label
-          <input type="text" placeholder="large-12.columns" />
-        </label>
-        input
+        <p>Begins with you!</p>
       </div>
     </div>
   </section>
@@ -100,32 +96,31 @@
   </script>
 
   <script>
-$(document).ready(function(){
+    $(document).ready(function(){
 
-  // hide #back-top first
-  $("#back-top").hide();
+    // hide #back-top first
+    $("#back-top").hide();
 
-  // fade in #back-top
-  $(function () {
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > 100) {
-        $('#back-top').fadeIn();
-      } else {
-        $('#back-top').fadeOut();
-      }
-    });
+    // fade in #back-top
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+          $('#back-top').fadeIn();
+        } else {
+          $('#back-top').fadeOut();
+        }
+      });
 
-    // scroll body to 0px on click
-    $('#back-top .fi-arrow-up').click(function () {
-      $('body,html').animate({
-        scrollTop: 0
-      }, 800);
-      return false;
+      // scroll body to 0px on click
+      $('#back-top .fi-arrow-up').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
     });
   });
-
-});
-</script>
+  </script>
 <!--<script src="js/delete/baseliner.js"></script>
 <script>
   window.onload = function() {
