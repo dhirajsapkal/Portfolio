@@ -74,7 +74,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 }
 
 .section-padding{
-  padding: 5rem 1rem;
+  padding: 5rem 0rem;
 }
 
 h2{
@@ -402,13 +402,13 @@ p{
 
 /*--------------------------------------swiper------------------------------------*/
 .swiper-container {
-    width: 260px;
-    height: 420px;
+    width: 230px;
+    height: 380px;
 }  
 
 .marvel-device.nexus5{
-    width: 290px;
-    height: 520px;
+    width: 260px;
+    height: 472px;
 } 
 
 
@@ -416,6 +416,115 @@ p{
 
 .hero{
   height: 100vh;
+}
+
+.my-position{
+  /*border: 1px solid rgba(0, 0, 0, 0.14);*/
+  padding: 20px;
+  /*background-color: #ffc500;*/
+  background-color: #ffc500;
+}
+
+.register-position{
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.btn-social {
+  color: white !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+/*  margin: 35px 8px;
+  padding: 14px 20px 12px 60px;*/
+  padding: 15px 20px!important;
+  margin: 30px 0px 0px 0px!important;
+  min-width: 0px!important;
+  width: 100%;
+  height: 60px!important;
+  font-size: 14px;
+  line-height: 17px!important;
+  border-radius: 0;
+}
+
+.icon-facebook{
+  background-color: #30487b!important;
+}
+
+.icon-twitter{
+  background-color: #2a83c8!important;
+}
+
+.icon-email{
+  background-color: #444!important;
+}
+
+.icon-facebook:before {
+  content: "Share";
+  background-color: #30487b !important;
+  font-family: 'Lato';
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.icon-twitter:before {
+  content: "Tweet";
+  /*background-color: #30487b !important;*/
+  font-family: 'Lato';
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.icon-email:before {
+  content: "Mail";
+  /*background-color: #30487b !important;*/
+  font-family: 'Lato';
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.copy-link{
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  padding: 25px;
+  background-color: transparent;
+  outline: none;
+  margin-top: 30px;
+  height: 70px;
+  font-size: 15px!important;
+  color: #2a83c8!important;
+  width: 100%;
+  padding: 15px 20px!important;
+  margin: 30px 0px 0px 0px!important;
+  min-width: 0px!important;
+  width: 100%;
+  border-radius: 0;
+}
+
+.copy-link:hover{
+  background-color: #000000;
+  color: rgb(255, 255, 255)!important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.copy-link:focus, .copy-link:active{
+  outline: none;
+}
+
+.copy-link:hover span{
+  display: none;
+}
+
+.copy-link:hover:before{
+  content: "Copy to clipboard";
 }
 
 
