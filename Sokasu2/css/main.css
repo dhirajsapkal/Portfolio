@@ -309,6 +309,7 @@ p{
   background-size: cover;
   background-attachment: fixed;*/
   background: url(../img/lowerbg.jpg) top center fixed no-repeat;
+  height: 100%;
 }
 
 .subscribe-container{
