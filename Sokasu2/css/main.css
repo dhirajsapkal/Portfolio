@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, p, body{
   font-family: 'Lato', sans-serif;
 }
 
-html, body{
+body, html{
   height: 100%;
 }
 
@@ -308,7 +308,6 @@ p{
   background-image: url('../img/lowerbg.jpg'); 
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100%;
 }
 
 .subscribe-container{
@@ -616,6 +615,10 @@ p{
 
   .btn-social {
     margin: 0 0 1.25rem 0;
+  }
+
+  .subscribe{
+    background-attachment: scroll;
   }
 
 } /* min-width 641px, medium screens */
