@@ -569,8 +569,11 @@ p{
    ========================================================================== */
 
 @media only screen and (max-width: 34.125em) {
-  .title:before{
+/*  .title:before{
     top:8.875rem;
+  }*/
+  html{
+    font-size: 0.8em;
   }
 }
 
