@@ -305,11 +305,9 @@ p{
 /*--------------------------------------Subscribe----------------------------------*/
 
 .subscribe{
-/*  background-image: url('../img/lowerbg.jpg'); 
+  background-image: url('../img/lowerbg.jpg'); 
   background-size: cover;
-  background-attachment: fixed;*/
-  background: url(../img/lowerbg.jpg) top center fixed no-repeat;
-  height: 100%;
+  background-attachment: fixed;
 }
 
 .subscribe-container{
@@ -571,6 +569,37 @@ p{
   font-family: 'Lato';
 }
 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/Preloader.gif) center no-repeat #fff;
+}
+
+.existing_user{
+  font-size: 0.9rem;
+  background-color: rgb(24, 24, 24);
+  color: #f8f8f8;
+  border-radius: 0px;
+  padding: 0.2 0.625rem;
+  width: auto;
+  text-align: center;
+  /*width: 90%;*/
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
 
 
 /* ==========================================================================
@@ -583,6 +612,10 @@ p{
   }
   html{
     font-size: 0.9em;
+  }
+
+  .subscribe{
+    background-attachment: scroll;
   }
 }
 
@@ -619,9 +652,9 @@ p{
     margin: 0 0 1.25rem 0;
   }
 
-  /*.subscribe{
+  .subscribe{
     background-attachment: scroll;
-  }*/
+  }
 
 } /* min-width 641px, medium screens */
 

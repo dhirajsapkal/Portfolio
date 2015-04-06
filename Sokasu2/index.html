@@ -39,6 +39,8 @@
   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  <div class="se-pre-con"></div>
+
   <section class="main-banner">
     <ul id="scene" data-friction-x="0.03" data-friction-y="0.03">
       <li class="layer dot-container" data-depth="0">
@@ -57,7 +59,7 @@
         <div class="button-strip">
           <input class="btn btn-6 btn-6a primary" type="email" placeholder="Email address" required="">
           <button class="btn-6 btn-6a submit">Sign me up for beta</button>
-          <!-- <p>Already registered? Enter your email ID to know your position</p> -->
+          <p class="existing_user">Already registered? Enter your email ID to know your position</p>
         </div>
       </li>
     </ul>
@@ -100,12 +102,12 @@
         <div class="medium-6 large-4 large-push-4 columns">
           <ul class="features-left wow fadeInUp">
             <li>
-              <h3>Topic trends</h3>
-              <p>Get the latest social trends on your favorite topics.</p>
+              <h3>From friends</h3>
+              <p>See what your friends and family are saying on the latest events.</p>
             </li>
             <li>
-              <h3>Cream of the content</h3>
-              <p>Get the best content from multiple social networks in one place.</p>
+              <h3>Realtime chatter</h3>
+              <p>See the latest tweets, posts and updates on trends in your chosen topic.</p>
             </li>
           </ul>
         </div>
@@ -156,30 +158,28 @@
     </div>
   </section> -->
 
-  <section class="section-padding" style="background: url(img/lowerbg.jpg) top center fixed no-repeat; min-height:100%;" id="confirm">
-    <div style="min-height: 100%;">
-      <div class="row">
-        <div class="large-6 small-10 large-offset-3 small-offset-1">
-          <div class="subscribe-container">
-            <h2>Thank you for signing up</h2>
-            <p>We have sent you an email to confirm your registration, follow the instructions in the mail to confirm your slot on the Sokasu waitlist</p>
-            <!-- <p class="my-position">You are the <span class="register-position">456<sup>th</sup></span> person in line.</p> -->
-            <p>in the meanwhile share the sokasu love with your friends.</p>
-            <div class="row">
-              <div class="small-12 medium-4 columns">
-                <a class="btn-social btn btn-5 btn-5b btn-facebook icon-facebook"><span><i class="fa fa-facebook fa-2x"></i></span></a>
-              </div>
-              <div class="small-12 medium-4 columns">
-                <a class="btn-social btn btn-5 btn-5b btn-twitter icon-twitter"><span><i class="fa fa-twitter fa-2x"></i></span></a>
-              </div>
-              <div class="small-12 medium-4 columns">
-                <a class="btn-social  btn btn-5 btn-5b btn-email btn-email icon-email"><span><i class="fa fa-envelope fa-2x"></i></span></a>
-              </div>
+  <section class="subscribe section-padding" id="confirm">
+    <div class="row">
+      <div class="large-6 small-10 large-offset-3 small-offset-1">
+        <div class="subscribe-container">
+          <h2>Thank you for signing up</h2>
+          <p>We have sent you an email to confirm your registration, follow the instructions in the mail to confirm your slot on the Sokasu waitlist</p>
+          <!-- <p class="my-position">You are the <span class="register-position">456<sup>th</sup></span> person in line.</p> -->
+          <p>in the meanwhile share the sokasu love with your friends.</p>
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <a class="btn-social btn btn-5 btn-5b btn-facebook icon-facebook"><span><i class="fa fa-facebook fa-2x"></i></span></a>
             </div>
-  <!--           <p style="text-align:center">Or<br>Share this link however you like..</p>
-            <button class="btn btn-6 btn-6a copy-link"><span>http://sokasudabombz.sharethisbro.12345678</span></button> -->
-            </p>
+            <div class="small-12 medium-4 columns">
+              <a class="btn-social btn btn-5 btn-5b btn-twitter icon-twitter"><span><i class="fa fa-twitter fa-2x"></i></span></a>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <a class="btn-social  btn btn-5 btn-5b btn-email btn-email icon-email"><span><i class="fa fa-envelope fa-2x"></i></span></a>
+            </div>
           </div>
+<!--           <p style="text-align:center">Or<br>Share this link however you like..</p>
+          <button class="btn btn-6 btn-6a copy-link"><span>http://sokasudabombz.sharethisbro.12345678</span></button> -->
+          </p>
         </div>
       </div>
     </div>
@@ -215,9 +215,6 @@
   </script>
   <script src="js/vendor/fastclick.js"></script>
   <script src="js/vendor/wow.min.js"></script>
-  <script>
-   new WOW().init();
-  </script>
   <script src="js/vendor/jquery.parallax.min.js"></script>
   <script src="js/vendor/classie.js"></script>
   <script src="js/main.js"></script>
