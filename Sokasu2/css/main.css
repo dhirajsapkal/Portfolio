@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6, p, body{
   font-family: 'Lato', sans-serif;
 }
 
+html, body{
+  height: 100%;
+}
+
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea{
   /*border: none;*/
   border-radius: 0;
@@ -304,6 +308,7 @@ p{
   background-image: url('../img/lowerbg.jpg'); 
   background-size: cover;
   background-attachment: fixed;
+  min-height: 100%;
 }
 
 .subscribe-container{
@@ -576,7 +581,7 @@ p{
     top:8.875rem;
   }
   html{
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 }
 
