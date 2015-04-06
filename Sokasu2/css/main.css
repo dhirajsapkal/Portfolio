@@ -305,9 +305,10 @@ p{
 /*--------------------------------------Subscribe----------------------------------*/
 
 .subscribe{
-  background-image: url('../img/lowerbg.jpg'); 
+/*  background-image: url('../img/lowerbg.jpg'); 
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+  background: url(../img/lowerbg.jpg) top center fixed no-repeat;
 }
 
 .subscribe-container{
@@ -617,9 +618,9 @@ p{
     margin: 0 0 1.25rem 0;
   }
 
-  .subscribe{
+  /*.subscribe{
     background-attachment: scroll;
-  }
+  }*/
 
 } /* min-width 641px, medium screens */
 
