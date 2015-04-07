@@ -59,6 +59,10 @@ h1, h2, h3, h4, h5, h6, p, body{
   font-family: 'Lato', sans-serif;
 }
 
+body, html{
+  height: 100%;
+}
+
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea{
   /*border: none;*/
   border-radius: 0;
@@ -565,6 +569,37 @@ p{
   font-family: 'Lato';
 }
 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(../img/Preloader.gif) center no-repeat #fff;
+}
+
+.existing_user{
+  font-size: 0.9rem;
+  background-color: rgb(24, 24, 24);
+  color: #f8f8f8;
+  border-radius: 0px;
+  padding: 0.2 0.625rem;
+  width: auto;
+  text-align: center;
+  /*width: 90%;*/
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+
 
 
 /* ==========================================================================
@@ -576,7 +611,11 @@ p{
     top:8.875rem;
   }
   html{
-    font-size: 0.8em;
+    font-size: 0.9em;
+  }
+
+  .subscribe{
+    background-attachment: scroll;
   }
 }
 
@@ -611,6 +650,10 @@ p{
 
   .btn-social {
     margin: 0 0 1.25rem 0;
+  }
+
+  .subscribe{
+    background-attachment: scroll;
   }
 
 } /* min-width 641px, medium screens */
