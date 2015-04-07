@@ -9,5 +9,13 @@ $(document).ready(function() {
   };
 
   setBackgroundHeight();
+
+  $("#topsubmit").click(function() {
+    var offset = 20; //Offset of 20px
+
+    $('html, body').animate({
+        scrollTop: $("#confirm").offset().top + offset
+    }, 800);
+	});
     
 });
