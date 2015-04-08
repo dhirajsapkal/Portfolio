@@ -497,6 +497,36 @@ p{
   background-color: #444!important;
 }
 
+.icon-home{
+  background-color: #ffc500!important;
+  color: #444;
+}
+
+.icon-blog{
+  background-color: #444!important;
+  margin-bottom: 2rem;
+}
+
+.icon-home:before {
+  content: "sokasu.com";
+  background-color: #ffc500 !important;
+  font-family: 'Lato';
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 3.75rem;
+}
+
+.icon-blog:before {
+  content: "Sokasu Blog";
+  background-color: #444 !important;
+  font-family: 'Lato';
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 3.75rem;
+}
+
 .icon-facebook:before {
   content: "Share";
   background-color: #30487b !important;
@@ -527,46 +557,20 @@ p{
   line-height: 3.75rem;
 }
 
-.copy-link{
-  border: 1px solid rgba(0, 0, 0, 0.14);
-  padding: 1.5625rem;
-  background-color: transparent;
-  outline: none;
-  /*margin-top: 30px;*/
-  height: 4.375rem;
-  font-size: 0.9375rem!important;
-  color: #2a83c8!important;
-  width: 100%;
-  padding: 0.9375rem 20px!important;
-  margin: 0px 0px 0px 0px!important;
-  min-width: 0px!important;
-  width: 100%;
-  border-radius: 0;
-  white-space: nowrap;
-  overflow:hidden !important;
-  text-overflow: ellipsis;
-}
+.share-link{
+  font-size: 1.25rem;
+  -ms-word-break: break-all;
 
-.copy-link:hover{
-  background-color: #000000;
-  color: rgb(255, 255, 255)!important;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-}
+     /* Be VERY careful with this, breaks normal words wh_erever */
+     word-break: break-all;
 
-.copy-link:focus, .copy-link:active{
-  outline: none;
-}
+     /* Non standard for webkit */
+     word-break: break-word;
 
-.copy-link:hover span{
-  display: none;
-}
-
-.copy-link:hover:before{
-  content: "Copy to clipboard";
-  font-family: 'Lato';
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+        word-wrap: break-word;
 }
 
 .no-js #loader { display: none;  }
