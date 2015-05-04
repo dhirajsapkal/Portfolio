@@ -59,7 +59,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#my-work h1, #about-me h1, #contact-me h1{
+#work h1, #about-me h1, #contact-me h1{
   font-weight: 700;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -98,8 +98,8 @@ textarea {
 }
 
 #home-banner, #greeting-message{
-  -webkit-transition-duration: 1s;
-  -webkit-transition-delay: 0s;
+/*  -webkit-transition-duration: 1s;
+  -webkit-transition-delay: 0s;*/
 }
 
 /*#home-banner{
@@ -124,7 +124,7 @@ textarea {
 }
 
 #landing-page{
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
 }
 
@@ -211,7 +211,7 @@ textarea {
 
 /*-------------------------------------projects section-----------------------------------------*/
 
-#my-work{
+#work{
   text-align: center;
   position: relative;
   width: 100%;
@@ -223,7 +223,7 @@ textarea {
 }
 
 
-#my-work h3{
+#work h3{
   font-size: 1.125rem;
   font-weight: 400;
   margin: 4.125rem 0 0 0;
@@ -251,18 +251,18 @@ textarea {
   background-size: 150%;
   background-position: center;
   margin-top: 2.375rem;
-  -webkit-filter: grayscale(1);
+/*  -webkit-filter: grayscale(1);
   -moz-filter: grayscale(1);
   -ms-filter: grayscale(1);
   -o-filter: grayscale(1);
-  filter: grayscale(1);
+  filter: grayscale(1);*/
   background-position: center;
   background-repeat:  no-repeat;  
 
 }
 
 .project-box-out:hover{
- -webkit-filter: grayscale(0);
+/* -webkit-filter: grayscale(0);
   -moz-filter: grayscale(0);
   -ms-filter: grayscale(0);
   -o-filter: grayscale(0);
@@ -276,8 +276,8 @@ textarea {
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-size: 108%;
+  transition: all 0.5s ease;*/
+  /*background-size: 108%;*/
 }
 
 .project-1{
