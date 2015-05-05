@@ -530,7 +530,7 @@ body{
 @media only screen and (max-width: 40.063em) {
   
   html{
-    font-size: 0.685rem;
+    font-size: 0.885rem;
   }
 
   .btn-secondary{
@@ -542,7 +542,7 @@ body{
   }
 
   .section-padding{
-    padding-top: 2rem;
+    padding-top: 5rem;
   }
 }
 
