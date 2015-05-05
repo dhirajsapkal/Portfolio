@@ -59,7 +59,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#work h1, #about-me h1, #contact-me h1{
+#work h1, #about-me h1, #contact-me h1, #about-me h1{
   font-weight: 700;
   font-size: 1.125rem;
   text-transform: uppercase;
@@ -76,14 +76,16 @@ textarea {
   background-color: rgb(157, 17, 36);
   position: relative;
   overflow: hidden;
+  transform-origin: left bottom;
 }
 
 .landing-background:before
 {
   content: "";
   position: absolute;
-  width: 150%;
-  height: 150%;
+  width: 180%;
+  height: 180%;
+  background-position: bottom bottom;
   top: -50%;
   left: -50%;
   z-index: -1;
@@ -103,7 +105,7 @@ textarea {
 }
 
 /*#home-banner{
-  -webkit-transition-timing-function: cubic-bezier(0.605, 0.020, 1.000, 0.480); 
+  -webkit-transition-timing-function: cubic-bezier(0, 1.8, 1, 1.8); 
 }*/
 
 #greeting-message{
@@ -126,13 +128,14 @@ textarea {
 #landing-page{
   /*position: fixed;*/
   width: 100%;
+  overflow: hidden;
 }
 
 #section-2{
   position: fixed;
   width: 100%;
   transform: translateX(-100%);
-  -webkit-transition-duration: 1s;
+  -webkit-transition-duration: 0.2s;
   -webkit-transition-delay: 0s;
 }
 
@@ -157,6 +160,20 @@ textarea {
 
 }
 
+.btn-seeall{
+  background-color: #9d1124;
+  height: 2.625rem;
+  padding: 0 1.75rem;
+  -webkit-transition-delay: 0s;
+  width: 100%;
+  color: #f4f4f4;
+}
+
+.btn-seeall:hover, .btn-seeall:active, .btn-seeall:focus, .btn-chomu:hover, .btn-chomu:active, .btn-chomu:focus{
+    background-color: #DA122C!important;
+  }
+
+
 .btn-general:active{
   transform: translateY(3px)!important;
   }
@@ -179,11 +196,11 @@ textarea {
   text-transform: uppercase;
   font-size: 0.75rem;
   font-weight: 800;
-  background-color: #bda690;
+  background-color: #9d1124;
   /*margin: 1.625rem 0 0 0;*/
 }
 
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-chomu:hover, .btn-chomu:active, .btn-chomu:focus{
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
   background-color: #9d1124!important;
 }
 
@@ -225,8 +242,8 @@ textarea {
 
 #work h3{
   font-size: 1.125rem;
-  font-weight: 400;
-  margin: 4.125rem 0 0 0;
+  font-weight: 300;
+  margin: 4.125rem 0 4.375rem 0;
 }
 
 .underline-center:before{
@@ -258,6 +275,16 @@ textarea {
   filter: grayscale(1);*/
   background-position: center;
   background-repeat:  no-repeat;  
+  -webkit-transition: background-position 0s linear;
+  -moz-transition: background-position 0s linear;
+  -ms-transition: background-position 0s linear;
+  -o-transition: background-position 0s linear;
+  transition: background-position 0s linear;
+  -webkit-transition: filter 0s linear;
+  -moz-transition: filter 0s linear;
+  -ms-transition: filter 0s linear;
+  -o-transition: filter 0s linear;
+  transition: filter 0s linear;
 
 }
 
@@ -266,26 +293,24 @@ textarea {
   -moz-filter: grayscale(0);
   -ms-filter: grayscale(0);
   -o-filter: grayscale(0);
-  filter: grayscale(0);
-  -webkit-transition: background-position 0.15s ease;
-  -moz-transition: background-position 0.15s ease;
-  -ms-transition: background-position 0.15s ease;
-  -o-transition: background-position 0.15s ease;
-  transition: background-position 0.15s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;*/
+  filter: grayscale(0);*/
   /*background-size: 108%;*/
 }
 
 .project-1{
-  background-image: url(../img/project1-bg.jpg);
+  background-image: url(../img/1.jpg);
 }
 
 .project-2{
-  background-image: url(../img/bncf-bg.jpg);
+  background-image: url(../img/2.jpg);
+}
+
+.project-3{
+  background-image: url(../img/3.jpg);
+}
+
+.project-4{
+  background-image: url(../img/4.jpg);
 }
 
 .project-box-in{
@@ -303,10 +328,27 @@ textarea {
   border-bottom: 1px solid #d7d7d7;
   padding-bottom: 1rem;
   margin: 0;
+  color: #9d1124;
 }
 
 .project-box-in p{
   margin-top: 1.5rem;
+  font-weight: 300;
+}
+
+/*-------------------------- about me ----------------------*/
+
+#about-me{
+  background-color: #f2ebe4;
+  text-align: center;
+}
+
+#about-me p{
+  text-align: justify;
+}
+
+.skills {
+  margin-top: 3.75rem;
 }
 
 
@@ -488,7 +530,7 @@ body{
 @media only screen and (max-width: 40.063em) {
   
   html{
-    font-size: 0.875rem;
+    font-size: 0.685rem;
   }
 
   .btn-secondary{
@@ -496,7 +538,7 @@ body{
   }
 
   .right-half {
-    padding: 6.875rem 0;
+    padding: 2rem 0;
   }
 
   .section-padding{

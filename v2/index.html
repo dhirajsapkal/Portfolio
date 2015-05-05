@@ -23,11 +23,13 @@
     <![endif]-->
     <div id="skrollr-body">
       
-      <section id="landing-page" class="pattern">
+      <section id="landing-page" class="pattern" data-start="background-color: #f4f4f4;"
+                                                 data-400-start="background-color: #1e1e1e;" style="transition: background-color 0.2s ease">
         <div class="row collapse" style="max-width: 100%;">
           <div class="medium-6 small-2 columns">
-            <div class="landing-background" id="home-banner" data-top="transform:translateX(0%); transform:translateY(0%); opacity: 1"
-                                                             data-top-bottom="transform:translateX(-100%); transform:translateY(-100%); opacity: 0">
+            <div class="landing-background" id="home-banner" data-top="width: 100%; opacity: 1; transform: rotate(0deg); border-radius: 0px"
+                                                             data-top-bottom="width: 30px; opacity: 0; transform: rotate(-90deg); border-radius: 500px;">
+
             </div>
           </div>
           <div class="medium-6 small-10 columns">
@@ -35,7 +37,7 @@
               <div class="row">
                 <div class="medium-10 large-8 small-10 medium-offset-1 large-offset-2 small-offset-1 columns"> 
                   <p id="greeting-message" data-top="transform:translateX(0%); opacity: 1;"
-                                           data-top-bottom="transform:translateX(100%); opacity: 0;">Hello there!<br>
+                                           data-top-bottom="transform:translateX(20%); opacity: 0;">Hello there!<br>
                     I’m <span>Dhiraj</span><br>
                     I’m a <span>UX Designer</span><br>
                     and <span>Developer</span><br>
@@ -44,8 +46,8 @@
                   <div class="button-strip">
                     <div class="row collapse">
                       <div class="small-12 medium-6 columns">
-                        <button class="btn-general btn-primary" data-center="opacity: 1;"
-                                                                 data-top="opacity: 0;">See my work</button> 
+                        <a href="#work"><button class="btn-general btn-primary" data-center="opacity: 1;"
+                                                                 data-top="opacity: 0;">See my work</button></a> 
                       </div>
                       <div class="small-12 medium-6 columns">
                         <button class="btn-general btn-secondary" data-center="opacity: 1;"
@@ -62,20 +64,23 @@
 
 
           <!-- =================================== Project section ====================================== -->
-      <section id="work" class="section-padding pattern">
+      <section id="work" class="section-padding pattern" data-start="background-color: #f4f4f4;"
+                                                         data-400-start="background-color: #1e1e1e;" style="transition: background-color 0.2s ease">
         <div class="row">
           <div class="small-12 columns">
             <h1 class="underline-center" data-bottom="transform:translateY(-400%); opacity: 0"
-                                         data-center ="transform:translateY(0); opacity: 1">My work</h1>
+                                         data-center ="transform:translateY(0); opacity: 1"
+                                         data-top-center="color: #f4f4f4;">My work</h1>
             <h3 data-bottom="transform:translateY(-400%); opacity: 0"
-                data-center-bottom="transform:translateY(0); opacity: 1">Take a look at some of my work</h3>
+                data-center-bottom="transform:translateY(0); opacity: 1"
+                data-top-center="color: #f4f4f4;">Take a look at some of my work</h3>
           </div>
         </div>
         <div class="row">
         <!-- ==================================project1======================== -->
           <div class="small-12 columns">
-            <div class="project-box-out project-1" data-bottom-top="background-position: 50% 40%"
-                                                   data-top-bottom="background-position: 50% 60%">
+            <div class="project-box-out project-1" data-bottom-top="background-position: 50% 80%"
+                                                   data-top-bottom="background-position: 50% 30%">
               <div class="row">
                 <div class="small-8 small-offset-2 columns">
                   <div class="project-box-in">
@@ -90,7 +95,9 @@
                         Aenean sollicitudin, lorem quis bibendum auctor.</p>
                         <div class="row">
                           <div class="medium-4 small-12 medium-offset-4 columns">
-                            <button class="btn-chomu btn-general">View more</button>
+                            <button class="btn-chomu btn-general" data-bottom="filter:grayscale(1);"
+                                                                  data-center="filter: grayscale(0)"
+                                                                  data-top: "filter: grayscale(1)">View more</button>
                           </div>
                         </div>                 
                       </div>
@@ -102,8 +109,8 @@
           </div>
           <!-- =======================================project 2========================== -->
           <div class="small-12 columns">
-            <div class="project-box-out project-2" data-bottom-top="background-position: 50% 40%"
-                                                   data-top-bottom="background-position: 50% 60%">
+            <div class="project-box-out project-2" data-bottom-top="background-position: 50% 80%"
+                                                   data-top-bottom="background-position: 50% 30%">
               <div class="row">
                 <div class="small-8 small-offset-2 columns">
                   <div class="project-box-in">
@@ -118,7 +125,9 @@
                         Aenean sollicitudin, lorem quis bibendum auctor.</p>
                         <div class="row">
                           <div class="medium-4 small-12 medium-offset-4 columns">
-                            <button class="btn-chomu btn-general">View more</button>
+                            <button class="btn-chomu btn-general" data-bottom="filter:grayscale(1);"
+                                                                  data-center="filter: grayscale(0)"
+                                                                  data-top: "filter: grayscale(1)">View more</button>
                           </div>
                         </div>                 
                       </div>
@@ -128,9 +137,104 @@
               </div>
             </div>
           </div>
+          <!-- ========================================== project 3 ========================= -->
+          <div class="small-12 columns">
+            <div class="project-box-out project-3" data-bottom-top="background-position: 50% 80%;"
+                                                   data-top-bottom="background-position: 50% 30%">
+              <div class="row">
+                <div class="small-8 small-offset-2 columns">
+                  <div class="project-box-in">
+                    <div class="row">
+                      <div class="small-10 small-offset-1 columns">
+                        <h2>BNCF</h2>
+                      </div>
+                    </div> 
+                    <div class="row">
+                      <div class="small-10 small-offset-1 columns">
+                        <p>Proin gravida nibh vel velit auctor aliquet. 
+                        Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                        <div class="row">
+                          <div class="medium-4 small-12 medium-offset-4 columns">
+                            <button class="btn-chomu btn-general" data-bottom="filter:grayscale(1);"
+                                                                  data-center="filter: grayscale(0)"
+                                                                  data-top: "filter: grayscale(1)">View more</button>
+                          </div>
+                        </div>                 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- =================================== project 4 =====================================-->
+          <div class="small-12 columns">
+            <div class="project-box-out project-4" data-bottom-top="background-position: 50% 80%"
+                                                   data-top-bottom="background-position: 50% 30%">
+              <div class="row">
+                <div class="small-8 small-offset-2 columns">
+                  <div class="project-box-in">
+                    <div class="row">
+                      <div class="small-10 small-offset-1 columns">
+                        <h2>BNCF</h2>
+                      </div>
+                    </div> 
+                    <div class="row">
+                      <div class="small-10 small-offset-1 columns">
+                        <p>Proin gravida nibh vel velit auctor aliquet. 
+                        Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                        <div class="row">
+                          <div class="medium-4 small-12 medium-offset-4 columns">
+                            <button class="btn-chomu btn-general" data-bottom="filter:grayscale(1);"
+                                                                  data-center="filter: grayscale(0)"
+                                                                  data-top: "filter: grayscale(1)">View more</button>
+                          </div>
+                        </div>                 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
           <div class="small-12 medium-4 medium-offset-4 end columns">
-            <button class="btn-primary btn-gener" style="margin-top: 4.375rem;">See all projects</button>
+            <button class="btn-general btn-seeall" style="margin-top: 4.375rem;">See all projects</button>
           </div>         
+        </div>
+      </section>
+
+      <section id="about-me" class=" section-padding">
+        <div class="row">
+          <div class="small-12 columns">
+            <h1 class="underline-center">Dem skillz</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <div class="skills">
+              <h2>Title</h2>
+              <p>Proin gravida nibh vel velit auctor aliquet. 
+              Aenean sollicitudin, lorem quis bibendum auctor.
+              Proin gravida nibh vel velit auctor aliquet. 
+              Aenean sollicitudin, lorem quis bibendum auctor.</p>
+            </div>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <div class="skills">
+              <h2>Title</h2>
+              <p>Proin gravida nibh vel velit auctor aliquet. 
+              Aenean sollicitudin, lorem quis bibendum auctor.</p>
+            </div>
+          </div>
+          <div class="small-12 medium-4 end columns">
+            <div class="skills">
+              <h2>Title</h2>
+              <p>Proin gravida nibh vel velit auctor aliquet. 
+              Aenean sollicitudin, lorem quis bibendum auctor.Proin gravida nibh vel velit auctor aliquet. 
+              Aenean sollicitudin, lorem quis bibendum auctor.Proin gravida nibh vel velit auctor aliquet. 
+              Aenean sollicitudin, lorem quis bibendum auctor.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -142,13 +246,11 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/vendor/smooth-scroll.js"></script>
-    <script>
-      smoothScroll.init();
-    </script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
     <script type="text/javascript">
-      var s = skrollr.init();
+      // var s = skrollr.init();
+         var s = skrollr.init({smoothScroll: true, mobileDeceleration: 0.004, forceHeight: false});
     </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
