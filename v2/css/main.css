@@ -1,5 +1,28 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
+/*------------------delete fonts pls------------------------*/
+
+/*@font-face {
+    font-family: 'Brandon grotesque', sans-serif;
+    font-weight: 700;
+    src: url(../fonts/Brandon_bld.otf);
+}
+
+@font-face {
+    font-family: 'Brandon grotesque', sans-serif;
+    font-weight: 400;
+    src: url(../fonts/Brandon_reg.otf);
+}
+
+@font-face {
+    font-family: 'Brandon grotesque', sans-serif;
+    font-weight: 300;
+    src: url(../fonts/Brandon_light.otf);*/
+}
+
+/*------------------delete above ffonts------------------------*/
+
+
 html {
     color: #222;
     font-size: 1em;
@@ -478,30 +501,6 @@ textarea {
   100% { }
 }
 
-
-
-
-/*------------------delete fonts pls------------------------*/
-
-@font-face {
-    font-family: 'Brandon grotesque', sans-serif;
-    font-weight: 700;
-    src: url(../fonts/Brandon_bld.otf);
-}
-
-@font-face {
-    font-family: 'Brandon grotesque', sans-serif;
-    font-weight: 400;
-    src: url(../fonts/Brandon_reg.otf);
-}
-
-@font-face {
-    font-family: 'Brandon grotesque', sans-serif;
-    font-weight: 300;
-    src: url(../fonts/Brandon_light.otf);
-}
-
-/*------------------delete above ffonts------------------------*/
 
 h1, h2, h3, h4, h5, h6, p, body, button{
   font-family: 'Brandon grotesque';
