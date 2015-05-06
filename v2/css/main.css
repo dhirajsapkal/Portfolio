@@ -543,6 +543,14 @@ body{
   .section-padding{
     padding-top: 5rem;
   }
+
+  .project-box-in {
+    margin-top: 2.125rem;
+  }
+
+  .project-box-out {
+    background-size: 300% auto;
+  }
 }
 
 @media print,
