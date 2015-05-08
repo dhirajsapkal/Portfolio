@@ -144,7 +144,7 @@ textarea {
 
 
 .pattern{
-  background-image: url(../img/marble.png);
+  /*background-image: url(../img/metal.jpg);*/
 
 }
 
@@ -190,6 +190,9 @@ textarea {
   -webkit-transition-delay: 0s;
   width: 100%;
   color: #f4f4f4;
+  -webkit-box-shadow: inset 0px 2px 0px 0px rgba(255,255,255,0.17);
+  -moz-box-shadow: inset 0px 2px 0px 0px rgba(255,255,255,0.17);
+  box-shadow: inset 0px 2px 0px 0px rgba(255,255,255,0.17);
 }
 
 .btn-seeall:hover, .btn-seeall:active, .btn-seeall:focus, .btn-chomu:hover, .btn-chomu:active, .btn-chomu:focus{
@@ -325,15 +328,15 @@ textarea {
 }
 
 .project-2{
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/4.jpg);
 }
 
 .project-3{
-  background-image: url(../img/3.jpg);
+  background-image: url(../img/5.jpg);
 }
 
 .project-4{
-  background-image: url(../img/4.jpg);
+  background-image: url(../img/6.jpg);
 }
 
 .project-box-in{
