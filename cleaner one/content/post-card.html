@@ -1,0 +1,96 @@
+<link rel="import" href="../components/polymer/polymer.html">
+<link rel="import" href="../components/paper-shadow/paper-shadow.html">
+<link rel="import" href="../components/core-icon-button/core-icon-button.html">
+
+<polymer-element name="twitter-card">
+  <template>
+    <style>
+    :host {
+      display: block;
+      position: relative;
+      background-color: white;
+      width: 100%;      
+      font-weight: 300;
+    }
+    .card-content{
+      font-family: 'Alegreya Sans', sans-serif;
+      padding: 10px;  
+    }
+/*    polyfill-next-selector { content: '.card-header h2'; }
+    .card-header ::content h2 {
+      margin-top: 0;
+      margin-bottom:  5px;
+      margin-left: 4px;
+      font-size: 8px;
+      font-weight: 500;
+      color: #3a3a3a;
+    }*/
+/*    polyfill-next-selector { content: '.card-header h2'; }
+    .card-header ::content h3 {
+      margin-top: 0;
+      margin-bottom:  5px;
+      margin-left: 4px;
+      font-size: 8px;
+      font-weight: 500;
+      font-weight: 300;
+      color: #a5a5a5;
+    }
+    polyfill-next-selector { content: '.card-header h2'; }
+    .card-header ::content h4 {
+      margin-top: 0;
+      margin-bottom:  5px;
+      margin-left: 4px;
+      font-size: 8px;
+      font-weight: 500;
+      font-weight: 300;
+      color: #a5a5a5;
+      position: absolute;
+      top: 28px;
+      left: 45px;
+    }*/
+/*    polyfill-next-selector { content: '.card-header img'; }
+    .card-header ::content img {
+      height: 24px;
+      width: 24px; 
+    }*/
+    .tweet-content{
+        margin-top: 10px;
+        margin-bottom:  10px;
+        font-size: 14px;
+        margin-bottom: 0px;
+      }
+    </style>
+    <div vertical layout>
+      <paper-shadow>
+        <div class="card-content">
+          <div class="user-section" horizontal layout>
+            <div><content select="img"></content></div>  
+            <div flex>
+              <div vertical layout>
+                <div>
+                  <div horizontal layout>
+                    <div>
+                      <content select="h2"></content>
+                    </div>
+                    <div> 
+                      <content select="h3"></content>
+                    </div>
+                  </div>
+                </div>
+                <div flex>
+                  <content select="h4"></content>
+                </div>
+              </div>
+            </div>  
+          </div>
+          <div flex class="tweet-content">
+            <content></content>
+          </div>
+        </div>
+      </paper-shadow>
+    </div>
+  </template>
+  <script>
+  Polymer({});
+  </script>
+</polymer-element>

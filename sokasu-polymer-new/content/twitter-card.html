@@ -1,0 +1,84 @@
+
+	<link rel="import" href="../components/polymer/polymer.html">
+  <link rel="import" href="../components/paper-shadow/paper-shadow.html">
+  <link rel="import" href="../components/font-roboto/roboto.html">
+<polymer-element name="twitter-card">
+	<template>
+		<style>
+			:host {
+				display: block;
+	      -webkit-tap-highlight-color: rgba(0,0,0,0);
+	      -webkit-tap-highlight-color: transparent; /* For some Androids */
+	      margin: auto auto 12px auto;
+	      background-color: 	transparent;
+	      height: 100%;
+	      width: 100%;	
+    	}
+
+    	.card-content{
+    		font-family: 'Alegreya Sans', sans-serif;
+    		padding: 10px;	
+    	}
+
+    	img{
+    		height: 24px;
+    		width: 24px; 
+    	}
+    	h2 {
+	      margin-top: 0;
+	      margin-bottom: 	5px;
+	      margin-left: 4px;
+	      font-size: 8px;
+	    	font-weight: 500;
+	    	color: #3a3a3a;
+	    }
+	    h3{
+	    	margin-top: 0;
+	      margin-bottom: 	5px;
+	      margin-left: 4px;
+	      font-size: 8px;
+	    	font-weight: 500;
+	    	font-weight: 300;
+	    	color: #a5a5a5;
+	    }
+
+	    .tweet-content{
+	    	margin-top: 10px;
+	    	margin-bottom: 	10px;
+	    	font-size: 14px;
+	    	margin-bottom: 0px;
+	    }
+  	</style>
+  	<div vertical layout>
+  		<paper-shadow>
+	  		<div class="card-content">
+			  	<div class="user-section" horizontal layout>
+						<div><img src="../images/tushar.jpg"></div>  
+						<div flex>
+							<div vertical layout>
+								<div>
+									<div horizontal layout>
+										<div>
+											<h2>Tushar Bansal</h2>
+										</div>
+										<div> 
+											<h3>@my_oily_tushy</h3>
+										</div>
+									</div>
+								</div>
+								<div>
+									<h2><span>9 minutes ago</span></h2>
+								</div>
+							</div>
+						</div>  
+			  	</div>
+			  	<div flex>
+				  	<p class="tweet-content">What a sad time to be British #CanaryWarf
+						sold to Qatar for £2.6 billion and Tesco is at 
+						loss </p>
+			  	</div>
+		  	</div>
+	  	</paper-shadow>
+  	</div>
+	</template>
+</polymer-element>

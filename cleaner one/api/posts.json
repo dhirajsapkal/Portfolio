@@ -1,0 +1,82 @@
+[
+  {
+    "userid" : "@eric_cartman",
+    "timestamp": "9 mins ago",
+    "content": "Bumper to bumper traffic on sclr due to water logging-Traffline app user",
+    "uid": 1,
+    "text" : "Periscope",
+    "username" : "Eric",
+    "avatar" : "../images/avatar-01.svg",
+    "favorite": false
+  },
+  {
+    "userid" : "@rob_notastark",
+    "timestamp": "15 mins ago",
+    "content": "Water logging at shyam nagar #MumbaiRains #MumbaiMonsoon @TrafflineMUM @smart_mumbaikar",
+    "uid": 2,
+    "text" : "Zomato Meetup",
+    "username" : "Rob",
+    "avatar" : "../images/avatar-02.svg",
+    "favorite": false
+  },
+    {
+    "userid" : "@idontlikevodka",
+    "timestamp": "2 h ago",
+    "content": "@TrafflineMUM Full water logged Near Gandhi market King circle Do not come this side ",
+    "uid": 3,
+    "text" : "PMOT",
+    "username" : "Dimitri",
+    "avatar" : "../images/avatar-03.svg",
+    "favorite": false
+  },
+  {
+    "userid" : "@Adaboi",
+    "timestamp": "5 h ago",
+    "content": "Colaba is doing jussssst fine :)",
+    "uid": 4,
+    "text" : "whizzaround",
+    "username" : "Ada",
+    "avatar" : "../images/avatar-07.svg",
+    "favorite": false
+  },
+  {
+    "userid" : "@gracekelly",
+    "timestamp": "12 h ago",
+    "content": "Are you listening on #socialmedia? Take a look at this interesting article on the importance of #sociallistening - http://t.co/CfEUAEeRND",
+    "uid": 5,
+    "text" : "Podcast",
+    "username" : "Grace",
+    "avatar" : "../images/avatar-08.svg",
+    "favorite": false
+  },
+  {
+    "userid" : "@johnsnow",
+    "timestamp": "1 d ago",
+    "content": "Are you listening on #socialmedia? Take a look at this interesting article on the importance of #sociallistening - http://t.co/CfEUAEeRND",
+    "uid": 6,
+    "text" : "COL",
+    "username" : "John",
+    "avatar" : "../images/avatar-04.svg",
+    "favorite": false
+  },
+  {
+    "userid" : "@the_legend_of",
+    "timestamp": "1 d ago",
+    "content": "Are you listening on #socialmedia? Take a look at this interesting article on the importance of #sociallistening - http://t.co/CfEUAEeRND",
+    "uid": 7,
+    "text" : "Golf",
+    "username" : "Zelda",
+    "avatar" : "../images/avatar-06.svg",
+    "favorite": false
+  },
+  {
+    "userid" : "@my_name_is_so_boring",
+    "timestamp": "3 d ago",
+    "content": "Are you listening on #socialmedia? Take a look at this interesting article on the importance of #sociallistening - http://t.co/CfEUAEeRND",
+    "uid": 8,
+    "text" : "LP",
+    "username" : "Norbert",
+    "avatar" : "../images/avatar-05.svg",
+    "favorite": false
+  }
+]

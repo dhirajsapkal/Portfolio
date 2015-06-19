@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <title>unquote</title>
+
+  <meta name="viewport" 
+  content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+  <script src="../components/webcomponentsjs/webcomponents.js">
+  </script>
+
+  <link rel="import" href="../components/font-roboto/roboto.html">
+  <link rel="import"
+    href="../components/core-scroll-header-panel/core-scroll-header-panel.html">
+  <link rel="import"
+    href="../components/core-toolbar/core-toolbar.html">
+  <link rel="import"
+    href="../components/paper-tabs/paper-tabs.html">
+  <link rel="import" href="../components/core-scroll-header-panel/core-scroll-header-panel.html">
+  <link rel="import" href="../components/core-toolbar/core-toolbar.html">
+  <link rel="import" href="../components/core-icon-button/core-icon-button.html">
+  <link rel="import" href="post-list.html">
+  <style>
+  html,body {
+    height: 100%;
+    margin: 0;
+    background-color: #E5E5E5;
+    font-family: 'RobotoDraft', sans-serif;
+  }
+  core-header-panel {
+    height: 100%;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; 
+  }
+  core-toolbar {
+    background: #ffc500;
+    color: #000000;
+    height: 64px;
+  }
+  #tabs {
+    width: 100%;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  color: white;
+  }
+  .container {
+    width: 95%;
+    margin: 50px auto;
+  }
+/*  @media (min-width: 481px) {
+    #tabs {
+      width: 200px;
+    }
+    .container {
+      width: 400px;
+    }
+  }*/
+  </style>
+
+</head>
+
+<body unresolved>
+
+  <core-scroll-header-panel scrollAwayTopbar="true">
+
+    <core-toolbar>
+
+      <!-- <paper-tabs id="tabs" selected="all" self-end>
+        <paper-tab name="all">All</paper-tab>
+        <paper-tab name="favorites">Favorites</paper-tab>
+      </paper-tabs> -->
+      <div vertical layout flex>
+        <div horizontal layout>
+          <div flex style="padding-top: 10px; color:white">Sokasu</div>
+          <core-icon-button icon="search" on-tap="{{search}}" end-justified><paper-ripple></paper-ripple></core-icon-button>
+          <core-icon-button icon="more-vert" on-tap="{{moreAction}}" end-justified><paper-ripple></paper-ripple></core-icon-button>
+        </div>
+
+        <div>
+          <paper-tabs id="ctabs" selected="{{selected}}" scrollable="true" hideScrollButton="true" self-end>
+            <paper-tab id="global" noink>Global</paper-tab>
+            <paper-tab id="business" noink>Business</paper-tab>
+            <paper-tab id="sports" noink>Technology</paper-tab>
+            <paper-tab id="movies" noink>Science</paper-tab>
+            <paper-tab id="4" noink>Photography</paper-tab>
+            <paper-tab id="5" noink>Design</paper-tab>
+            <paper-tab id="7" noink>Gaming</paper-tab>
+            <paper-tab id="8" noink>Politics</paper-tab>
+            <paper-tab id="9" noink>Food</paper-tab>
+            <paper-tab id="10" noink>Health</paper-tab>
+            <paper-tab id="11" noink>Books</paper-tab>
+            <paper-tab id="12" noink>Fashion</paper-tab>
+            <paper-tab id="13" noink>Art</paper-tab>
+            <paper-tab id="14" noink>Finance</paper-tab>
+            <paper-tab id="15" noink>Movies</paper-tab>
+            <paper-tab id="16" noink>Humor</paper-tab>
+          </paper-tabs>
+        </div>
+      </div>
+    </core-toolbar>
+
+    <div class="container" layout vertical center>
+      <post-list show="all"></post-list>
+    </div>
+  </core-scroll-header-panel>
+  
+  <script>
+    var tabs = document.querySelector('paper-tabs');
+    tabs.addEventListener('core-select', function() {
+      console.log("Selected: " + tabs.selected);
+    });
+  </script>
+</body>
+
+</html>
