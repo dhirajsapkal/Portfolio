@@ -1,5 +1,6 @@
 <link rel="import" href="../components/polymer/polymer.html">
 <link rel="import" href="../post-service/post-service.html">
+<link rel="import" href="../components/fontawesome-iconset/fa-icons.html">
 <link rel="import" href="post-card.html">
 
 <polymer-element name="post-list" attributes="show">
@@ -47,19 +48,26 @@
     }
     p{
       margin-top: 10px;
-      margin-bottom:  10px;
+      margin-bottom: 10px;
       font-size: 22px;
-      margin-bottom: 0px;
       white-space: pre-wrap; /* css-3 */    
       white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
       white-space: -pre-wrap; /* Opera 4-6 */    
       white-space: -o-pre-wrap; /* Opera 7 */    
       word-wrap: break-word; /* Internet Explorer 5.5+ */
     }
+
+/*    core-icon[icon="fa:retweet"], core-icon[icon="fa:reply"], core-icon[icon="fa:star"] {
+      color: #929293;
+    }*/
     </style>
 
     <post-service id="service" posts="{{posts}}">
     </post-service>
+
+    <core-iconset-svg id="custom-icons">
+      <svg id="star" src="../images/reply.png"></svg>
+    </core-iconset-svg>
     
     <div layout vertical center>
 
@@ -71,6 +79,18 @@
           <h3>{{post.userid}}</h3>
           <h4>{{post.timestamp}}</h4>
           <p>{{post.content}}</p>
+          <div horizontal layout>
+            <div flex>
+              <div>
+                <core-icon class="icon-small" src="../images/twitter.svg" style="width: 16px; height: 16px; margin-top: 16px;"></core-icon>
+              </div>         
+            </div>
+            <div end-justified>
+              <paper-icon-button icon="fa:retweet" style="color: #929293"></paper-icon-button>
+              <paper-icon-button icon="fa:reply" style="color: #929293"></paper-icon-button>
+              <paper-icon-button icon="fa:star" style="color: #929293"></paper-icon-button>
+            </div>
+          </div>
         </twitter-card>
       </template>
       
