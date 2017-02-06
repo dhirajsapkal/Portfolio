@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="943px" height="527px" viewBox="0 0 943 527" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>wordcloud</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="Timewinder" transform="translate(-250.000000, -2062.000000)" fill="#FFFFFF">
+            <g id="wordcloud" transform="translate(250.000000, 2049.000000)">
+                <text id="Jokes" font-family="AvenirNext-Bold, Avenir Next" font-size="44" font-weight="bold">
+                    <tspan x="675" y="246">Jokes</tspan>
+                </text>
+                <text id="Location" font-family="AvenirNext-Bold, Avenir Next" font-size="44" font-weight="bold">
+                    <tspan x="91" y="173">Location</tspan>
+                </text>
+                <text id="Conversations" font-family="AvenirNext-Regular, Avenir Next" font-size="40" font-weight="normal">
+                    <tspan x="650" y="50">Conversations</tspan>
+                </text>
+                <text id="Fun-Facts" font-family="AvenirNext-Regular, Avenir Next" font-size="40" font-weight="normal">
+                    <tspan x="700" y="539">Fun Facts</tspan>
+                </text>
+                <text id="Old-Friends" font-family="AvenirNext-Regular, Avenir Next" font-size="50" font-weight="normal">
+                    <tspan x="50" y="410">Old Friends</tspan>
+                </text>
+                <text id="Images" font-family="AvenirNext-Bold, Avenir Next" font-size="54" font-weight="bold">
+                    <tspan x="726" y="340">Images</tspan>
+                </text>
+                <text id="Text-messages" font-family="AvenirNext-Bold, Avenir Next" font-size="34" font-weight="bold">
+                    <tspan x="700" y="462">Text messages</tspan>
+                </text>
+                <text id="Birthdays" font-family="AvenirNext-Bold, Avenir Next" font-size="34" font-weight="bold">
+                    <tspan x="700" y="163">Birthdays</tspan>
+                </text>
+                <text id="Facebook" font-family="AvenirNext-Bold, Avenir Next" font-size="54" font-weight="bold">
+                    <tspan x="1" y="54">Facebook</tspan>
+                </text>
+                <text id="Instagram" font-family="AvenirNext-Bold, Avenir Next" font-size="54" font-weight="bold">
+                    <tspan x="28" y="289">Instagram</tspan>
+                </text>
+                <text id="Twitter" font-family="AvenirNext-Bold, Avenir Next" font-size="50" font-weight="bold">
+                    <tspan x="0" y="511">Twitter</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

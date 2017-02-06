@@ -1,0 +1,103 @@
+.hero-timewinder{
+  background-color: #000;
+  background-image: url(../img/timewinder-phone.png);
+  background-repeat: no-repeat;
+  background-position: 80% 110%;
+  background-size: 30%;
+  background-attachment: fixed;
+}
+
+.timewinder-logo
+{
+	width: 80%;
+	text-align: center;
+}
+
+.full-height-center{
+	height: 100vh;
+	display: flex;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timewinder-phone{
+	width: 80%;
+}
+
+.chat{
+	padding: 30px;
+}
+
+.left-chat{
+	background: #F5F5F5;
+  border-radius: 10px 40px 40px 40px;
+  margin: 30px 0 0 0;
+  padding: 30px 60px 40px 50px;
+  display: inline-block;
+  max-width: 80%;
+}
+
+.left-chat p, .right-chat p{
+	margin-bottom: 0;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.right-chat{
+	background: #ECECFF;
+	border-radius: 40px 10px 40px 40px;
+  margin: 30px 0 0 0;
+  padding: 30px 60px 40px 50px;
+  display: inline-block;
+  max-width: 80%;
+  float: right;
+}
+
+.rich-chat{
+	border-radius: 10px 40px 40px 40px;
+	background-color: $white;
+	padding: 30px;
+	display: flex;
+	margin-top: 20px;
+	// transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.good , .bad{
+	margin-bottom: 8px!important;
+}
+
+.rich-chat:hover{
+	// transform: scale3d(1.1,1.1,1.1);
+}
+
+
+
+.rich-right{
+	flex-grow: 1;
+}
+
+.rich-chat a{
+	color: $purple;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.rich-right span{
+	display: block;
+	font-size: 20px;
+	color: $grey;
+}
+
+.timehop-image{
+	height: 120px;
+	margin-right: 30px;
+}
+
+.good{
+	color: #349F4B;
+}
+
+.bad{
+	color: #BD4E4E;
+}

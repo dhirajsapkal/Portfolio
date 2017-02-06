@@ -1,0 +1,157 @@
+.timewinder-thumb{
+	background-image: url('../img/timewinder/card.jpg');
+	background-position: cover;
+}
+
+
+.hero-timewinder{
+	height: 100vh;
+	background: #F8F8F8;
+}
+
+.timewinder-image{
+	height: 100vh;
+  display: flex;
+}
+
+.timewinder-image img{
+  align-self: flex-end;
+
+}
+
+.timewinder-content h1{
+	font-family: $sourcesans;
+	font-weight: 900;
+	font-size: 65px;
+	color: #2C2C2C;
+	letter-spacing: -2.03px;
+	line-height: 71px;
+}
+
+.timewinder-content p{
+	/* “Your own personal m: */
+	font-family: $sourcesans;
+	font-weight: 300;
+	font-style: italic;
+	font-size: 24px;
+	color: #2C2C2C;
+	letter-spacing: -0.4px;
+	line-height: 35px;
+	text-shadow: 0 2px 0 rgba(0,0,0,0.15);
+}
+
+.timewinder-button{
+	background-color: $purple;
+	color: #f8f8f8;
+	margin-top: 42px;
+}
+
+.timewinder-button:hover{
+	background-color: $dark-grey;
+}
+
+.timewinder-1{
+	background-color: #7C7CD3;
+	padding: 60px 0;
+}
+
+.timewinder-1 h1, .timewinder-4 h1{	font-family: $sourcesans;
+	font-weight: 900;
+	font-size: 36px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+
+.timewinder-1 h1{
+	margin-top: 100px;
+}
+
+.timewinder-1 p, .timewinder-4 p{
+	font-family: $sourcesans;
+	font-weight: 300;
+	font-size: 18px;
+	color: #F8F8F8;
+	letter-spacing: 0;
+	line-height: 26px;
+}
+
+.timewinder-1 p{
+	margin-top: 40px;
+}
+
+.timewinder-4 h4{
+	font-family: $sourcesans;
+	font-weight: 900;
+	font-size: 20px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	margin: 12px 0;
+}
+
+.timewinder-4 h1{
+	margin: 0 0 26px 0;
+}
+
+.timewinder-4 p{
+	margin: 0 0 0 0;
+}
+
+.timewinder-2{
+	padding: 100px 0;
+	background-color: #3F3F3F;
+	text-align: center;
+}
+
+.timewinder-2 h1{
+	color: #fff;
+	font-family: $sourcesans;
+	font-size: 36px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	font-weight: 900;
+	margin: 0;
+}
+
+
+
+.timewinder-2 p{
+	font-family: $sourcesans;
+	font-weight: 300;
+	font-size: 18px;
+	color: #F8F8F8;
+	letter-spacing: 0;
+	line-height: 26px;
+	margin-top: 20px;
+}
+
+.timewinder-3{
+	padding: 100px 0;
+	background-color: #53E5B2;
+}
+
+.timewinder-4{
+
+}
+
+.wordcloud-bg{
+	background-image: url('../img/timewinder/wordcloud.svg');
+	background-position: 100px;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.timewinder-4{
+	padding: 100px 0;
+	background-color: #4A8DDF;
+}
+
+.timewinder-5{
+	background: #F8F8F8;
+	padding: 100px 0;
+}
+
+.timewinder-5 img{
+	margin: 0 0 100px 0;
+}
+
+
