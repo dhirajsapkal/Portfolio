@@ -102,9 +102,76 @@
 					<div class="nudge">
 						<h1 class="text-center">India’s first Social Media Command Center</h1>
 						<p>A massive video wall, 4 feet high and 22 feet wide, The Social media command center is comprised of 12, 55" LED TVs, and is housed at the heart of the company's headquarters, where a dedicated team of experts representing various departments monitor all of the company's social media data in real time.</p>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		<div class="command-6">
+			<div class="row">
+				<div class="small-12 columns">
+					<h1 class="text-center">How we pulled it off</h1>
+					<p>We spoke our potential users at Airtel, and after studying the inner workings of their current social media management system, We gained a better insight into their needs and requirements. Based on this data, we determined that there are three major use cases for this tool:<br>
+					<br>
+					<br>
+					<span>Business as usual :</span> Just another day at the office.<br>
+					<br>
+					<span>Campaign management :</span> Monitoring any campaigns the company might have running at the time.<br>
+					<br>
+					<span>Crisis management :</span> All hands on deck!!<br>
+					<br>
+					<br>
+					The next major problem to tackle was making the data actionable. Data is meaningless if there's nothing you can do about it. So we went to the roots and studied the assets available at Airtel's disposal, that the company can deploy during times or crisis, promoting campaigns, or just everyday brand promotion. These assets range from social media Influencers, Bloggers, Journalists and loyal customers who act as Brand advocates.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="command-7">
+			<div class="row">
+				<div class="small-12 columns">
+					<h1>The information pipeline</h1>
+				</div>
+				<div class="small-12 medium-6 columns">
+					<p>Just like reading a book, you start at the left. Mentions and Tonality give the user an overview of the brand's health on social media. It answers general questions such as:<br>
+					<br>
+					<span>How many mentions has my brand gotten?</span><br>
+					<span>Are these mentions good or bad?</span></p>
+				</div>
+				<div class="small-12 medium-6 columns">
+					<img src="img/command/pipeline1.png">
+				</div>
+				<div class="small-12 medium-6 columns">
+					<img src="img/command/livestream.png">
+				</div>
+				<div class="small-12 medium-6 columns">
+					<p>As we move further along, we delve deeper into the data, answering more specific questions like:<br>
+					<br>
+					<span>How many people are talking about me?</span><br>
+					<span>How many people are talking about me?</span><br>
+					<span>Where are they from?</span><br>
+					<span>What are the trends common in these conversations?</span><br>
+					<span>Are there any influencers talking about me?</span></p>
+				</div>
+				<div class="small-12 columns">
+					<img style="margin: 0;" src="img/command/pipeline3.png">
+					<p class="nudge">In an age where competition is fierce, it pays to know what your rival is up to at all time. At every step of the way, at every single data point, we run a realtime comparison with top competitor brands. This enables the company to always be one step ahead of the competition.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="command-8">
+			<!-- Set up your HTML -->
+			<!-- <div class="owl-carousel">
+			  <div> <img src="img/command/1.jpg"> </div>
+			  <div> <img src="img/command/2.jpg"> </div>
+			  <div> <img src="img/command/3.jpg"> </div>
+			  <div> <img src="img/command/4.jpg"> </div>
+			  <div> <img src="img/command/5.jpg"> </div>
+			  <div> <img src="img/command/6.jpg"> </div>
+			</div> -->
+			<div id="myPano"></div>
+		</div>
+
 
 		<div class="endproject">
 			<div class="row">
@@ -142,15 +209,15 @@
 	      </div>
 	      <div class="small-12 medium-6 columns">
 	    		<h4>Call me</h4>
-	      	<div class="contact-box">
-	      		<a href="tel:+15714242439">(+1) 571-424-2439</a>
-	      	</div>
+	      	<a href="tel:+15714242439"><div class="contact-box">
+	      		<p>(+1) 571-424-2439</p>
+	      	</div></a>
 	      </div>
 	      <div class="small-12 medium-6 columns">
 	    		<h4>Mail me</h4>
-	      	<div class="contact-box">
-	      		<a href="mailto:dhirajsapkal@gmail.com">dhirajsapkal@gmail.com</a>
-	      	</div>
+	      	<a href="mailto:dhirajsapkal@gmail.com"><div class="contact-box">
+	      		<p>dhirajsapkal@gmail.com</p>
+	      	</div></a>
 	      </div>
 
 	    </div>
@@ -161,8 +228,44 @@
 	  <script src="bower_components/jquery/dist/jquery.js"></script>
 	  <script src="bower_components/what-input/dist/what-input.js"></script>
 		<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+	  <!-- <script src="js/owl.carousel.min.js"></script> -->
+	  <script src="js/jquery.pano.js"></script>
+
 		<script>
 			$(document).ready(function(){
+				// $('.owl-carousel').owlCarousel({
+				//     loop:true,
+				//     margin:0,
+				//     responsiveClass:true,
+				//     responsive:{
+				//         0:{
+				//             items:1,
+				//             nav:true
+				//         },
+				//         600:{
+				//             items:3,
+				//             nav:false
+				//         },
+				//         1000:{
+				//             items:5,
+				//             nav:true,
+				//             loop:false
+				//         }
+				//     }
+				// })
+
+				var pano = $("#myPano").pano({
+	        img: "img/command/BAU-blue.jpg",
+	        interval: 100,
+	        speed: 50
+		    });
+
+		    pano.moveLeft();
+		    pano.stopMoving();
+		    pano.moveRight();
+		    pano.stopMoving();
+
+
 			  // Add smooth scrolling to all links
 			  $("a").on('click', function(event) {
 
@@ -188,6 +291,11 @@
 			});
 
 		</script>
+
+
+
+
+
 		<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
