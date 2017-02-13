@@ -33,7 +33,8 @@ body{
 // }
 
 .hero-landing h1, .hero-landing span{
-	font-family: WorkSans-Regular;
+	// font-family: WorkSans-Regular;
+	font-family: $worksans;
 	font-size: 36px;
 	color: $white;
 	letter-spacing: 0;
