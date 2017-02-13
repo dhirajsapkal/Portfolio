@@ -161,16 +161,15 @@
 
 		<div class="command-8">
 			<!-- Set up your HTML -->
-			<div class="owl-carousel">
+			<!-- <div class="owl-carousel">
 			  <div> <img src="img/command/1.jpg"> </div>
 			  <div> <img src="img/command/2.jpg"> </div>
 			  <div> <img src="img/command/3.jpg"> </div>
 			  <div> <img src="img/command/4.jpg"> </div>
 			  <div> <img src="img/command/5.jpg"> </div>
 			  <div> <img src="img/command/6.jpg"> </div>
-			  <div> <img src="img/command/7.jpg"> </div>
-			</div>
-			<!-- <div id="myPano"></div> -->
+			</div> -->
+			<div id="myPano"></div>
 		</div>
 
 
@@ -230,7 +229,7 @@
 	  <script src="bower_components/what-input/dist/what-input.js"></script>
 		<script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
 	  <script src="js/owl.carousel.min.js"></script>
-	  <!-- <script src="js/jquery.pano.js"></script> -->
+	  <script src="js/jquery.pano.js"></script>
 
 		<script>
 			$(document).ready(function(){
@@ -256,11 +255,11 @@
 				    }
 				})
 
-				// var pano = $("#myPano").pano({
-	   //      img: "img/command/BAU-blue.jpg",
-	   //      interval: 100,
-	   //      speed: 50
-		  //   });
+				var pano = $("#myPano").pano({
+	        img: "img/command/BAU-blue.jpg",
+	        interval: 100,
+	        speed: 50
+		    });
 
 		    pano.moveLeft();
 		    pano.stopMoving();
