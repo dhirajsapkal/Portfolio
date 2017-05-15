@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="224px" height="151px" viewBox="0 0 224 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>IDEA Logo 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-187.000000, -64.000000)">
+            <g id="Group-20">
+                <g id="Group-16" transform="translate(187.000000, 32.000000)">
+                    <g id="IDEA-Logo-4" transform="translate(0.000000, 36.000000)">
+                        <rect id="Rectangle-path" x="13.9389293" y="15.1385645" width="64.5732081" height="56.8887805"></rect>
+                        <text id="I" fill="#000000" font-family="Helvetica" font-size="47.6999974" font-weight="normal">
+                            <tspan x="13.9389293" y="63.7274146">I</tspan>
+                        </text>
+                        <polyline id="Shape" stroke="#000000" stroke-width="6.35999966" points="0.221773737 142.466369 145.732869 142.466369 145.732869 94.8008641"></polyline>
+                        <polyline id="Shape" stroke="#000000" stroke-width="6.35999966" points="3.35254141 47.6655052 3.35254141 0 148.731842 0"></polyline>
+                        <rect id="Rectangle-path" x="157.410659" y="95.0656725" width="43.2585818" height="21.184669"></rect>
+                        <text id="+" fill="#000000" font-family="Helvetica" font-size="25.4399986" font-weight="normal">
+                            <tspan x="157.41087" y="113.883562">+</tspan>
+                        </text>
+                        <rect id="Rectangle-path" x="86.0990222" y="15.358885" width="62.9853293" height="55.2565017"></rect>
+                        <text id="D" fill="#000000" font-family="Helvetica" font-size="47.6999974" font-weight="normal">
+                            <tspan x="86.0990222" y="63.9477352">D</tspan>
+                        </text>
+                        <rect id="Rectangle-path" x="13.9389293" y="81.3840836" width="70.7479394" height="53.4918188"></rect>
+                        <text id="E" fill="#000000" font-family="Helvetica" font-size="47.6999974" font-weight="normal">
+                            <tspan x="13.9389293" y="129.972934">E</tspan>
+                        </text>
+                        <rect id="Rectangle-path" x="86.0990222" y="81.3840836" width="70.7479394" height="54.9043066"></rect>
+                        <text id="A" fill="#000000" font-family="Helvetica" font-size="47.6999974" font-weight="normal">
+                            <tspan x="86.0990222" y="129.972934">A</tspan>
+                        </text>
+                        <rect id="Rectangle-path" x="157.410659" y="115.720725" width="104.447491" height="36.0139373"></rect>
+                        <g id="Group" transform="translate(157.410870, 113.260920)" font-size="9.53999949" font-family="Helvetica" fill="#000000" font-weight="normal">
+                            <text id="Experimental">
+                                <tspan x="0" y="9">Experimental</tspan>
+                            </text>
+                            <text id="Architecture">
+                                <tspan x="0" y="20.4402509">Architecture</tspan>
+                            </text>
+                            <text id="Studio">
+                                <tspan x="0" y="31.8794425">Studio</tspan>
+                            </text>
+                        </g>
+                        <rect id="Rectangle-path" x="157.130663" y="75.646216" width="98.8015232" height="34.6014495"></rect>
+                        <g id="Group" transform="translate(157.130716, 73.186411)" font-size="9.53999949" font-family="Helvetica" fill="#000000" font-weight="normal">
+                            <text id="Interdisciplinary">
+                                <tspan x="0" y="9">Interdisciplinary</tspan>
+                            </text>
+                            <text id="Design">
+                                <tspan x="0" y="20.4402509">Design</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
