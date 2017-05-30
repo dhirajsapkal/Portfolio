@@ -123,7 +123,7 @@ $(document).ready(function(){
 
 	var ourScene = new ScrollMagic.Scene({
 		triggerElement: '.spring',
-		triggerHook: 0.9
+		triggerHook: 0.99
 	})
 	.setClassToggle('.spring', 'fade-in') // add class to project01
 
@@ -140,7 +140,7 @@ $(document).ready(function(){
 
 	var ourScene = new ScrollMagic.Scene({
 		triggerElement: '.fall',
-		triggerHook: 0.9
+		triggerHook: 0.99
 	})
 	.setClassToggle('.fall', 'fade-in') // add class to project01
 
@@ -175,7 +175,7 @@ $(document).ready(function(){
 		//Move footer
 	var ourScene = new ScrollMagic.Scene({
 		triggerElement: '.full-image-1',
-		triggerHook: 0.9
+		triggerHook: 0.99
 	})
 	.setClassToggle('.full-image-1', 'fade-in') // add class to project01
 
@@ -192,7 +192,7 @@ $(document).ready(function(){
 		//Move footer
 	var ourScene = new ScrollMagic.Scene({
 		triggerElement: '.full-image-2',
-		triggerHook: 0.9
+		triggerHook: 0.99
 	})
 	.setClassToggle('.full-image-2', 'fade-in') // add class to project01
 
@@ -209,7 +209,7 @@ $(document).ready(function(){
 	//Move footer
 	var ourScene = new ScrollMagic.Scene({
 		triggerElement: '.footer',
-		triggerHook: 0.9
+		triggerHook: 0.99
 	})
 	.setClassToggle('.footer', 'fade-in') // add class to project01
 
