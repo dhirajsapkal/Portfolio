@@ -43,7 +43,7 @@
 @include foundation-tooltip;
 @include foundation-top-bar;
 @include foundation-visibility-classes;
-@include foundation-float-classes;
+// @include foundation-float-classes;
 @include foundation-flex-classes;
 
 @include motion-ui-transitions;
@@ -51,6 +51,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,900');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700,900');
+
+@import 'util/util';
 
 @import 'owl/owl.carousel';
 @import 'owl/owl.theme.default';
@@ -62,7 +65,8 @@
 @import 'timewinder';
 @import 'command';
 @import 'shame';
-@import 'devices';
+@import 'shop101';
+@import 'splitwise';
 
 
 

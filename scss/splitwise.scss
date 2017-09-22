@@ -1,0 +1,258 @@
+.splitwise-thumb{
+	background-image: url('../img/splitwise.jpg');
+	background-size: cover;
+}
+
+
+.hero-splitwise{
+	background-image: linear-gradient(to right bottom, #cacd83, #a2cb89, #78c697, #4bbfa9, #12b5bb);
+}
+
+.hero-splitwise h1{
+	font-family: $nunitosans;
+	font-weight: 900;
+	font-size: 85px;
+	color: #FFFFFF;
+  text-shadow: 0 20px 110px rgba(0,0,0,0.41);
+	text-transform: uppercase;
+	z-index: 3;
+}
+
+.hero-splitwise h3{
+	opacity: 0.09;
+	font-family: $nunitosans;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 193px;
+	color: #FFFFFF;
+	position: absolute;
+  right: 0;
+  z-index: 1;
+  bottom: 40%;
+}
+
+.hero-splitwise h2{
+	transform: rotate(-90deg);
+	font-family: $nunitosans;
+	font-weight: 700;
+	font-size: 18px;
+	color: #FFFFFF;
+	position: absolute;
+  left: 0;
+  z-index: 3;
+}
+
+.about-splitwise h2, .existing-flow h2, .splitwise-user h2, .splitwise-wireframes h2, .splitwise-visual h2{
+	font-family: $nunitosans;
+	font-weight: 900;
+	opacity: 0.06;
+	font-size: 193px;
+	color: #000000;
+	z-index: 1;
+	position: absolute;
+	left: 30%;
+	z-index: 2;
+}
+
+.existing-flow,  .splitwise-wireframes{
+	background-color: #F7F7F7;
+}
+
+.about-splitwise h1, .existing-flow h1, .splitwise-user h1, .splitwise-wireframes h1, .splitwise-visual h1{
+	font-family: $nunitosans;
+	font-weight: 900;
+	font-size: 28px;
+	color: #4A4A4A;
+	line-height: 37px;
+	margin: 0;
+	z-index: 2;
+}
+
+.existing-flow h1{
+	margin-bottom: 60px;
+}
+
+.about-splitwise img, .splitwise-visual img{
+	z-index: 2;
+	position: relative;
+}
+
+.about-splitwise p, .splitwise-user p, .splitwise-wireframes p{
+	font-family: $nunitosans;
+	font-weight: 700;
+	font-size: 14px;
+	color: #808080;
+	line-height: 27px;
+	margin-top: 20px;
+	z-index: 2;
+}
+
+.existing-flow, .splitwise-user, .splitwise-wireframes, .splitwise-visual{
+	padding: 100px 0;
+}
+
+.existing-flow img {
+	margin: 10px 0 0 0;
+	position: relative;
+  z-index: 4;
+}
+
+.splitwise-persona{
+	margin-top: 100px;
+}
+
+.splitwise-persona img{
+	position: relative;
+	z-index: 3;
+}
+
+.user-quote{
+	background-color: #FBE397;
+	padding: 60px;
+	margin-bottom: 60px;
+	z-index: 10;
+}
+
+.user-quote p{
+	font-family: $nunitosans;
+	font-weight: 700;
+	margin: 0;
+	font-size: 24px;
+	color: #3B3B3B;
+	line-height: 48px;	
+}
+
+.user-quote h3{
+	font-size: 107px;
+	color: #FFFAEB;
+}
+
+.splitwise-persona .quote-front{
+	z-index: 3;
+}
+
+.splitwise-persona .quote-back{
+	position: absolute;
+	z-index: 1;
+}
+
+.splitwise-wireframes-gifs{
+	text-align: center;
+}
+
+.splitwise-wireframes-gifs img{
+	margin: 120px 0 20px 0;
+}
+
+.splitwise-shadow{
+	box-shadow: 0 31px 66px 0 rgba(0,0,0,0.29);
+}
+
+
+
+.splitwise-visual img{
+	margin: 60px 0 0 0;
+}
+
+
+.splitwise-footwave{
+	position: absolute!important;
+	width: 100%;
+	// bottom: -3px;
+	margin: 0!important;
+  transform: translateY(-100%);
+}
+
+
+
+.move-up{
+	transform: translate3d(0, 150px, 0);
+	opacity: 0;
+	transition: all 0.65s ease-out;
+}
+.fade-in{
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+.flow1-1i, .flow1-2i, .flow3-1i{
+	position: absolute!important;
+  z-index: 10!important;
+  opacity: 0;
+  transition: all 0.65s ease-out;
+}
+
+.flow1-1i{
+  transform: translateY(120px)!important;
+}
+
+.flow1-2i{
+  transform: translate3d(210px, 110px, 0px);
+}
+
+.flow3-1i{
+  transform: translate3d(190px, 380px, 0px);
+}
+
+.flow1-1i-card, .flow1-2i-card, .flow3-1i-card{
+	background: #FFFFFF;
+	box-shadow: 0 31px 66px 0 rgba(0,0,0,0.29);
+	position: absolute;
+  width: 300px;
+  padding: 20px;
+  z-index: 11;
+  opacity: 0;
+  transition: all 0.65s ease-out;
+  
+}
+
+.flow1-1i-card{
+	transform: translate3d(50px, 290px, 0px);
+}
+
+.flow1-2i-card{
+	transform: translate3d(160px, -40px, 0px);
+}
+
+.flow3-1i-card{
+  transform: translate3d(190px, 550px, 0px);
+}
+
+
+.hide{
+	opacity: 0;
+}
+
+.show{
+	opacity: 1;
+}
+
+
+.flow1-1i-card h3, .flow1-2i-card h3, .flow3-1i-card h3{
+	font-family: $nunitosans;
+	font-weight: 900;
+	font-size: 14px;
+	color: #59C2A5;
+	margin-bottom: 10px;
+}
+
+.flow1-1i-card h4, .flow1-2i-card h4, .flow3-1i-card h4{
+	font-family: $nunitosans;
+	font-weight: 900;
+	font-size: 14px;
+	color: #808080;
+	line-height: 20px;
+	margin: 0;
+}
+
+
+.move-user-flow, .move-visual{
+	left: 0;
+}
+
+
+
+
+
+
+
