@@ -45,6 +45,9 @@
 
 .about-shop101{
 	padding: 200px 30px 100px 30px;
+	@include breakpoint(small){
+		padding: 100px 30px 100px 30px;
+	}
 }
 
 
@@ -99,6 +102,7 @@
   padding: 30px;
   border-radius: 16px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .browse-text{

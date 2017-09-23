@@ -110,4 +110,16 @@
 
 .margin-button{
 	margin-left: 10px;
+	@include breakpoint(small) {
+    // All CSS in here goes inside the media query
+    margin-left: 0;
+  }
+}
+
+.end-button{
+	min-width: 140px;
+	margin: 0 20px;
+	@include breakpoint(small){
+		margin: 10px 20px 0 20px;
+	}
 }

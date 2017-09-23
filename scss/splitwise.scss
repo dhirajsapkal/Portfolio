@@ -6,6 +6,9 @@
 
 .hero-splitwise{
 	background-image: linear-gradient(to right bottom, #cacd83, #a2cb89, #78c697, #4bbfa9, #12b5bb);
+	@include breakpoint(small down) {
+		text-align: center;
+	}
 }
 
 .hero-splitwise h1{
@@ -16,6 +19,9 @@
   text-shadow: 0 20px 110px rgba(0,0,0,0.41);
 	text-transform: uppercase;
 	z-index: 3;
+	@include breakpoint(small down) {
+		font-size: 50px;
+	}
 }
 
 .hero-splitwise h3{
@@ -29,6 +35,9 @@
   right: 0;
   z-index: 1;
   bottom: 40%;
+  @include breakpoint(small){
+  	font-size: 93px;
+  }
 }
 
 .hero-splitwise h2{
@@ -40,6 +49,16 @@
 	position: absolute;
   left: 0;
   z-index: 3;
+  @include breakpoint(medium down) {
+  	transform: none;
+  	position: relative;
+  }
+}
+
+.about-splitwise{
+	@include breakpoint(small){
+		padding: 100px 0;
+	}
 }
 
 .about-splitwise h2, .existing-flow h2, .splitwise-user h2, .splitwise-wireframes h2, .splitwise-visual h2{
@@ -52,6 +71,9 @@
 	position: absolute;
 	left: 30%;
 	z-index: 2;
+	@include breakpoint(small){
+		display: none;
+	}
 }
 
 .existing-flow,  .splitwise-wireframes{
@@ -66,6 +88,9 @@
 	line-height: 37px;
 	margin: 0;
 	z-index: 2;
+	@include breakpoint(small){
+		text-align: center;
+	}
 }
 
 .existing-flow h1{
@@ -85,6 +110,9 @@
 	line-height: 27px;
 	margin-top: 20px;
 	z-index: 2;
+	@include breakpoint(small){
+		margin: 20px 10px;
+	}
 }
 
 .existing-flow, .splitwise-user, .splitwise-wireframes, .splitwise-visual{
@@ -99,6 +127,9 @@
 
 .splitwise-persona{
 	margin-top: 100px;
+	@include breakpoint(small){
+		margin-top: 30px;
+	}
 }
 
 .splitwise-persona img{
@@ -119,7 +150,11 @@
 	margin: 0;
 	font-size: 24px;
 	color: #3B3B3B;
-	line-height: 48px;	
+	line-height: 48px;
+	@include breakpoint(small){
+		font-size: 15px;
+		line-height: 26px;
+	}	
 }
 
 .user-quote h3{
@@ -142,6 +177,9 @@
 
 .splitwise-wireframes-gifs img{
 	margin: 120px 0 20px 0;
+	@include breakpoint(small){
+		margin: 50px 0 10px 0;
+	}
 }
 
 .splitwise-shadow{
@@ -250,6 +288,25 @@
 	left: 0;
 }
 
+.wave img{
+	position: absolute;
+	bottom: -3px;
+	width: 100%;
+	@include breakpoint(medium) {
+		bottom: -20px;
+	}
+	@include breakpoint(small){
+		bottom: -15px;
+	}
+}
+
+.hero-phone{
+	display: inline-block;
+	@include breakpoint(small down) {
+    // All CSS in here goes inside the media query
+    display: none;
+  }
+}
 
 
 
