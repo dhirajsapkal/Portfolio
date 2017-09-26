@@ -35,7 +35,7 @@
   right: 0;
   z-index: 1;
   bottom: 40%;
-  @include breakpoint(small){
+  @include breakpoint(small down){
   	font-size: 93px;
   }
 }
@@ -71,7 +71,9 @@
 	position: absolute;
 	left: 30%;
 	z-index: 2;
-
+	@include breakpoint(small down){
+		display: none;
+	}
 }
 
 .existing-flow,  .splitwise-wireframes{
