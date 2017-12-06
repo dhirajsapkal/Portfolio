@@ -76,6 +76,9 @@
 	border-radius: 100px;
 	padding: 14px 22px;
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	@include breakpoint(small down) {
+		width: 100%;
+	}
 }
 .secondary-button:hover, .secondary-button:active, .secondary-button:focus{
 	background-color: $dark-grey;
