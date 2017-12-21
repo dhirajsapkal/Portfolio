@@ -1,0 +1,522 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1{
+	font-weight: 700;
+	font-size: 34px;
+	color: #4BAEE0;
+	letter-spacing: 0;
+	@include breakpoint(small only){
+		font-size: 26px;
+	}
+}
+
+p, ul > li{
+	font-weight: 400;
+	font-size: 16px;
+	color: #2B2B2B;
+	letter-spacing: 0;
+	line-height: 25px;
+	@include breakpoint(small only){
+		font-size: 16px;
+	}
+}
+
+.content{
+	padding: 100px 0;
+	@include breakpoint(small only){
+		padding: 30px 0;
+	}
+}
+
+.landing-content video, .visual video{
+	z-index: 1;
+	width: 100%;
+	height: auto;
+}
+
+.visual video{
+	margin-top: 100px;
+	max-height: 90vh;
+	@include breakpoint (small only){
+		margin-top: 60px;
+	}
+}
+
+.landing-content img{
+	z-index: 4;
+	position: relative;
+	@include breakpoint(medium down){
+		margin-top: 30px;
+	}
+	@include breakpoint(small only){
+		margin-top: 20px;
+		width: 40%;
+		height: auto;
+	}
+}
+
+.landing-content h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 24px;
+	color: #2B2B2B;
+	letter-spacing: -0.4px;
+	line-height: 35px;
+	// text-shadow: 0 2px 0 rgba(0,0,0,0.15);
+	margin-top: 15px;
+	@include breakpoint(small only){
+		font-size: 18px;
+	}
+}
+
+.centered-text-padding{
+	margin-top: 150px;
+	@include breakpoint(small only){
+		margin-top: 50px;
+	}
+}
+
+.parallax-background{
+	overflow: hidden;
+  position: relative;
+  height: 500px;
+  margin-top: 150px;
+  @include breakpoint(small only){
+  	height: 300px;
+  }
+}
+
+.parallax-background .text{
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+}
+
+
+.discover-background, .define-background, .blueprint-background{
+	background-image: url('../img/discover.jpg');
+	height: 160%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  position: relative;
+	overflow: hidden;
+	 &:after {
+    content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		opacity: 0.38;
+		background: #000000;
+		/* Rectangle 5: */
+
+  }
+}
+
+.define-background{
+	background-image: url('../img/define.jpg');
+}
+
+.blueprint-background{
+	background-image: url('../img/blueprint.jpg');
+}
+
+.parallax-background .text h1{
+	font-weight: 700;
+	font-size: 74px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 97px;
+	@include breakpoint(small only){
+		font-size: 50px;
+		line-height: 74px;
+	}
+}
+
+
+.parallax-background .text h2{
+	opacity: 0.6;
+	font-weight: 700;
+	font-size: 34px;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	line-height: 45px;
+	@include breakpoint (small only){
+		font-size: 20px;
+		line-height: 34px;
+	}
+}
+
+.chart {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.user-survey{
+	// perspective: 1000px;
+}
+
+.white-card{
+	padding: 40px;
+	margin-top: 80px;
+	background: #FFFFFF;
+	box-shadow: 0 31px 66px 0 rgba(0,0,0,0.05);
+	border-radius: 14px;
+	// transform: rotateX(90deg);
+	// transform-origin: bottom;
+
+}
+
+.results-card{
+	transform: translate3d(0, 150px, 0);
+	opacity: 0;
+	transition: all 0.65s ease-out;
+}
+
+.fade-in{
+	opacity: 1;
+	// transform: rotateX(0deg);
+	transform: translate3d(0, 0, 0);
+	transition: all 0.65s ease-out;
+}
+
+.results-card p{
+	max-width: 140px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 14px;
+	color: #2B2B2B;
+	letter-spacing: 0;
+	line-height: 20px;
+	margin: 0;
+}
+
+
+
+.green-text, .red-text{
+	font-weight: 700;
+	font-size: 18px;
+	color: #49A67C;
+	letter-spacing: 0;
+}
+
+.red-text{
+	color: #FF6161;
+}
+
+
+.competitor-card img{
+	margin: 80px 0;
+}
+
+.competitor-card h1{
+	margin-bottom: 20px;
+}
+
+.competitor-card p{
+	margin-bottom: 30px;
+}
+
+.wireframes h1{
+	margin-top: 60px;
+}
+
+.wireframes h1:first-child{
+	margin-top: 0;
+}
+
+.wireframes img:first-child{
+	@include breakpoint (small only){
+		margin-top: 40px;
+	}
+}
+
+.wireframes1{
+	background-color: #FDFDFD;
+}
+
+.wireframes1 h1, .wireframes2 h1{
+	margin-top: 60px;
+}
+
+.wireframes1 h1:first-child, .wireframes2 h1:first-child{
+	margin-top: 0;
+}
+
+.informationarc{
+	height: calc(100%);
+	color: #fff;
+  background-color: #000;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.ia-background{
+	background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 140%;
+  top: 0;
+  z-index: 1;
+  // opacity: 0.2;
+  background: url('../img/ia.jpg');
+}
+
+.informationarc h1, .informationarc p, .informationarc img{
+	z-index: 10;
+	position: relative;
+	color: white;
+}
+
+.branding img{
+	margin: 60px 0;
+}
+
+
+
+
+.styleguide{
+	background-color: #4BAEE0;
+}
+
+.styleguide h1{
+	color: #fff;
+	margin-bottom: 80px;
+}
+
+.styleguide img{
+	margin: 30px 0;
+}
+
+.last-logo{
+	margin-top: 180px;
+}
+
+
+.nav{
+	position: absolute;
+	margin-top:	20px;
+    z-index: 20;
+}
+
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    // background-color: #333;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 0 30px 0 0;
+    text-decoration: none;
+		opacity: 0.5;
+		font-weight: 500;
+		font-size: 14px;
+		color: #2b2b2b;
+		letter-spacing: 0;
+		transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
+
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav li a:hover {
+    // background-color: #111;
+    // color: #fff;
+    opacity: 1;
+}
+
+.nav-dark li a{
+  color: #2B2B2B;
+}
+
+
+.endproject{
+	background-image: linear-gradient(-134deg, #3023AE 0%, #C96DD8 100%);
+	background-attachment: fixed;
+	padding: 100px 0;
+}
+
+
+
+
+.endproject h1{
+	font-weight: 700;
+	font-size: 36px;
+	color: #F8F8F8;
+	letter-spacing: 0;
+	margin: 0 0 70px 0;
+}
+
+
+.my-button{
+	font-weight: 600;
+	font-size: 14px;
+	color: #9454C9;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	border-radius: 100px;
+	padding: 14px 22px;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	@include breakpoint(small down) {
+		width: 100%;
+	}
+}
+.secondary-button:hover, .secondary-button:active, .secondary-button:focus{
+	background-color: #2B2B2B;
+	border-color: #2B2B2B;
+}
+
+
+.primary-button{
+	// background: $white;
+  background: rgba(255, 255, 255, 0.9);
+	border-radius: 100px;
+	color: #9454C9;
+}
+
+.primary-button:hover, .primary-button:focus, .primary-button:active {
+	background: #fff;
+	color: #2B2B2B;
+} 
+
+.my-button:hover, .my-button:focus, .my-button:active{
+
+	// box-shadow: 0 2px 10px 1px rgba(0,0,0,0.5);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transform: translateY(-4px);
+}
+
+.secondary-button{
+	border: 1px solid #fff;
+	background-color: transparent;
+	color: #fff;
+}
+
+.margin-button{
+	margin-left: 10px;
+	@include breakpoint(small) {
+    // All CSS in here goes inside the media query
+    margin-left: 0;
+  }
+}
+
+.end-button{
+	min-width: 140px;
+	margin: 0 20px;
+	@include breakpoint(small){
+		margin: 10px 20px 0 20px;
+	}
+}
+
+.footer{
+	width: 100%;
+	// height: 100vh;
+	padding: 40px 0px;
+	background-color: #181818;
+	padding: 100px 0;
+}
+
+.footer h1{
+	// color: #fff;
+	// font-family: $sourcesans;
+	// font-size: 36px;
+	// color: #FFFFFF;
+	// letter-spacing: 0;
+	// font-weight: 900;
+	// margin: 100px 0;
+	// text-align: center;
+	/* Got an idea? Let’s g: */
+	font-weight: 400;
+	font-size: 26px;
+	color: #C5C5C5;
+	letter-spacing: 0;
+	line-height: 65px;
+	// text-align: center;
+	margin: 0 0 100px 0;
+}
+
+.contact-box{
+	border-top: 1px solid #444444;
+	border-bottom: 1px solid #444444;
+	padding: 50px 0;
+	// background-color: #181818;
+	// height: 200px;
+	// padding: 100px 0;
+	// text-align: center;
+}
+
+.contact-box:hover{
+	background-color: #4b4b4b;
+	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.contact-box p{
+	font-weight: 600;
+	font-size: 24px;
+	color: #C5C5C5;
+	letter-spacing: 0;
+}
+
+.footer h4{
+	font-weight: 600;
+	font-size: 14px;
+	color: #9454C9;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin: 0 0 35px 0;
+}
+
+
+.informationarc img{
+	margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

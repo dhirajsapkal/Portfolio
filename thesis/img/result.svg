@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="981px" height="1053px" viewBox="0 0 981 1053" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14,0 L837,0 C844.731986,-1.42034288e-15 851,6.2680135 851,14 L851,909 C851,916.731986 844.731986,923 837,923 L14,923 C6.2680135,923 9.46895252e-16,916.731986 0,909 L0,14 C-9.46895252e-16,6.2680135 6.2680135,1.42034288e-15 14,0 Z" id="path-1"></path>
+        <filter x="-13.5%" y="-9.0%" width="126.9%" height="124.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="31" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="33" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0514039855 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Desktop-HD-Copy-15" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-230.000000, -9283.000000)">
+        <g id="Group-10" transform="translate(295.000000, 9317.000000)">
+            <g id="Rectangle-14-Copy-2">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Group-7" transform="translate(60.000000, 26.000000)">
+                <rect id="Rectangle-5" fill="#F4F4F4" x="0" y="156.600004" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <rect id="Rectangle-5-Copy" fill="#F4F4F4" x="0" y="232.000009" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <rect id="Rectangle-5-Copy-2" fill="#F4F4F4" x="0" y="307.400013" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <rect id="Rectangle-5-Copy-3" fill="#F4F4F4" x="0" y="382.800017" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <rect id="Rectangle-5-Copy-4" fill="#F4F4F4" x="0" y="459.500021" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <rect id="Rectangle-5-Copy-5" fill="#F4F4F4" x="0" y="533.600025" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <rect id="Rectangle-5-Copy-6" fill="#F4F4F4" x="0" y="610.300029" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <rect id="Rectangle-5-Copy-7" fill="#F4F4F4" x="0" y="684.400033" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <rect id="Rectangle-5-Copy-8" fill="#F4F4F4" x="0" y="761.100038" width="730.60004" height="39.0000021" rx="19.5000011"></rect>
+                <text id="Start-a-pool-View-on" font-family="SFUIText-Regular, SF UI Text" font-size="18.200001" font-weight="normal" line-spacing="37.7000021" letter-spacing="0.000303333396" fill="#2B2B2B">
+                    <tspan x="19.5000011" y="137.200002">Start a pool</tspan>
+                    <tspan x="19.5000011" y="174.900005">View ongoing pools</tspan>
+                    <tspan x="19.5000011" y="212.600007">View past pools</tspan>
+                    <tspan x="19.5000011" y="250.300009">Add Money to my wallet</tspan>
+                    <tspan x="19.5000011" y="288.000011">Transfer from wallet to bank</tspan>
+                    <tspan x="19.5000011" y="325.700013">Link a bank account</tspan>
+                    <tspan x="19.5000011" y="363.400015">Link a new credit card</tspan>
+                    <tspan x="19.5000011" y="401.100017">View/Edit existing bank account</tspan>
+                    <tspan x="19.5000011" y="438.800019">View/Edit existing credit cards</tspan>
+                    <tspan x="19.5000011" y="476.500021">Explore new events</tspan>
+                    <tspan x="19.5000011" y="514.200023">View upcoming tickets</tspan>
+                    <tspan x="19.5000011" y="551.900025">View past tickets</tspan>
+                    <tspan x="19.5000011" y="589.600027">Sell tickets</tspan>
+                    <tspan x="19.5000011" y="627.300029">View selling status</tspan>
+                    <tspan x="19.5000011" y="665.000031">Add a new friend to my list</tspan>
+                    <tspan x="19.5000011" y="702.700034">Remove a friend from my list</tspan>
+                    <tspan x="19.5000011" y="740.400036">View all friends on my list</tspan>
+                    <tspan x="19.5000011" y="778.100038">Information about the app</tspan>
+                    <tspan x="19.5000011" y="815.80004">See all my notifications</tspan>
+                </text>
+                <text id="4-0-0-0-0-0-0-0-0-10" font-family="SFUIText-Regular, SF UI Text" font-size="18.200001" font-weight="normal" line-spacing="37.7000021" letter-spacing="0.000303333396" fill="#2B2B2B">
+                    <tspan x="373.093521" y="137.200002">4</tspan>
+                    <tspan x="373.217935" y="174.900005">0</tspan>
+                    <tspan x="373.217935" y="212.600007">0</tspan>
+                    <tspan x="373.217935" y="250.300009">0</tspan>
+                    <tspan x="373.217935" y="288.000011">0</tspan>
+                    <tspan x="373.217935" y="325.700013">0</tspan>
+                    <tspan x="373.217935" y="363.400015">0</tspan>
+                    <tspan x="373.217935" y="401.100017">0</tspan>
+                    <tspan x="373.217935" y="438.800019">0</tspan>
+                    <tspan x="368.974375" y="476.500021">10</tspan>
+                    <tspan x="373.217935" y="514.200023">0</tspan>
+                    <tspan x="373.217935" y="551.900025">0</tspan>
+                    <tspan x="373.217935" y="589.600027">0</tspan>
+                    <tspan x="373.217935" y="627.300029">0</tspan>
+                    <tspan x="373.244595" y="665.000031">3</tspan>
+                    <tspan x="373.217935" y="702.700034">0</tspan>
+                    <tspan x="373.217935" y="740.400036">0</tspan>
+                    <tspan x="373.217935" y="778.100038">0</tspan>
+                    <tspan x="374.706461" y="815.80004">1</tspan>
+                </text>
+                <text id="6-10-10-2-2-0-0-0-0" font-family="SFUIText-Regular, SF UI Text" font-size="18.200001" font-weight="normal" line-spacing="37.7000021" letter-spacing="0.000303333396" fill="#2B2B2B">
+                    <tspan x="464.15129" y="137.200002">6</tspan>
+                    <tspan x="459.97438" y="174.900005">10</tspan>
+                    <tspan x="459.97438" y="212.600007">10</tspan>
+                    <tspan x="464.453438" y="250.300009">2</tspan>
+                    <tspan x="464.453438" y="288.000011">2</tspan>
+                    <tspan x="464.21794" y="325.700013">0</tspan>
+                    <tspan x="464.21794" y="363.400015">0</tspan>
+                    <tspan x="464.21794" y="401.100017">0</tspan>
+                    <tspan x="464.21794" y="438.800019">0</tspan>
+                    <tspan x="464.21794" y="476.500021">0</tspan>
+                    <tspan x="464.21794" y="514.200023">0</tspan>
+                    <tspan x="464.21794" y="551.900025">0</tspan>
+                    <tspan x="464.21794" y="589.600027">0</tspan>
+                    <tspan x="464.21794" y="627.300029">0</tspan>
+                    <tspan x="464.21794" y="665.000031">0</tspan>
+                    <tspan x="465.706466" y="702.700034">1</tspan>
+                    <tspan x="464.453438" y="740.400036">2</tspan>
+                    <tspan x="464.21794" y="778.100038">0</tspan>
+                    <tspan x="464.764474" y="815.80004">7</tspan>
+                </text>
+                <text id="0-0-0-0-0-0-0-0-0-0" font-family="SFUIText-Regular, SF UI Text" font-size="18.200001" font-weight="normal" line-spacing="37.7000021" letter-spacing="0.000303333396" fill="#2B2B2B">
+                    <tspan x="552.617945" y="137.200002">0</tspan>
+                    <tspan x="552.617945" y="174.900005">0</tspan>
+                    <tspan x="552.617945" y="212.600007">0</tspan>
+                    <tspan x="552.617945" y="250.300009">0</tspan>
+                    <tspan x="552.617945" y="288.000011">0</tspan>
+                    <tspan x="552.617945" y="325.700013">0</tspan>
+                    <tspan x="552.617945" y="363.400015">0</tspan>
+                    <tspan x="552.617945" y="401.100017">0</tspan>
+                    <tspan x="552.617945" y="438.800019">0</tspan>
+                    <tspan x="552.617945" y="476.500021">0</tspan>
+                    <tspan x="548.374385" y="514.200023">10</tspan>
+                    <tspan x="548.374385" y="551.900025">10</tspan>
+                    <tspan x="548.374385" y="589.600027">10</tspan>
+                    <tspan x="548.374385" y="627.300029">10</tspan>
+                    <tspan x="552.617945" y="665.000031">0</tspan>
+                    <tspan x="552.617945" y="702.700034">0</tspan>
+                    <tspan x="552.617945" y="740.400036">0</tspan>
+                    <tspan x="552.853443" y="778.100038">2</tspan>
+                    <tspan x="552.617945" y="815.80004">0</tspan>
+                </text>
+                <text id="0-0-0-8-8-10-10-10-1" font-family="SFUIText-Regular, SF UI Text" font-size="18.200001" font-weight="normal" line-spacing="37.7000021" letter-spacing="0.000303333396" fill="#2B2B2B">
+                    <tspan x="643.61795" y="137.200002">0</tspan>
+                    <tspan x="643.61795" y="174.900005">0</tspan>
+                    <tspan x="643.61795" y="212.600007">0</tspan>
+                    <tspan x="643.53797" y="250.300009">8</tspan>
+                    <tspan x="643.53797" y="288.000011">8</tspan>
+                    <tspan x="639.37439" y="325.700013">10</tspan>
+                    <tspan x="639.37439" y="363.400015">10</tspan>
+                    <tspan x="639.37439" y="401.100017">10</tspan>
+                    <tspan x="639.37439" y="438.800019">10</tspan>
+                    <tspan x="643.61795" y="476.500021">0</tspan>
+                    <tspan x="643.61795" y="514.200023">0</tspan>
+                    <tspan x="643.61795" y="551.900025">0</tspan>
+                    <tspan x="643.61795" y="589.600027">0</tspan>
+                    <tspan x="643.61795" y="627.300029">0</tspan>
+                    <tspan x="643.53797" y="665.000031">8</tspan>
+                    <tspan x="643.5513" y="702.700034">9</tspan>
+                    <tspan x="643.53797" y="740.400036">8</tspan>
+                    <tspan x="643.53797" y="778.100038">8</tspan>
+                    <tspan x="643.853448" y="815.80004">2</tspan>
+                </text>
+                <text id="Explore" font-family="SFUIText-Bold, SF UI Text" font-size="18.200001" font-weight="bold" fill="#2B2B2B">
+                    <tspan x="343.200019" y="93">Explore</tspan>
+                </text>
+                <text id="Label" font-family="SFUIText-Bold, SF UI Text" font-size="18.200001" font-weight="bold" fill="#2B2B2B">
+                    <tspan x="19.5000011" y="93">Label</tspan>
+                </text>
+                <text id="Result-Matrix" font-family="SFUIText-Bold, SF UI Text" font-size="18.200001" font-weight="bold" fill="#4BAEE0">
+                    <tspan x="304" y="17">Result Matrix</tspan>
+                </text>
+                <text id="Pools" font-family="SFUIText-Bold, SF UI Text" font-size="18.200001" font-weight="bold" fill="#2B2B2B">
+                    <tspan x="444.600024" y="93">Pools</tspan>
+                </text>
+                <text id="Tickets" font-family="SFUIText-Bold, SF UI Text" font-size="18.200001" font-weight="bold" fill="#2B2B2B">
+                    <tspan x="522.600029" y="93">Tickets</tspan>
+                </text>
+                <text id="Account" font-family="SFUIText-Bold, SF UI Text" font-size="18.200001" font-weight="bold" fill="#2B2B2B">
+                    <tspan x="612.300034" y="93">Account</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
