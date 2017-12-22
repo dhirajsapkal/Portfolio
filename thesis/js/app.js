@@ -389,12 +389,12 @@ $(document).ready(function(){
 	})
 	.setClassToggle('.results-card', 'fade-in') // add class to project01
 
-	.addIndicators({
-		name: 'Show phone',
-		colorTrigger: 'black',
-		colorStart: '#75C695',
-		colorEnd: 'pink'
-	}) 
+	// .addIndicators({
+	// 	name: 'Show phone',
+	// 	colorTrigger: 'black',
+	// 	colorStart: '#75C695',
+	// 	colorEnd: 'pink'
+	// }) 
 
 	.addTo(controller);
 
