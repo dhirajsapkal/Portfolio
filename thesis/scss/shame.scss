@@ -186,12 +186,6 @@ p, ul > li{
 	transition: all 0.65s ease-out;
 }
 
-.fade-in{
-	opacity: 1;
-	// transform: rotateX(0deg);
-	transform: translate3d(0, 0, 0);
-	transition: all 0.65s ease-out;
-}
 
 .results-card p{
 	max-width: 140px;
@@ -494,11 +488,25 @@ p, ul > li{
 }
 
 
+.landing-video{
+	transform: translate3d(0, 20px, 0);
+	opacity: 1;
+	transition: all 3.65s ease-in-out;
+}
+
+.landing-content-offset, .clique-is-offset, .research-strategy-offset, .competitor-offset-1, .competitor-offset-2{
+	transform: translate3d(0, 50px, 0);
+	opacity: 0;
+	transition: all 0.65s ease-in-out;
+}
 
 
 
-
-
+.fade-in{
+	opacity: 1;
+	// transform: rotateX(0deg);
+	transform: translate3d(0, 0, 0);
+}
 
 
 

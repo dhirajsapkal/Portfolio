@@ -49,6 +49,28 @@ $(document).ready(function(){
 
 
 
+	// Init ScrollMagic
+	var controller = new ScrollMagic.Controller();
+
+	//header parallax scene
+	var slideParallaxScene = new ScrollMagic.Scene({
+		triggerElement: '.blueprint-parallax',
+		triggerHook: 1,
+		duration: '160%'
+	})
+
+	.setTween(TweenMax.from('.blueprint-background', .4, {y: '-30%', ease:Power0.easeNone}))
+
+	// .addIndicators({
+	// 	name: 'move hero title',
+	// 	colorTrigger: 'black',
+	// 	colorStart: '#75C695',
+	// 	colorEnd: 'pink'
+	// }) 
+	.addTo(controller);
+
+
+
 	var bar1 = new ProgressBar.Circle(responses, {
 	  color: '#aaa',
 	  // This has to be the same size as the maximum width to
@@ -382,7 +404,78 @@ $(document).ready(function(){
 	.addTo(controllerResults);
 
 
-	//Fade in hero phone
+	// //Fade in hero video
+	// var Fadevideo = new ScrollMagic.Scene({
+	// 	triggerElement: '.landing-content',
+	// 	triggerHook: 0
+	// })
+	// .setClassToggle('.landing-video', 'fade-in') // add class to project01
+
+	// .addIndicators({
+	// 	name: 'Show phone',
+	// 	colorTrigger: 'black',
+	// 	colorStart: '#75C695',
+	// 	colorEnd: 'pink'
+	// }) 
+
+	// .addTo(controller);
+
+
+	//Fade in logo and text
+	var Fadelogo = new ScrollMagic.Scene({
+		triggerElement: '.landing-content',
+		triggerHook: 0
+	})
+
+	.setClassToggle('.landing-content-offset', 'fade-in') // add class to project01
+
+	// .addIndicators({
+	// 	name: 'Show phone',
+	// 	colorTrigger: 'black',
+	// 	colorStart: '#75C695',
+	// 	colorEnd: 'pink'
+	// }) 
+
+	.addTo(controller);
+
+	//fade out video
+
+
+	//Fade in clique is...
+	var FadeCliqueIs = new ScrollMagic.Scene({
+		triggerElement: '.clique-is',
+		triggerHook: 0.5
+	})
+	.setClassToggle('.clique-is-offset', 'fade-in') // add class to project01
+
+	// .addIndicators({
+	// 	name: 'Show phone',
+	// 	colorTrigger: 'black',
+	// 	colorStart: '#75C695',
+	// 	colorEnd: 'pink'
+	// }) 
+
+	.addTo(controller);
+
+
+	//Fade in research strategy...
+	var FadeCliqueIs = new ScrollMagic.Scene({
+		triggerElement: '.research-strategy',
+		triggerHook: 0.7
+	})
+	.setClassToggle('.research-strategy-offset', 'fade-in') // add class to project01
+
+	// .addIndicators({
+	// 	name: 'Show phone',
+	// 	colorTrigger: 'black',
+	// 	colorStart: '#75C695',
+	// 	colorEnd: 'pink'
+	// }) 
+
+	.addTo(controller);
+
+
+	//Fade in user survey
 	var FadeCard = new ScrollMagic.Scene({
 		triggerElement: '.user-survey',
 		triggerHook: 0
@@ -397,6 +490,40 @@ $(document).ready(function(){
 	// }) 
 
 	.addTo(controller);
+
+	//Fade in competitors1
+	var FadeCard1 = new ScrollMagic.Scene({
+		triggerElement: '.competitors',
+		triggerHook: 0.5
+	})
+	.setClassToggle('.competitor-offset-1', 'fade-in') // add class to project01
+
+	// .addIndicators({
+	// 	name: 'Show phone',
+	// 	colorTrigger: 'black',
+	// 	colorStart: '#75C695',
+	// 	colorEnd: 'pink'
+	// }) 
+
+	.addTo(controller);
+
+	//Fade in competitors2
+	var FadeCard2 = new ScrollMagic.Scene({
+		triggerElement: '.competitor-offset-2',
+		triggerHook: 1
+	})
+	.setClassToggle('.competitor-offset-2', 'fade-in') // add class to project01
+
+	.addIndicators({
+		name: 'Show phone',
+		colorTrigger: 'black',
+		colorStart: '#75C695',
+		colorEnd: 'pink'
+	}) 
+
+	.addTo(controller);
+
+
 
 
 
@@ -432,7 +559,6 @@ $(document).ready(function(){
     }, 'xml');
 
   });
-
 
 
 
